@@ -1,21 +1,44 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-06-30T17:52:52",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
+  "device": "DELTA Pro",
+  "timestamp": "2026-06-30T18:29:37",
+  "grid": true,
+  "battery": {
+    "soc": 79,
+    "min": 10.0,
+    "max": 69.0,
+    "eta": "49:06"
+  },
+  "power": {
+    "in": 43,
+    "out": 43,
+    "acOut": 43,
+    "chargeLimit": 1800
+  },
+  "ac": {
+    "inputVoltage": 220.322,
+    "inputFreq": 50.0,
+    "outputVoltage": 219.547
+  },
+  "temps": {
+    "battery": 33,
+    "inverter": 38,
+    "mppt": 41
+  },
   "history": [],
   "telemetry": {
     "window": "24h",
-    "sample_count": 74,
+    "sample_count": 75,
     "from": "2026-06-30T08:11:53",
-    "to": "2026-06-30T17:04:48",
+    "to": "2026-06-30T18:29:37",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 79.0,
-      "ac_v": 226.623,
-      "in_w": 0.0,
-      "out_w": 0.0,
+      "ac_v": 220.322,
+      "in_w": 43.0,
+      "out_w": 43.0,
       "charge_limit_w": 1800.0
     },
     "voltage": {
@@ -48,16 +71,16 @@
     },
     "power": {
       "max_load": {
-        "value": 37.0,
-        "ts": "2026-06-30T12:24:54"
+        "value": 43.0,
+        "ts": "2026-06-30T18:29:37"
       },
       "max_input": {
-        "value": 37.0,
-        "ts": "2026-06-30T12:24:54"
+        "value": 43.0,
+        "ts": "2026-06-30T18:29:37"
       },
       "max_ac_output": {
-        "value": 37.0,
-        "ts": "2026-06-30T12:24:54"
+        "value": 43.0,
+        "ts": "2026-06-30T18:29:37"
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 2,
@@ -67,10 +90,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 5632,
+      "idle_sec": 5812,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 33 хв",
+      "idle": "1 год 36 хв",
       "last_charging": null,
       "last_discharging": null
     }
