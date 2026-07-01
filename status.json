@@ -1,13 +1,13 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-07-01T07:42:20",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+  "timestamp": "2026-07-01T08:40:41",
+  "error": "_ssl.c:1011: The handshake operation timed out",
   "history": [],
   "telemetry": {
     "window": "24h",
-    "sample_count": 82,
-    "from": "2026-06-30T08:11:53",
+    "sample_count": 76,
+    "from": "2026-06-30T09:40:00",
     "to": "2026-07-01T06:41:31",
     "latest": {
       "mode": "idle",
@@ -29,11 +29,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-06-30T08:11:53"
+        "ts": "2026-06-30T09:40:00"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-06-30T08:11:53"
+        "ts": "2026-06-30T09:40:00"
       }
     },
     "soc": {
@@ -42,8 +42,8 @@
         "ts": "2026-07-01T05:40:28"
       },
       "max": {
-        "value": 83.0,
-        "ts": "2026-06-30T08:11:53"
+        "value": 82.0,
+        "ts": "2026-06-30T09:40:00"
       }
     },
     "power": {
@@ -67,10 +67,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 7072,
+      "idle_sec": 6577,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 57 хв",
+      "idle": "1 год 49 хв",
       "last_charging": null,
       "last_discharging": null
     }
