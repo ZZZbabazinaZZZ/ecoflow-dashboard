@@ -1,21 +1,44 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-07-02T10:24:15",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.ecoflow.com', port=443) at 0x10799cc20>, 'Connection to api.ecoflow.com timed out. (connect timeout=10)'))",
+  "device": "DELTA Pro",
+  "timestamp": "2026-07-02T10:52:12",
+  "grid": true,
+  "battery": {
+    "soc": 69,
+    "min": 10.0,
+    "max": 69.0,
+    "eta": "90:16"
+  },
+  "power": {
+    "in": 0,
+    "out": 0,
+    "acOut": 0,
+    "chargeLimit": 1800
+  },
+  "ac": {
+    "inputVoltage": 219.132,
+    "inputFreq": 50.0,
+    "outputVoltage": 218.387
+  },
+  "temps": {
+    "battery": 33,
+    "inverter": 40,
+    "mppt": 41
+  },
   "history": [],
   "telemetry": {
     "window": "24h",
-    "sample_count": 440,
-    "from": "2026-07-01T10:45:04",
-    "to": "2026-07-02T10:15:13",
+    "sample_count": 450,
+    "from": "2026-07-01T11:28:20",
+    "to": "2026-07-02T10:52:12",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 69.0,
-      "ac_v": 216.955,
-      "in_w": 37.0,
-      "out_w": 37.0,
+      "ac_v": 219.132,
+      "in_w": 0.0,
+      "out_w": 0.0,
       "charge_limit_w": 1800.0
     },
     "voltage": {
@@ -29,11 +52,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-07-01T10:45:04"
+        "ts": "2026-07-01T11:28:20"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-07-01T10:45:04"
+        "ts": "2026-07-01T11:28:20"
       }
     },
     "soc": {
@@ -43,7 +66,7 @@
       },
       "max": {
         "value": 72.0,
-        "ts": "2026-07-01T10:45:04"
+        "ts": "2026-07-01T11:28:20"
       }
     },
     "power": {
@@ -61,16 +84,16 @@
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 101,
-      "input_wh_est": 227.5,
-      "load_wh_est": 19.2
+      "input_wh_est": 230.4,
+      "load_wh_est": 22.2
     },
     "modes": {
       "charging_sec": 438,
       "discharging_sec": 0,
-      "idle_sec": 27297,
+      "idle_sec": 27966,
       "charging": "7 хв",
       "discharging": "0 сек",
-      "idle": "7 год 34 хв",
+      "idle": "7 год 46 хв",
       "last_charging": {
         "ts": "2026-07-02T09:55:35",
         "grid": true,
