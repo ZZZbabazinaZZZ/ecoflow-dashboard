@@ -2,13 +2,13 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-07-09T09:10:13",
+  "timestamp": "2026-07-09T09:36:24",
   "grid": true,
   "battery": {
-    "soc": 67,
+    "soc": 66,
     "min": 10.0,
     "max": 66.0,
-    "eta": "87:12"
+    "eta": "85:40"
   },
   "power": {
     "in": 0,
@@ -17,9 +17,9 @@
     "chargeLimit": 1800
   },
   "ac": {
-    "inputVoltage": 228.132,
+    "inputVoltage": 229.637,
     "inputFreq": 50.0,
-    "outputVoltage": 227.299
+    "outputVoltage": 228.809
   },
   "temps": {
     "battery": 28,
@@ -29,14 +29,14 @@
   "history": [],
   "telemetry": {
     "window": "24h",
-    "sample_count": 50,
-    "from": "2026-07-08T09:10:13",
-    "to": "2026-07-09T09:10:13",
+    "sample_count": 46,
+    "from": "2026-07-08T09:40:39",
+    "to": "2026-07-09T09:36:24",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 67.0,
-      "ac_v": 228.132,
+      "soc": 66.0,
+      "ac_v": 229.637,
       "in_w": 0.0,
       "out_w": 0.0,
       "charge_limit_w": 1800.0
@@ -52,35 +52,35 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-07-08T09:10:13"
+        "ts": "2026-07-08T09:40:39"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-07-08T09:10:13"
+        "ts": "2026-07-08T09:40:39"
       }
     },
     "soc": {
       "min": {
-        "value": 67.0,
-        "ts": "2026-07-09T08:52:39"
+        "value": 66.0,
+        "ts": "2026-07-09T09:36:24"
       },
       "max": {
         "value": 75.0,
-        "ts": "2026-07-08T09:10:13"
+        "ts": "2026-07-08T09:40:39"
       }
     },
     "power": {
       "max_load": {
         "value": 0.0,
-        "ts": "2026-07-08T09:10:13"
+        "ts": "2026-07-08T09:40:39"
       },
       "max_input": {
         "value": 0.0,
-        "ts": "2026-07-08T09:10:13"
+        "ts": "2026-07-08T09:40:39"
       },
       "max_ac_output": {
         "value": 0.0,
-        "ts": "2026-07-08T09:10:13"
+        "ts": "2026-07-08T09:40:39"
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 0,
@@ -90,10 +90,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 5012,
+      "idle_sec": 4766,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 23 хв",
+      "idle": "1 год 19 хв",
       "last_charging": null,
       "last_discharging": null
     }
