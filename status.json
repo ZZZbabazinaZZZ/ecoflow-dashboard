@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-07-08T17:08:49",
-  "grid": true,
-  "battery": {
-    "soc": 72,
-    "min": 10.0,
-    "max": 66.0,
-    "eta": "94:51"
-  },
-  "power": {
-    "in": 0,
-    "out": 0,
-    "acOut": 0,
-    "chargeLimit": 1800
-  },
-  "ac": {
-    "inputVoltage": 230.019,
-    "inputFreq": 50.0,
-    "outputVoltage": 229.162
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 34,
-    "mppt": 37
-  },
+  "timestamp": "2026-07-09T08:51:35",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NewConnectionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to establish a new connection: [Errno 65] No route to host\"))",
   "history": [],
   "telemetry": {
     "window": "24h",
