@@ -2,43 +2,43 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-07-10T11:04:07",
+  "timestamp": "2026-07-10T11:19:45",
   "grid": true,
   "battery": {
     "soc": 73,
     "min": 10.0,
     "max": 59.0,
-    "eta": "6:21"
+    "eta": "96:23"
   },
   "power": {
-    "in": 303,
-    "out": 303,
-    "acOut": 303,
+    "in": 15,
+    "out": 15,
+    "acOut": 15,
     "chargeLimit": 1800
   },
   "ac": {
-    "inputVoltage": 223.291,
+    "inputVoltage": 225.466,
     "inputFreq": 50.0,
-    "outputVoltage": 222.904
+    "outputVoltage": 224.641
   },
   "temps": {
     "battery": 27,
     "inverter": 33,
-    "mppt": 35
+    "mppt": 36
   },
   "history": [],
   "telemetry": {
     "window": "24h",
-    "sample_count": 349,
-    "from": "2026-07-09T11:16:29",
-    "to": "2026-07-10T11:04:07",
+    "sample_count": 362,
+    "from": "2026-07-09T11:22:03",
+    "to": "2026-07-10T11:19:45",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 73.0,
-      "ac_v": 223.291,
-      "in_w": 303.0,
-      "out_w": 303.0,
+      "ac_v": 225.466,
+      "in_w": 15.0,
+      "out_w": 15.0,
       "charge_limit_w": 1800.0
     },
     "voltage": {
@@ -52,11 +52,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-07-09T11:16:29"
+        "ts": "2026-07-09T11:22:03"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-07-09T11:16:29"
+        "ts": "2026-07-09T11:22:03"
       }
     },
     "soc": {
@@ -84,16 +84,16 @@
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 100,
-      "input_wh_est": 527.2,
-      "load_wh_est": 60.4
+      "input_wh_est": 581.1,
+      "load_wh_est": 114.4
     },
     "modes": {
       "charging_sec": 981,
       "discharging_sec": 0,
-      "idle_sec": 22181,
+      "idle_sec": 22785,
       "charging": "16 хв",
       "discharging": "0 сек",
-      "idle": "6 год 09 хв",
+      "idle": "6 год 19 хв",
       "last_charging": {
         "ts": "2026-07-09T12:57:39",
         "grid": true,
