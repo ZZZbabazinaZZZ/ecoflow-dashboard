@@ -1,7 +1,7 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-07-19T19:22:02",
+  "timestamp": "2026-07-19T21:24:01",
   "error": "EcoFlow API error 8521: signature is wrong",
   "history": [],
   "telemetry": {
