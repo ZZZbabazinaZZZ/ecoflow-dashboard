@@ -1,8 +1,8 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-07-19T21:24:01",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "timestamp": "2026-07-20T03:00:25",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
   "history": [],
   "telemetry": {
     "window": "24h",
