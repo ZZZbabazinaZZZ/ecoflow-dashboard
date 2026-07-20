@@ -1,13 +1,13 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-07-20T05:32:02",
+  "timestamp": "2026-07-20T08:38:52",
   "error": "EcoFlow API error 8521: signature is wrong",
   "history": [],
   "telemetry": {
     "window": "24h",
-    "sample_count": 18,
-    "from": "2026-07-19T07:53:10",
+    "sample_count": 2,
+    "from": "2026-07-19T11:30:23",
     "to": "2026-07-19T16:05:51",
     "latest": {
       "mode": "idle",
@@ -24,22 +24,22 @@
         "ts": "2026-07-19T16:05:51"
       },
       "max": {
-        "value": 231.1,
-        "ts": "2026-07-19T08:00:26"
+        "value": 225.3,
+        "ts": "2026-07-19T11:30:23"
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-07-19T07:53:10"
+        "ts": "2026-07-19T11:30:23"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-07-19T07:53:10"
+        "ts": "2026-07-19T11:30:23"
       }
     },
     "soc": {
       "min": {
-        "value": 58.0,
-        "ts": "2026-07-19T07:53:10"
+        "value": 75.0,
+        "ts": "2026-07-19T16:05:51"
       },
       "max": {
         "value": 76.0,
@@ -67,10 +67,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 1407,
+      "idle_sec": 180,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "23 хв",
+      "idle": "3 хв",
       "last_charging": null,
       "last_discharging": null
     }
