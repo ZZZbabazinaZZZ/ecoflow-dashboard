@@ -75,7 +75,7 @@
       overflow: hidden;
       margin-top: 14px;
     }
-    .fill { width: 68%; height: 100%; background: linear-gradient(90deg, var(--green), var(--cyan)); }
+    .fill { width: 0%; height: 100%; background: linear-gradient(90deg, var(--green), var(--cyan)); }
     .cards {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -177,34 +177,34 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-07-22T14:48:02 · data 2026-07-22T14:48:02</div>
+      <div class="sub">Cloud MQTT · generated 2026-07-22T15:50:28 · data 2026-07-22T15:50:28</div>
     </div>
-    <div class="status online"><span class="dot"></span><span>AC online</span></div>
+    <div class="status offline"><span class="dot"></span><span>Offline</span></div>
   </header>
 
-  
+  <div class='error'>_ssl.c:1011: The handshake operation timed out</div>
 
   <div class="grid">
     <section>
       <h2>Battery</h2>
-      <div class="value">68%</div>
+      <div class="value">0%</div>
       <div class="battery"><div class="fill"></div></div>
-      <div class="row"><span>ETA</span><span>88:44</span></div>
-      <div class="row"><span>SOC limits</span><span>10.0% - 50.0%</span></div>
+      <div class="row"><span>ETA</span><span>--</span></div>
+      <div class="row"><span>SOC limits</span><span>--% - --%</span></div>
     </section>
     <section>
       <h2>AC</h2>
-      <div class="row"><span>Input voltage</span><span>224.4 V</span></div>
-      <div class="row"><span>Input frequency</span><span>50.0 Hz</span></div>
-      <div class="row"><span>Output voltage</span><span>223.6 V</span></div>
+      <div class="row"><span>Input voltage</span><span>-- V</span></div>
+      <div class="row"><span>Input frequency</span><span>-- Hz</span></div>
+      <div class="row"><span>Output voltage</span><span>-- V</span></div>
     </section>
   </div>
 
   <div class="cards">
-    <div class="card"><span class="label">Input</span><span class="value">0 W</span></div>
-    <div class="card"><span class="label">Load</span><span class="value">0 W</span></div>
-    <div class="card"><span class="label">Battery temp</span><span class="value">29°C</span></div>
-    <div class="card"><span class="label">Inverter temp</span><span class="value">35°C</span></div>
+    <div class="card"><span class="label">Input</span><span class="value">-- W</span></div>
+    <div class="card"><span class="label">Load</span><span class="value">-- W</span></div>
+    <div class="card"><span class="label">Battery temp</span><span class="value">--°C</span></div>
+    <div class="card"><span class="label">Inverter temp</span><span class="value">--°C</span></div>
   </div>
 
   
@@ -213,12 +213,12 @@
       <div class="daily-grid">
         <div class="daily-item"><span class="label">Напруга min / max</span><strong>220 V / 231 V</strong><small>22.07 14:30 / 22.07 09:57</small></div>
         <div class="daily-item"><span class="label">SOC min / max</span><strong>65% / 70%</strong><small>21.07 16:01 / 22.07 08:03</small></div>
-        <div class="daily-item"><span class="label">Пік навантаження</span><strong>0 W</strong><small>21.07 14:48</small></div>
+        <div class="daily-item"><span class="label">Пік навантаження</span><strong>0 W</strong><small>21.07 15:50</small></div>
         <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1800 W</strong><small>пік входу 0 W · 0% ліміту</small></div>
         <div class="daily-item"><span class="label">Заряджання</span><strong>0 сек</strong><small>--</small></div>
         <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
         <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>0 Wh / 0 Wh</strong><small>оцінка за sample-ами</small></div>
-        <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>21.07 14:48 / 21.07 14:48</small></div>
+        <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>21.07 15:50 / 21.07 15:50</small></div>
       </div>
     </section>
     
@@ -235,44 +235,21 @@
   <details>
     <summary>Snapshot JSON</summary>
     <pre>{
-  &quot;ok&quot;: true,
+  &quot;ok&quot;: false,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;device&quot;: &quot;DELTA Pro&quot;,
-  &quot;timestamp&quot;: &quot;2026-07-22T14:48:02&quot;,
-  &quot;grid&quot;: true,
-  &quot;battery&quot;: {
-    &quot;soc&quot;: 68,
-    &quot;min&quot;: 10.0,
-    &quot;max&quot;: 50.0,
-    &quot;eta&quot;: &quot;88:44&quot;
-  },
-  &quot;power&quot;: {
-    &quot;in&quot;: 0,
-    &quot;out&quot;: 0,
-    &quot;acOut&quot;: 0,
-    &quot;chargeLimit&quot;: 1800
-  },
-  &quot;ac&quot;: {
-    &quot;inputVoltage&quot;: 224.411,
-    &quot;inputFreq&quot;: 50.0,
-    &quot;outputVoltage&quot;: 223.608
-  },
-  &quot;temps&quot;: {
-    &quot;battery&quot;: 29,
-    &quot;inverter&quot;: 35,
-    &quot;mppt&quot;: 37
-  },
+  &quot;timestamp&quot;: &quot;2026-07-22T15:50:28&quot;,
+  &quot;error&quot;: &quot;_ssl.c:1011: The handshake operation timed out&quot;,
   &quot;history&quot;: [],
   &quot;telemetry&quot;: {
     &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 187,
-    &quot;from&quot;: &quot;2026-07-21T14:48:51&quot;,
-    &quot;to&quot;: &quot;2026-07-22T14:48:02&quot;,
+    &quot;sample_count&quot;: 143,
+    &quot;from&quot;: &quot;2026-07-21T15:50:28&quot;,
+    &quot;to&quot;: &quot;2026-07-22T14:49:09&quot;,
     &quot;latest&quot;: {
       &quot;mode&quot;: &quot;idle&quot;,
       &quot;grid&quot;: true,
       &quot;soc&quot;: 68.0,
-      &quot;ac_v&quot;: 224.411,
+      &quot;ac_v&quot;: 223.175,
       &quot;in_w&quot;: 0.0,
       &quot;out_w&quot;: 0.0,
       &quot;charge_limit_w&quot;: 1800.0
@@ -288,11 +265,11 @@
       },
       &quot;frequency_min&quot;: {
         &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-07-21T14:48:51&quot;
+        &quot;ts&quot;: &quot;2026-07-21T15:50:28&quot;
       },
       &quot;frequency_max&quot;: {
         &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-07-21T14:48:51&quot;
+        &quot;ts&quot;: &quot;2026-07-21T15:50:28&quot;
       }
     },
     &quot;soc&quot;: {
@@ -308,15 +285,15 @@
     &quot;power&quot;: {
       &quot;max_load&quot;: {
         &quot;value&quot;: 0.0,
-        &quot;ts&quot;: &quot;2026-07-21T14:48:51&quot;
+        &quot;ts&quot;: &quot;2026-07-21T15:50:28&quot;
       },
       &quot;max_input&quot;: {
         &quot;value&quot;: 0.0,
-        &quot;ts&quot;: &quot;2026-07-21T14:48:51&quot;
+        &quot;ts&quot;: &quot;2026-07-21T15:50:28&quot;
       },
       &quot;max_ac_output&quot;: {
         &quot;value&quot;: 0.0,
-        &quot;ts&quot;: &quot;2026-07-21T14:48:51&quot;
+        &quot;ts&quot;: &quot;2026-07-21T15:50:28&quot;
       },
       &quot;charge_limit_w&quot;: 1800.0,
       &quot;max_input_pct_of_current_limit&quot;: 0,
@@ -326,10 +303,10 @@
     &quot;modes&quot;: {
       &quot;charging_sec&quot;: 0,
       &quot;discharging_sec&quot;: 0,
-      &quot;idle_sec&quot;: 13318,
+      &quot;idle_sec&quot;: 10273,
       &quot;charging&quot;: &quot;0 сек&quot;,
       &quot;discharging&quot;: &quot;0 сек&quot;,
-      &quot;idle&quot;: &quot;3 год 41 хв&quot;,
+      &quot;idle&quot;: &quot;2 год 51 хв&quot;,
       &quot;last_charging&quot;: null,
       &quot;last_discharging&quot;: null
     }
