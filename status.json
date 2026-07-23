@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-07-23T09:11:28",
+  "timestamp": "2026-07-23T09:49:21",
   "grid": true,
   "battery": {
     "soc": 68,
@@ -17,9 +17,9 @@
     "chargeLimit": 1800
   },
   "ac": {
-    "inputVoltage": 225.738,
+    "inputVoltage": 228.318,
     "inputFreq": 50.0,
-    "outputVoltage": 224.928
+    "outputVoltage": 227.493
   },
   "temps": {
     "battery": 29,
@@ -29,14 +29,14 @@
   "history": [],
   "telemetry": {
     "window": "24h",
-    "sample_count": 91,
-    "from": "2026-07-22T09:13:06",
-    "to": "2026-07-23T09:11:28",
+    "sample_count": 93,
+    "from": "2026-07-22T09:51:07",
+    "to": "2026-07-23T09:49:21",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 68.0,
-      "ac_v": 225.738,
+      "ac_v": 228.318,
       "in_w": 0.0,
       "out_w": 0.0,
       "charge_limit_w": 1800.0
@@ -52,11 +52,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-07-22T09:13:06"
+        "ts": "2026-07-22T09:51:07"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-07-22T09:13:06"
+        "ts": "2026-07-22T09:51:07"
       }
     },
     "soc": {
@@ -72,15 +72,15 @@
     "power": {
       "max_load": {
         "value": 0.0,
-        "ts": "2026-07-22T09:13:06"
+        "ts": "2026-07-22T09:51:07"
       },
       "max_input": {
         "value": 0.0,
-        "ts": "2026-07-22T09:13:06"
+        "ts": "2026-07-22T09:51:07"
       },
       "max_ac_output": {
         "value": 0.0,
-        "ts": "2026-07-22T09:13:06"
+        "ts": "2026-07-22T09:51:07"
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 0,
@@ -90,10 +90,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 7659,
+      "idle_sec": 7934,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "2 год 07 хв",
+      "idle": "2 год 12 хв",
       "last_charging": null,
       "last_discharging": null
     }
