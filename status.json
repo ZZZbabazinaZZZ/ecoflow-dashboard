@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-07-24T15:08:49",
+  "timestamp": "2026-07-24T15:24:25",
   "grid": true,
   "battery": {
     "soc": 75,
@@ -17,9 +17,9 @@
     "chargeLimit": 1800
   },
   "ac": {
-    "inputVoltage": 221.193,
+    "inputVoltage": 222.341,
     "inputFreq": 50.0,
-    "outputVoltage": 220.391
+    "outputVoltage": 221.995
   },
   "temps": {
     "battery": 29,
@@ -30,13 +30,13 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 134,
-    "from": "2026-07-23T15:09:25",
-    "to": "2026-07-24T15:08:49",
+    "from": "2026-07-23T15:25:13",
+    "to": "2026-07-24T15:24:25",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 75.0,
-      "ac_v": 221.193,
+      "ac_v": 222.341,
       "in_w": 0.0,
       "out_w": 0.0,
       "charge_limit_w": 1800.0
@@ -52,17 +52,17 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-07-23T15:09:25"
+        "ts": "2026-07-23T15:25:13"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-07-23T15:09:25"
+        "ts": "2026-07-23T15:25:13"
       }
     },
     "soc": {
       "min": {
         "value": 67.0,
-        "ts": "2026-07-23T15:09:25"
+        "ts": "2026-07-23T15:25:13"
       },
       "max": {
         "value": 76.0,
@@ -72,15 +72,15 @@
     "power": {
       "max_load": {
         "value": 0.0,
-        "ts": "2026-07-23T15:09:25"
+        "ts": "2026-07-23T15:25:13"
       },
       "max_input": {
         "value": 0.0,
-        "ts": "2026-07-23T15:09:25"
+        "ts": "2026-07-23T15:25:13"
       },
       "max_ac_output": {
         "value": 0.0,
-        "ts": "2026-07-23T15:09:25"
+        "ts": "2026-07-23T15:25:13"
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 0,
@@ -90,7 +90,7 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 10663,
+      "idle_sec": 10651,
       "charging": "0 сек",
       "discharging": "0 сек",
       "idle": "2 год 57 хв",
