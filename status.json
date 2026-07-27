@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-07-27T08:28:56",
+  "timestamp": "2026-07-27T09:03:14",
   "grid": false,
   "battery": {
     "soc": 73,
@@ -39,9 +39,9 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 39,
+    "sample_count": 43,
     "from": "2026-07-26T11:29:07",
-    "to": "2026-07-27T08:28:56",
+    "to": "2026-07-27T09:03:14",
     "latest": {
       "mode": "idle",
       "grid": false,
@@ -88,10 +88,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 4637,
+      "idle_sec": 5124,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 17 хв",
+      "idle": "1 год 25 хв",
       "last_charging": null,
       "last_discharging": null
     }
