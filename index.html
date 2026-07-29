@@ -177,7 +177,7 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-07-29T09:21:47 · data 2026-07-29T09:21:47</div>
+      <div class="sub">Cloud MQTT · generated 2026-07-29T10:58:19 · data 2026-07-29T10:58:19</div>
     </div>
     <div class="status offline"><span class="dot"></span><span>Offline</span></div>
   </header>
@@ -212,12 +212,12 @@
       <h2>Останні 24 години</h2>
       <div class="daily-grid">
         <div class="daily-item"><span class="label">Напруга min / max</span><strong>-- V / -- V</strong><small>-- / --</small></div>
-        <div class="daily-item"><span class="label">SOC min / max</span><strong>--% / --%</strong><small>-- / --</small></div>
-        <div class="daily-item"><span class="label">Пік навантаження</span><strong>-- W</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>--</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Заряджання</span><strong>--</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Розряджання</span><strong>--</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>-- / --</strong><small>оцінка за sample-ами</small></div>
+        <div class="daily-item"><span class="label">SOC min / max</span><strong>73% / 73%</strong><small>29.07 09:22 / 29.07 09:22</small></div>
+        <div class="daily-item"><span class="label">Пік навантаження</span><strong>0 W</strong><small>29.07 09:22</small></div>
+        <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1800 W</strong><small>пік входу 0 W · 0% ліміту</small></div>
+        <div class="daily-item"><span class="label">Заряджання</span><strong>0 сек</strong><small>--</small></div>
+        <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
+        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>0 Wh / 0 Wh</strong><small>оцінка за sample-ами</small></div>
         <div class="daily-item"><span class="label">Частота min / max</span><strong>-- Hz / -- Hz</strong><small>-- / --</small></div>
       </div>
     </section>
@@ -237,7 +237,7 @@
     <pre>{
   &quot;ok&quot;: false,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;timestamp&quot;: &quot;2026-07-29T09:21:47&quot;,
+  &quot;timestamp&quot;: &quot;2026-07-29T10:58:19&quot;,
   &quot;error&quot;: &quot;HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\&quot;HTTPSConnection(host=&#x27;api.ecoflow.com&#x27;, port=443): Failed to resolve &#x27;api.ecoflow.com&#x27; ([Errno 8] nodename nor servname provided, or not known)\&quot;))&quot;,
   &quot;history&quot;: [
     {
@@ -252,8 +252,62 @@
   ],
   &quot;telemetry&quot;: {
     &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 0,
-    &quot;message&quot;: &quot;Недостатньо даних за останні 24 години.&quot;
+    &quot;sample_count&quot;: 8,
+    &quot;from&quot;: &quot;2026-07-29T09:22:51&quot;,
+    &quot;to&quot;: &quot;2026-07-29T09:30:02&quot;,
+    &quot;latest&quot;: {
+      &quot;mode&quot;: &quot;idle&quot;,
+      &quot;grid&quot;: false,
+      &quot;soc&quot;: 73.0,
+      &quot;ac_v&quot;: 0.0,
+      &quot;in_w&quot;: 0.0,
+      &quot;out_w&quot;: 0.0,
+      &quot;charge_limit_w&quot;: 1800.0
+    },
+    &quot;voltage&quot;: {
+      &quot;min&quot;: null,
+      &quot;max&quot;: null,
+      &quot;frequency_min&quot;: null,
+      &quot;frequency_max&quot;: null
+    },
+    &quot;soc&quot;: {
+      &quot;min&quot;: {
+        &quot;value&quot;: 73.0,
+        &quot;ts&quot;: &quot;2026-07-29T09:22:51&quot;
+      },
+      &quot;max&quot;: {
+        &quot;value&quot;: 73.0,
+        &quot;ts&quot;: &quot;2026-07-29T09:22:51&quot;
+      }
+    },
+    &quot;power&quot;: {
+      &quot;max_load&quot;: {
+        &quot;value&quot;: 0.0,
+        &quot;ts&quot;: &quot;2026-07-29T09:22:51&quot;
+      },
+      &quot;max_input&quot;: {
+        &quot;value&quot;: 0.0,
+        &quot;ts&quot;: &quot;2026-07-29T09:22:51&quot;
+      },
+      &quot;max_ac_output&quot;: {
+        &quot;value&quot;: 0.0,
+        &quot;ts&quot;: &quot;2026-07-29T09:22:51&quot;
+      },
+      &quot;charge_limit_w&quot;: 1800.0,
+      &quot;max_input_pct_of_current_limit&quot;: 0,
+      &quot;input_wh_est&quot;: 0.0,
+      &quot;load_wh_est&quot;: 0.0
+    },
+    &quot;modes&quot;: {
+      &quot;charging_sec&quot;: 0,
+      &quot;discharging_sec&quot;: 0,
+      &quot;idle_sec&quot;: 431,
+      &quot;charging&quot;: &quot;0 сек&quot;,
+      &quot;discharging&quot;: &quot;0 сек&quot;,
+      &quot;idle&quot;: &quot;7 хв&quot;,
+      &quot;last_charging&quot;: null,
+      &quot;last_discharging&quot;: null
+    }
   }
 }</pre>
   </details>
