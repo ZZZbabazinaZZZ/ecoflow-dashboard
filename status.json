@@ -1,7 +1,7 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-07-31T01:07:50",
+  "timestamp": "2026-07-31T02:19:29",
   "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
@@ -16,8 +16,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 371,
-    "from": "2026-07-30T01:43:45",
+    "sample_count": 370,
+    "from": "2026-07-30T02:52:56",
     "to": "2026-07-30T23:02:26",
     "latest": {
       "mode": "idle",
@@ -37,25 +37,25 @@
     "soc": {
       "min": {
         "value": 73.0,
-        "ts": "2026-07-30T01:43:45"
+        "ts": "2026-07-30T02:52:56"
       },
       "max": {
         "value": 73.0,
-        "ts": "2026-07-30T01:43:45"
+        "ts": "2026-07-30T02:52:56"
       }
     },
     "power": {
       "max_load": {
         "value": 0.0,
-        "ts": "2026-07-30T01:43:45"
+        "ts": "2026-07-30T02:52:56"
       },
       "max_input": {
         "value": 0.0,
-        "ts": "2026-07-30T01:43:45"
+        "ts": "2026-07-30T02:52:56"
       },
       "max_ac_output": {
         "value": 0.0,
-        "ts": "2026-07-30T01:43:45"
+        "ts": "2026-07-30T02:52:56"
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 0,
@@ -65,10 +65,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 24586,
+      "idle_sec": 24406,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "6 год 49 хв",
+      "idle": "6 год 46 хв",
       "last_charging": null,
       "last_discharging": null
     }
