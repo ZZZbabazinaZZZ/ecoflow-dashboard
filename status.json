@@ -1,9 +1,42 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-08-05T08:32:10",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+  "device": "DELTA Pro",
+  "timestamp": "2026-08-05T09:41:45",
+  "grid": true,
+  "battery": {
+    "soc": 78,
+    "min": 10.0,
+    "max": 62.0,
+    "eta": "37:49"
+  },
+  "power": {
+    "in": 55,
+    "out": 55,
+    "acOut": 55,
+    "chargeLimit": 1800
+  },
+  "ac": {
+    "inputVoltage": 224.449,
+    "inputFreq": 50.0,
+    "outputVoltage": 225.226
+  },
+  "temps": {
+    "battery": 33,
+    "inverter": 38,
+    "mppt": 40
+  },
   "history": [
+    {
+      "ts": "2026-08-05T08:33:17",
+      "type": "power_on",
+      "title": "Світло з'явилось",
+      "ac_v": 223.181,
+      "freq": 50.0,
+      "soc": 78,
+      "load_w": 56,
+      "duration": "237 год 04 хв"
+    },
     {
       "ts": "2026-07-26T11:29:07",
       "type": "power_off",
@@ -16,23 +49,35 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 118,
-    "from": "2026-08-04T08:36:56",
-    "to": "2026-08-04T16:59:09",
+    "sample_count": 113,
+    "from": "2026-08-04T11:13:31",
+    "to": "2026-08-05T09:41:45",
     "latest": {
-      "mode": "discharging",
-      "grid": false,
-      "soc": 61.0,
-      "ac_v": 0.0,
-      "in_w": 0.0,
-      "out_w": 73.0,
+      "mode": "idle",
+      "grid": true,
+      "soc": 78.0,
+      "ac_v": 224.449,
+      "in_w": 55.0,
+      "out_w": 55.0,
       "charge_limit_w": 1800.0
     },
     "voltage": {
-      "min": null,
-      "max": null,
-      "frequency_min": null,
-      "frequency_max": null
+      "min": {
+        "value": 223.2,
+        "ts": "2026-08-05T08:33:17"
+      },
+      "max": {
+        "value": 224.4,
+        "ts": "2026-08-05T09:41:45"
+      },
+      "frequency_min": {
+        "value": 50.0,
+        "ts": "2026-08-05T08:33:17"
+      },
+      "frequency_max": {
+        "value": 50.0,
+        "ts": "2026-08-05T08:33:17"
+      }
     },
     "soc": {
       "min": {
@@ -40,8 +85,8 @@
         "ts": "2026-08-04T16:59:09"
       },
       "max": {
-        "value": 73.0,
-        "ts": "2026-08-04T08:36:56"
+        "value": 78.0,
+        "ts": "2026-08-05T08:33:17"
       }
     },
     "power": {
@@ -50,25 +95,25 @@
         "ts": "2026-08-04T12:38:45"
       },
       "max_input": {
-        "value": 0.0,
-        "ts": "2026-08-04T08:36:56"
+        "value": 57.0,
+        "ts": "2026-08-05T08:34:18"
       },
       "max_ac_output": {
         "value": 132.0,
         "ts": "2026-08-04T12:38:45"
       },
       "charge_limit_w": 1800.0,
-      "max_input_pct_of_current_limit": 0,
-      "input_wh_est": 0.0,
-      "load_wh_est": 91.8
+      "max_input_pct_of_current_limit": 3,
+      "input_wh_est": 4.7,
+      "load_wh_est": 100.2
     },
     "modes": {
       "charging_sec": 0,
-      "discharging_sec": 3605,
-      "idle_sec": 6081,
+      "discharging_sec": 3785,
+      "idle_sec": 5465,
       "charging": "0 сек",
-      "discharging": "1 год 00 хв",
-      "idle": "1 год 41 хв",
+      "discharging": "1 год 03 хв",
+      "idle": "1 год 31 хв",
       "last_charging": null,
       "last_discharging": {
         "ts": "2026-08-04T16:59:09",
