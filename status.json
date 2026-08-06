@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-06T07:35:37",
+  "timestamp": "2026-08-06T08:36:37",
   "grid": true,
   "battery": {
-    "soc": 73,
+    "soc": 72,
     "min": 10.0,
     "max": 62.0,
-    "eta": "40:09"
+    "eta": "31:37"
   },
   "power": {
-    "in": 48,
-    "out": 48,
-    "acOut": 48,
+    "in": 60,
+    "out": 60,
+    "acOut": 60,
     "chargeLimit": 1800
   },
   "ac": {
-    "inputVoltage": 223.557,
+    "inputVoltage": 228.563,
     "inputFreq": 50.0,
-    "outputVoltage": 224.335
+    "outputVoltage": 229.361
   },
   "temps": {
     "battery": 33,
@@ -49,16 +49,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 16,
-    "from": "2026-08-05T08:33:17",
-    "to": "2026-08-06T07:35:37",
+    "sample_count": 14,
+    "from": "2026-08-05T09:41:45",
+    "to": "2026-08-06T08:36:37",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 73.0,
-      "ac_v": 223.557,
-      "in_w": 48.0,
-      "out_w": 48.0,
+      "soc": 72.0,
+      "ac_v": 228.563,
+      "in_w": 60.0,
+      "out_w": 60.0,
       "charge_limit_w": 1800.0
     },
     "voltage": {
@@ -72,21 +72,21 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-05T08:33:17"
+        "ts": "2026-08-05T09:41:45"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-05T08:33:17"
+        "ts": "2026-08-05T09:41:45"
       }
     },
     "soc": {
       "min": {
-        "value": 73.0,
-        "ts": "2026-08-06T04:32:52"
+        "value": 72.0,
+        "ts": "2026-08-06T08:36:37"
       },
       "max": {
         "value": 78.0,
-        "ts": "2026-08-05T08:33:17"
+        "ts": "2026-08-05T09:41:45"
       }
     },
     "power": {
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1800.0,
       "max_input_pct_of_current_limit": 5,
-      "input_wh_est": 29.4,
-      "load_wh_est": 29.4
+      "input_wh_est": 27.1,
+      "load_wh_est": 27.1
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 1990,
+      "idle_sec": 1868,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "33 хв",
+      "idle": "31 хв",
       "last_charging": null,
       "last_discharging": null
     }
