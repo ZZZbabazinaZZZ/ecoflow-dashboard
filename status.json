@@ -1,8 +1,8 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-08-06T11:52:45",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
+  "timestamp": "2026-08-06T13:31:37",
+  "error": "timed out",
   "history": [
     {
       "ts": "2026-08-05T08:33:17",
