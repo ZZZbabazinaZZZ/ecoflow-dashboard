@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-11T10:27:45",
+  "timestamp": "2026-08-11T10:59:00",
   "grid": true,
   "battery": {
     "soc": 74,
     "min": 10.0,
     "max": 75.0,
-    "eta": "93:15"
+    "eta": "89:01"
   },
   "power": {
-    "in": 21,
-    "out": 21,
-    "acOut": 21,
+    "in": 22,
+    "out": 22,
+    "acOut": 22,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 223.693,
+    "inputVoltage": 222.145,
     "inputFreq": 50.0,
-    "outputVoltage": 224.46
+    "outputVoltage": 222.914
   },
   "temps": {
     "battery": 30,
@@ -49,16 +49,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 310,
-    "from": "2026-08-10T10:38:32",
-    "to": "2026-08-11T10:27:45",
+    "sample_count": 290,
+    "from": "2026-08-10T10:59:59",
+    "to": "2026-08-11T10:59:00",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 74.0,
-      "ac_v": 223.693,
-      "in_w": 21.0,
-      "out_w": 21.0,
+      "ac_v": 222.145,
+      "in_w": 22.0,
+      "out_w": 22.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,17 +72,17 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-10T10:38:32"
+        "ts": "2026-08-10T10:59:59"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-10T10:38:32"
+        "ts": "2026-08-10T10:59:59"
       }
     },
     "soc": {
       "min": {
         "value": 68.0,
-        "ts": "2026-08-10T10:38:32"
+        "ts": "2026-08-10T10:59:59"
       },
       "max": {
         "value": 75.0,
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 100,
-      "input_wh_est": 389.1,
-      "load_wh_est": 212.1
+      "input_wh_est": 382.6,
+      "load_wh_est": 205.6
     },
     "modes": {
       "charging_sec": 491,
       "discharging_sec": 0,
-      "idle_sec": 21785,
+      "idle_sec": 20678,
       "charging": "8 хв",
       "discharging": "0 сек",
-      "idle": "6 год 03 хв",
+      "idle": "5 год 44 хв",
       "last_charging": {
         "ts": "2026-08-10T11:14:16",
         "grid": true,
