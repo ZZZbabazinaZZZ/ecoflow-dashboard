@@ -75,7 +75,7 @@
       overflow: hidden;
       margin-top: 14px;
     }
-    .fill { width: 0%; height: 100%; background: linear-gradient(90deg, var(--green), var(--cyan)); }
+    .fill { width: 75%; height: 100%; background: linear-gradient(90deg, var(--green), var(--cyan)); }
     .cards {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -177,34 +177,34 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-08-12T08:57:18 · data 2026-08-12T08:57:18</div>
+      <div class="sub">Cloud MQTT · generated 2026-08-12T09:17:03 · data 2026-08-12T09:17:03</div>
     </div>
-    <div class="status offline"><span class="dot"></span><span>Offline</span></div>
+    <div class="status online"><span class="dot"></span><span>AC online</span></div>
   </header>
 
-  <div class='error'>HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NewConnectionError(&quot;HTTPSConnection(host=&#x27;api.ecoflow.com&#x27;, port=443): Failed to establish a new connection: [Errno 65] No route to host&quot;))</div>
+  
 
   <div class="grid">
     <section>
       <h2>Battery</h2>
-      <div class="value">0%</div>
+      <div class="value">75%</div>
       <div class="battery"><div class="fill"></div></div>
-      <div class="row"><span>ETA</span><span>--</span></div>
-      <div class="row"><span>SOC limits</span><span>--% - --%</span></div>
+      <div class="row"><span>ETA</span><span>90:24</span></div>
+      <div class="row"><span>SOC limits</span><span>10.0% - 75.0%</span></div>
     </section>
     <section>
       <h2>AC</h2>
-      <div class="row"><span>Input voltage</span><span>-- V</span></div>
-      <div class="row"><span>Input frequency</span><span>-- Hz</span></div>
-      <div class="row"><span>Output voltage</span><span>-- V</span></div>
+      <div class="row"><span>Input voltage</span><span>227.6 V</span></div>
+      <div class="row"><span>Input frequency</span><span>50.0 Hz</span></div>
+      <div class="row"><span>Output voltage</span><span>228.4 V</span></div>
     </section>
   </div>
 
   <div class="cards">
-    <div class="card"><span class="label">Input</span><span class="value">-- W</span></div>
-    <div class="card"><span class="label">Load</span><span class="value">-- W</span></div>
-    <div class="card"><span class="label">Battery temp</span><span class="value">--°C</span></div>
-    <div class="card"><span class="label">Inverter temp</span><span class="value">--°C</span></div>
+    <div class="card"><span class="label">Input</span><span class="value">22 W</span></div>
+    <div class="card"><span class="label">Load</span><span class="value">22 W</span></div>
+    <div class="card"><span class="label">Battery temp</span><span class="value">30°C</span></div>
+    <div class="card"><span class="label">Inverter temp</span><span class="value">36°C</span></div>
   </div>
 
   
@@ -217,7 +217,7 @@
         <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1300 W</strong><small>пік входу 1300 W · 100% ліміту</small></div>
         <div class="daily-item"><span class="label">Заряджання</span><strong>5 хв</strong><small>останнє 11.08 16:13</small></div>
         <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>208 Wh / 94 Wh</strong><small>оцінка за sample-ами</small></div>
+        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>210 Wh / 96 Wh</strong><small>оцінка за sample-ами</small></div>
         <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>11.08 09:20 / 11.08 09:20</small></div>
       </div>
     </section>
@@ -236,10 +236,33 @@
   <details>
     <summary>Snapshot JSON</summary>
     <pre>{
-  &quot;ok&quot;: false,
+  &quot;ok&quot;: true,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;timestamp&quot;: &quot;2026-08-12T08:57:18&quot;,
-  &quot;error&quot;: &quot;HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NewConnectionError(\&quot;HTTPSConnection(host=&#x27;api.ecoflow.com&#x27;, port=443): Failed to establish a new connection: [Errno 65] No route to host\&quot;))&quot;,
+  &quot;device&quot;: &quot;DELTA Pro&quot;,
+  &quot;timestamp&quot;: &quot;2026-08-12T09:17:03&quot;,
+  &quot;grid&quot;: true,
+  &quot;battery&quot;: {
+    &quot;soc&quot;: 75,
+    &quot;min&quot;: 10.0,
+    &quot;max&quot;: 75.0,
+    &quot;eta&quot;: &quot;90:24&quot;
+  },
+  &quot;power&quot;: {
+    &quot;in&quot;: 22,
+    &quot;out&quot;: 22,
+    &quot;acOut&quot;: 22,
+    &quot;chargeLimit&quot;: 1300
+  },
+  &quot;ac&quot;: {
+    &quot;inputVoltage&quot;: 227.579,
+    &quot;inputFreq&quot;: 50.0,
+    &quot;outputVoltage&quot;: 228.367
+  },
+  &quot;temps&quot;: {
+    &quot;battery&quot;: 30,
+    &quot;inverter&quot;: 36,
+    &quot;mppt&quot;: 38
+  },
   &quot;history&quot;: [
     {
       &quot;ts&quot;: &quot;2026-08-05T08:33:17&quot;,
@@ -263,14 +286,14 @@
   ],
   &quot;telemetry&quot;: {
     &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 170,
+    &quot;sample_count&quot;: 172,
     &quot;from&quot;: &quot;2026-08-11T09:20:03&quot;,
-    &quot;to&quot;: &quot;2026-08-11T17:54:32&quot;,
+    &quot;to&quot;: &quot;2026-08-12T09:17:03&quot;,
     &quot;latest&quot;: {
       &quot;mode&quot;: &quot;idle&quot;,
       &quot;grid&quot;: true,
       &quot;soc&quot;: 75.0,
-      &quot;ac_v&quot;: 223.971,
+      &quot;ac_v&quot;: 227.579,
       &quot;in_w&quot;: 22.0,
       &quot;out_w&quot;: 22.0,
       &quot;charge_limit_w&quot;: 1300.0
@@ -318,16 +341,16 @@
       },
       &quot;charge_limit_w&quot;: 1300.0,
       &quot;max_input_pct_of_current_limit&quot;: 100,
-      &quot;input_wh_est&quot;: 207.7,
-      &quot;load_wh_est&quot;: 94.0
+      &quot;input_wh_est&quot;: 209.9,
+      &quot;load_wh_est&quot;: 96.1
     },
     &quot;modes&quot;: {
       &quot;charging_sec&quot;: 315,
       &quot;discharging_sec&quot;: 0,
-      &quot;idle_sec&quot;: 12093,
+      &quot;idle_sec&quot;: 12453,
       &quot;charging&quot;: &quot;5 хв&quot;,
       &quot;discharging&quot;: &quot;0 сек&quot;,
-      &quot;idle&quot;: &quot;3 год 21 хв&quot;,
+      &quot;idle&quot;: &quot;3 год 27 хв&quot;,
       &quot;last_charging&quot;: {
         &quot;ts&quot;: &quot;2026-08-11T16:13:10&quot;,
         &quot;grid&quot;: true,
