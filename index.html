@@ -75,7 +75,7 @@
       overflow: hidden;
       margin-top: 14px;
     }
-    .fill { width: 69%; height: 100%; background: linear-gradient(90deg, var(--green), var(--cyan)); }
+    .fill { width: 0%; height: 100%; background: linear-gradient(90deg, var(--green), var(--cyan)); }
     .cards {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -177,34 +177,34 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-08-13T10:13:35 · data 2026-08-13T10:13:35</div>
+      <div class="sub">Cloud MQTT · generated 2026-08-13T10:45:45 · data 2026-08-13T10:45:45</div>
     </div>
-    <div class="status online"><span class="dot"></span><span>AC online</span></div>
+    <div class="status offline"><span class="dot"></span><span>Offline</span></div>
   </header>
 
-  
+  <div class='error'>HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Read timed out. (read timeout=10)</div>
 
   <div class="grid">
     <section>
       <h2>Battery</h2>
-      <div class="value">69%</div>
+      <div class="value">0%</div>
       <div class="battery"><div class="fill"></div></div>
-      <div class="row"><span>ETA</span><span>82:03</span></div>
-      <div class="row"><span>SOC limits</span><span>10.0% - 64.0%</span></div>
+      <div class="row"><span>ETA</span><span>--</span></div>
+      <div class="row"><span>SOC limits</span><span>--% - --%</span></div>
     </section>
     <section>
       <h2>AC</h2>
-      <div class="row"><span>Input voltage</span><span>225.7 V</span></div>
-      <div class="row"><span>Input frequency</span><span>50.0 Hz</span></div>
-      <div class="row"><span>Output voltage</span><span>226.5 V</span></div>
+      <div class="row"><span>Input voltage</span><span>-- V</span></div>
+      <div class="row"><span>Input frequency</span><span>-- Hz</span></div>
+      <div class="row"><span>Output voltage</span><span>-- V</span></div>
     </section>
   </div>
 
   <div class="cards">
-    <div class="card"><span class="label">Input</span><span class="value">22 W</span></div>
-    <div class="card"><span class="label">Load</span><span class="value">22 W</span></div>
-    <div class="card"><span class="label">Battery temp</span><span class="value">29°C</span></div>
-    <div class="card"><span class="label">Inverter temp</span><span class="value">35°C</span></div>
+    <div class="card"><span class="label">Input</span><span class="value">-- W</span></div>
+    <div class="card"><span class="label">Load</span><span class="value">-- W</span></div>
+    <div class="card"><span class="label">Battery temp</span><span class="value">--°C</span></div>
+    <div class="card"><span class="label">Inverter temp</span><span class="value">--°C</span></div>
   </div>
 
   
@@ -236,33 +236,10 @@
   <details>
     <summary>Snapshot JSON</summary>
     <pre>{
-  &quot;ok&quot;: true,
+  &quot;ok&quot;: false,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;device&quot;: &quot;DELTA Pro&quot;,
-  &quot;timestamp&quot;: &quot;2026-08-13T10:13:35&quot;,
-  &quot;grid&quot;: true,
-  &quot;battery&quot;: {
-    &quot;soc&quot;: 69,
-    &quot;min&quot;: 10.0,
-    &quot;max&quot;: 64.0,
-    &quot;eta&quot;: &quot;82:03&quot;
-  },
-  &quot;power&quot;: {
-    &quot;in&quot;: 22,
-    &quot;out&quot;: 22,
-    &quot;acOut&quot;: 22,
-    &quot;chargeLimit&quot;: 1300
-  },
-  &quot;ac&quot;: {
-    &quot;inputVoltage&quot;: 225.698,
-    &quot;inputFreq&quot;: 50.0,
-    &quot;outputVoltage&quot;: 226.484
-  },
-  &quot;temps&quot;: {
-    &quot;battery&quot;: 29,
-    &quot;inverter&quot;: 35,
-    &quot;mppt&quot;: 38
-  },
+  &quot;timestamp&quot;: &quot;2026-08-13T10:45:45&quot;,
+  &quot;error&quot;: &quot;HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Read timed out. (read timeout=10)&quot;,
   &quot;history&quot;: [
     {
       &quot;ts&quot;: &quot;2026-08-05T08:33:17&quot;,
