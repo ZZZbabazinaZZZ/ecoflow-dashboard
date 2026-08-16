@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-17T02:39:48",
+  "timestamp": "2026-08-17T02:55:03",
   "grid": true,
   "battery": {
     "soc": 66,
@@ -17,13 +17,13 @@
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 226.544,
+    "inputVoltage": 226.869,
     "inputFreq": 50.0,
-    "outputVoltage": 227.329
+    "outputVoltage": 227.643
   },
   "temps": {
     "battery": 29,
-    "inverter": 33,
+    "inverter": 34,
     "mppt": 36
   },
   "history": [
@@ -49,14 +49,14 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 458,
-    "from": "2026-08-16T02:44:09",
-    "to": "2026-08-17T02:39:48",
+    "sample_count": 472,
+    "from": "2026-08-16T03:15:12",
+    "to": "2026-08-17T02:55:03",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 66.0,
-      "ac_v": 226.544,
+      "ac_v": 226.869,
       "in_w": 23.0,
       "out_w": 23.0,
       "charge_limit_w": 1300.0
@@ -72,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-16T02:44:09"
+        "ts": "2026-08-16T03:15:12"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-16T02:44:09"
+        "ts": "2026-08-16T03:15:12"
       }
     },
     "soc": {
@@ -85,8 +85,8 @@
         "ts": "2026-08-17T00:46:59"
       },
       "max": {
-        "value": 75.0,
-        "ts": "2026-08-16T02:44:09"
+        "value": 74.0,
+        "ts": "2026-08-16T03:15:12"
       }
     },
     "power": {
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 38,
-      "input_wh_est": 1327.9,
-      "load_wh_est": 1327.9
+      "input_wh_est": 1333.8,
+      "load_wh_est": 1333.8
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 30600,
+      "idle_sec": 31335,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "8 год 30 хв",
+      "idle": "8 год 42 хв",
       "last_charging": null,
       "last_discharging": null
     }
