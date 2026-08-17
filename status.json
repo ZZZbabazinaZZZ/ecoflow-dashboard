@@ -2,29 +2,29 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-17T15:04:16",
+  "timestamp": "2026-08-17T15:40:01",
   "grid": true,
   "battery": {
-    "soc": 62,
+    "soc": 61,
     "min": 10.0,
     "max": 60.0,
-    "eta": "69:10"
+    "eta": "33:12"
   },
   "power": {
-    "in": 23,
-    "out": 23,
-    "acOut": 23,
+    "in": 47,
+    "out": 47,
+    "acOut": 47,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 223.123,
+    "inputVoltage": 220.756,
     "inputFreq": 50.0,
-    "outputVoltage": 223.928
+    "outputVoltage": 221.528
   },
   "temps": {
-    "battery": 29,
-    "inverter": 29,
-    "mppt": 30
+    "battery": 30,
+    "inverter": 31,
+    "mppt": 33
   },
   "history": [
     {
@@ -49,16 +49,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 476,
+    "sample_count": 485,
     "from": "2026-08-16T15:41:57",
-    "to": "2026-08-17T15:04:16",
+    "to": "2026-08-17T15:40:01",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 62.0,
-      "ac_v": 223.123,
-      "in_w": 23.0,
-      "out_w": 23.0,
+      "soc": 61.0,
+      "ac_v": 220.756,
+      "in_w": 47.0,
+      "out_w": 47.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -81,8 +81,8 @@
     },
     "soc": {
       "min": {
-        "value": 62.0,
-        "ts": "2026-08-17T13:01:02"
+        "value": 61.0,
+        "ts": "2026-08-17T15:40:01"
       },
       "max": {
         "value": 70.0,
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 30,
-      "input_wh_est": 1386.5,
-      "load_wh_est": 1386.5
+      "input_wh_est": 1390.6,
+      "load_wh_est": 1390.6
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 31222,
+      "idle_sec": 31893,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "8 год 40 хв",
+      "idle": "8 год 51 хв",
       "last_charging": null,
       "last_discharging": null
     }
