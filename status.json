@@ -1,7 +1,7 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-08-17T07:57:12",
+  "timestamp": "2026-08-17T08:12:17",
   "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
@@ -26,8 +26,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 470,
-    "from": "2026-08-16T08:04:33",
+    "sample_count": 469,
+    "from": "2026-08-16T08:50:20",
     "to": "2026-08-17T02:59:08",
     "latest": {
       "mode": "idle",
@@ -49,11 +49,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-16T08:04:33"
+        "ts": "2026-08-16T08:50:20"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-16T08:04:33"
+        "ts": "2026-08-16T08:50:20"
       }
     },
     "soc": {
@@ -63,7 +63,7 @@
       },
       "max": {
         "value": 73.0,
-        "ts": "2026-08-16T08:04:33"
+        "ts": "2026-08-16T08:50:20"
       }
     },
     "power": {
@@ -87,10 +87,10 @@
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 30500,
+      "idle_sec": 30320,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "8 год 28 хв",
+      "idle": "8 год 25 хв",
       "last_charging": null,
       "last_discharging": null
     }
