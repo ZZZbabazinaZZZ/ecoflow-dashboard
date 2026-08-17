@@ -2,29 +2,29 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-17T11:14:20",
+  "timestamp": "2026-08-17T11:59:32",
   "grid": true,
   "battery": {
     "soc": 63,
     "min": 10.0,
     "max": 60.0,
-    "eta": "5:10"
+    "eta": "60:04"
   },
   "power": {
-    "in": 313,
-    "out": 313,
-    "acOut": 313,
+    "in": 27,
+    "out": 27,
+    "acOut": 27,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 223.409,
+    "inputVoltage": 225.476,
     "inputFreq": 50.0,
-    "outputVoltage": 224.207
+    "outputVoltage": 225.804
   },
   "temps": {
     "battery": 29,
-    "inverter": 27,
-    "mppt": 27
+    "inverter": 30,
+    "mppt": 32
   },
   "history": [
     {
@@ -50,15 +50,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 470,
-    "from": "2026-08-16T11:37:56",
-    "to": "2026-08-17T11:14:20",
+    "from": "2026-08-16T12:23:58",
+    "to": "2026-08-17T11:59:32",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 63.0,
-      "ac_v": 223.409,
-      "in_w": 313.0,
-      "out_w": 313.0,
+      "ac_v": 225.476,
+      "in_w": 27.0,
+      "out_w": 27.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-16T11:37:56"
+        "ts": "2026-08-16T12:23:58"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-16T11:37:56"
+        "ts": "2026-08-16T12:23:58"
       }
     },
     "soc": {
@@ -85,8 +85,8 @@
         "ts": "2026-08-17T10:18:37"
       },
       "max": {
-        "value": 72.0,
-        "ts": "2026-08-16T11:37:56"
+        "value": 71.0,
+        "ts": "2026-08-16T12:23:58"
       }
     },
     "power": {
@@ -104,8 +104,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 38,
-      "input_wh_est": 1353.3,
-      "load_wh_est": 1353.3
+      "input_wh_est": 1368.9,
+      "load_wh_est": 1368.9
     },
     "modes": {
       "charging_sec": 0,
