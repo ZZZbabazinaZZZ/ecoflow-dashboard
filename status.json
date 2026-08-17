@@ -2,29 +2,29 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-17T23:37:58",
+  "timestamp": "2026-08-18T00:07:07",
   "grid": true,
   "battery": {
     "soc": 75,
     "min": 10.0,
     "max": 60.0,
-    "eta": "76:30"
+    "eta": "79:33"
   },
   "power": {
-    "in": 26,
-    "out": 26,
-    "acOut": 26,
+    "in": 25,
+    "out": 25,
+    "acOut": 25,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 228.196,
+    "inputVoltage": 224.76,
     "inputFreq": 50.0,
-    "outputVoltage": 229.014
+    "outputVoltage": 225.998
   },
   "temps": {
     "battery": 31,
-    "inverter": 44,
-    "mppt": 37
+    "inverter": 39,
+    "mppt": 39
   },
   "history": [
     {
@@ -49,16 +49,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 256,
-    "from": "2026-08-16T23:38:51",
-    "to": "2026-08-17T23:37:58",
+    "sample_count": 229,
+    "from": "2026-08-17T00:07:20",
+    "to": "2026-08-18T00:07:07",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 75.0,
-      "ac_v": 228.196,
-      "in_w": 26.0,
-      "out_w": 26.0,
+      "ac_v": 224.76,
+      "in_w": 25.0,
+      "out_w": 25.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-16T23:38:51"
+        "ts": "2026-08-17T00:07:20"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-16T23:38:51"
+        "ts": "2026-08-17T00:07:20"
       }
     },
     "soc": {
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 123,
-      "input_wh_est": 705.2,
-      "load_wh_est": 575.2
+      "input_wh_est": 545.5,
+      "load_wh_est": 415.5
     },
     "modes": {
       "charging_sec": 360,
       "discharging_sec": 0,
-      "idle_sec": 18922,
+      "idle_sec": 17393,
       "charging": "6 хв",
       "discharging": "0 сек",
-      "idle": "5 год 15 хв",
+      "idle": "4 год 49 хв",
       "last_charging": {
         "ts": "2026-08-17T23:21:55",
         "grid": true,
