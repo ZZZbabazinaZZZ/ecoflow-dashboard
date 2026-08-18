@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-18T10:56:35",
+  "timestamp": "2026-08-18T11:16:08",
   "grid": true,
   "battery": {
     "soc": 71,
     "min": 10.0,
     "max": 60.0,
-    "eta": "71:47"
+    "eta": "5:55"
   },
   "power": {
-    "in": 26,
-    "out": 26,
-    "acOut": 26,
+    "in": 315,
+    "out": 315,
+    "acOut": 315,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 225.308,
+    "inputVoltage": 226.967,
     "inputFreq": 50.0,
-    "outputVoltage": 226.07
+    "outputVoltage": 227.732
   },
   "temps": {
     "battery": 30,
@@ -49,16 +49,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 116,
-    "from": "2026-08-17T11:14:20",
-    "to": "2026-08-18T10:56:35",
+    "sample_count": 118,
+    "from": "2026-08-17T11:59:32",
+    "to": "2026-08-18T11:16:08",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 71.0,
-      "ac_v": 225.308,
-      "in_w": 26.0,
-      "out_w": 26.0,
+      "ac_v": 226.967,
+      "in_w": 315.0,
+      "out_w": 315.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-17T11:14:20"
+        "ts": "2026-08-17T11:59:32"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-17T11:14:20"
+        "ts": "2026-08-17T11:59:32"
       }
     },
     "soc": {
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 123,
-      "input_wh_est": 388.7,
-      "load_wh_est": 258.8
+      "input_wh_est": 406.0,
+      "load_wh_est": 276.1
     },
     "modes": {
       "charging_sec": 360,
       "discharging_sec": 0,
-      "idle_sec": 12826,
+      "idle_sec": 13186,
       "charging": "6 хв",
       "discharging": "0 сек",
-      "idle": "3 год 33 хв",
+      "idle": "3 год 39 хв",
       "last_charging": {
         "ts": "2026-08-17T23:21:55",
         "grid": true,
