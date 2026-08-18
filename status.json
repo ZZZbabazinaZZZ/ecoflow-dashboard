@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-18T09:52:16",
+  "timestamp": "2026-08-18T10:21:46",
   "grid": true,
   "battery": {
-    "soc": 72,
+    "soc": 71,
     "min": 10.0,
     "max": 60.0,
-    "eta": "82:29"
+    "eta": "71:47"
   },
   "power": {
-    "in": 23,
-    "out": 23,
-    "acOut": 23,
+    "in": 26,
+    "out": 26,
+    "acOut": 26,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 225.943,
+    "inputVoltage": 229.852,
     "inputFreq": 50.0,
-    "outputVoltage": 226.72
+    "outputVoltage": 230.647
   },
   "temps": {
     "battery": 30,
@@ -49,16 +49,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 107,
-    "from": "2026-08-17T10:18:37",
-    "to": "2026-08-18T09:52:16",
+    "sample_count": 111,
+    "from": "2026-08-17T10:49:40",
+    "to": "2026-08-18T10:21:46",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 72.0,
-      "ac_v": 225.943,
-      "in_w": 23.0,
-      "out_w": 23.0,
+      "soc": 71.0,
+      "ac_v": 229.852,
+      "in_w": 26.0,
+      "out_w": 26.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-17T10:18:37"
+        "ts": "2026-08-17T10:49:40"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-17T10:18:37"
+        "ts": "2026-08-17T10:49:40"
       }
     },
     "soc": {
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 123,
-      "input_wh_est": 397.1,
-      "load_wh_est": 267.1
+      "input_wh_est": 399.2,
+      "load_wh_est": 269.3
     },
     "modes": {
       "charging_sec": 360,
       "discharging_sec": 0,
-      "idle_sec": 11921,
+      "idle_sec": 12283,
       "charging": "6 хв",
       "discharging": "0 сек",
-      "idle": "3 год 18 хв",
+      "idle": "3 год 24 хв",
       "last_charging": {
         "ts": "2026-08-17T23:21:55",
         "grid": true,
