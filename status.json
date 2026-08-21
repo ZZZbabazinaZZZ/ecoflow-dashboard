@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-08-21T08:57:41",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "device": "DELTA Pro",
+  "timestamp": "2026-08-21T09:14:58",
+  "grid": true,
+  "battery": {
+    "soc": 77,
+    "min": 10.0,
+    "max": 60.0,
+    "eta": "93:11"
+  },
+  "power": {
+    "in": 22,
+    "out": 22,
+    "acOut": 22,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 220.399,
+    "inputFreq": 50.0,
+    "outputVoltage": 221.181
+  },
+  "temps": {
+    "battery": 31,
+    "inverter": 36,
+    "mppt": 38
+  },
   "history": [
     {
       "ts": "2026-08-05T08:33:17",
@@ -26,16 +49,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 312,
-    "from": "2026-08-20T09:01:42",
-    "to": "2026-08-21T00:49:59",
+    "sample_count": 311,
+    "from": "2026-08-20T09:15:11",
+    "to": "2026-08-21T09:14:58",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 80.0,
-      "ac_v": 226.344,
-      "in_w": 26.0,
-      "out_w": 26.0,
+      "soc": 77.0,
+      "ac_v": 220.399,
+      "in_w": 22.0,
+      "out_w": 22.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -49,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-20T09:01:42"
+        "ts": "2026-08-20T09:15:11"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-20T09:01:42"
+        "ts": "2026-08-20T09:15:11"
       }
     },
     "soc": {
@@ -81,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 46,
-      "input_wh_est": 956.0,
-      "load_wh_est": 950.2
+      "input_wh_est": 957.4,
+      "load_wh_est": 951.7
     },
     "modes": {
       "charging_sec": 70,
       "discharging_sec": 0,
-      "idle_sec": 21142,
+      "idle_sec": 21315,
       "charging": "1 хв",
       "discharging": "0 сек",
-      "idle": "5 год 52 хв",
+      "idle": "5 год 55 хв",
       "last_charging": {
         "ts": "2026-08-20T23:14:19",
         "grid": true,
