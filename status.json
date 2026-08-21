@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-21T15:15:27",
+  "timestamp": "2026-08-21T15:30:47",
   "grid": true,
   "battery": {
     "soc": 75,
     "min": 10.0,
     "max": 60.0,
-    "eta": "94:42"
+    "eta": "82:52"
   },
   "power": {
-    "in": 21,
-    "out": 21,
-    "acOut": 21,
+    "in": 24,
+    "out": 24,
+    "acOut": 24,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 223.342,
+    "inputVoltage": 224.713,
     "inputFreq": 50.0,
-    "outputVoltage": 224.126
+    "outputVoltage": 225.491
   },
   "temps": {
     "battery": 31,
@@ -50,15 +50,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 460,
-    "from": "2026-08-20T15:15:56",
-    "to": "2026-08-21T15:15:27",
+    "from": "2026-08-20T15:31:18",
+    "to": "2026-08-21T15:30:47",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 75.0,
-      "ac_v": 223.342,
-      "in_w": 21.0,
-      "out_w": 21.0,
+      "ac_v": 224.713,
+      "in_w": 24.0,
+      "out_w": 24.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,17 +72,17 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-20T15:15:56"
+        "ts": "2026-08-20T15:31:18"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-20T15:15:56"
+        "ts": "2026-08-20T15:31:18"
       }
     },
     "soc": {
       "min": {
         "value": 59.0,
-        "ts": "2026-08-20T15:15:56"
+        "ts": "2026-08-20T15:31:18"
       },
       "max": {
         "value": 80.0,
@@ -104,13 +104,13 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 46,
-      "input_wh_est": 826.3,
-      "load_wh_est": 820.6
+      "input_wh_est": 731.2,
+      "load_wh_est": 725.5
     },
     "modes": {
       "charging_sec": 70,
       "discharging_sec": 0,
-      "idle_sec": 30080,
+      "idle_sec": 30078,
       "charging": "1 хв",
       "discharging": "0 сек",
       "idle": "8 год 21 хв",
