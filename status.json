@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-08-22T20:05:17",
-  "grid": true,
-  "battery": {
-    "soc": 65,
-    "min": 10.0,
-    "max": 60.0,
-    "eta": "34:20"
-  },
-  "power": {
-    "in": 49,
-    "out": 49,
-    "acOut": 49,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 222.752,
-    "inputFreq": 50.0,
-    "outputVoltage": 223.515
-  },
-  "temps": {
-    "battery": 31,
-    "inverter": 37,
-    "mppt": 39
-  },
+  "timestamp": "2026-08-22T21:21:27",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.ecoflow.com', port=443) at 0x1075b0c20>, 'Connection to api.ecoflow.com timed out. (connect timeout=10)'))",
   "history": [
     {
       "ts": "2026-08-05T08:33:17",
