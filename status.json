@@ -2,13 +2,13 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-23T22:03:41",
+  "timestamp": "2026-08-23T22:19:22",
   "grid": true,
   "battery": {
-    "soc": 59,
+    "soc": 66,
     "min": 10.0,
-    "max": 60.0,
-    "eta": "74:58"
+    "max": 75.0,
+    "eta": "85:40"
   },
   "power": {
     "in": 1300,
@@ -17,14 +17,14 @@
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 223.335,
+    "inputVoltage": 220.032,
     "inputFreq": 50.0,
-    "outputVoltage": 223.93
+    "outputVoltage": 220.648
   },
   "temps": {
     "battery": 31,
-    "inverter": 47,
-    "mppt": 33
+    "inverter": 53,
+    "mppt": 31
   },
   "history": [
     {
@@ -49,14 +49,14 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 416,
+    "sample_count": 431,
     "from": "2026-08-22T23:29:41",
-    "to": "2026-08-23T22:03:41",
+    "to": "2026-08-23T22:19:22",
     "latest": {
       "mode": "charging",
       "grid": true,
-      "soc": 59.0,
-      "ac_v": 223.335,
+      "soc": 66.0,
+      "ac_v": 220.032,
       "in_w": 1300.0,
       "out_w": 0.0,
       "charge_limit_w": 1300.0
@@ -85,8 +85,8 @@
         "ts": "2026-08-23T11:59:25"
       },
       "max": {
-        "value": 64.0,
-        "ts": "2026-08-22T23:29:41"
+        "value": 66.0,
+        "ts": "2026-08-23T22:19:22"
       }
     },
     "power": {
@@ -104,28 +104,28 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 100,
-      "input_wh_est": 2694.9,
+      "input_wh_est": 3034.5,
       "load_wh_est": 2694.9
     },
     "modes": {
-      "charging_sec": 0,
+      "charging_sec": 941,
       "discharging_sec": 0,
       "idle_sec": 29016,
-      "charging": "0 сек",
+      "charging": "15 хв",
       "discharging": "0 сек",
       "idle": "8 год 03 хв",
       "last_charging": {
-        "ts": "2026-08-23T22:03:41",
+        "ts": "2026-08-23T22:19:22",
         "grid": true,
-        "ac_v": 223.335,
+        "ac_v": 220.032,
         "ac_f": 50.0,
         "in_w": 1300.0,
         "out_w": 0.0,
         "ac_out_w": 0.0,
-        "soc": 59.0,
+        "soc": 66.0,
         "charge_limit_w": 1300.0,
         "net_w": 1300.0,
-        "epoch": 1787511821.0,
+        "epoch": 1787512762.0,
         "mode": "charging"
       },
       "last_discharging": null
