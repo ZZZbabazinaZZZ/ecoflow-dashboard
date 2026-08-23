@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-23T11:51:34",
+  "timestamp": "2026-08-23T12:06:43",
   "grid": true,
   "battery": {
-    "soc": 59,
+    "soc": 58,
     "min": 10.0,
     "max": 60.0,
-    "eta": "3:54"
+    "eta": "3:56"
   },
   "power": {
-    "in": 384,
-    "out": 384,
-    "acOut": 384,
+    "in": 373,
+    "out": 373,
+    "acOut": 373,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 218.371,
+    "inputVoltage": 217.421,
     "inputFreq": 50.0,
-    "outputVoltage": 219.14
+    "outputVoltage": 218.19
   },
   "temps": {
     "battery": 28,
@@ -49,22 +49,22 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 48,
+    "sample_count": 61,
     "from": "2026-08-22T13:03:52",
-    "to": "2026-08-23T11:51:34",
+    "to": "2026-08-23T12:06:43",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 59.0,
-      "ac_v": 218.371,
-      "in_w": 384.0,
-      "out_w": 384.0,
+      "soc": 58.0,
+      "ac_v": 217.421,
+      "in_w": 373.0,
+      "out_w": 373.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
       "min": {
-        "value": 217.3,
-        "ts": "2026-08-23T11:29:52"
+        "value": 216.4,
+        "ts": "2026-08-23T12:00:27"
       },
       "max": {
         "value": 226.8,
@@ -81,8 +81,8 @@
     },
     "soc": {
       "min": {
-        "value": 59.0,
-        "ts": "2026-08-23T10:30:13"
+        "value": 58.0,
+        "ts": "2026-08-23T11:59:25"
       },
       "max": {
         "value": 68.0,
@@ -104,16 +104,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 42,
-      "input_wh_est": 279.1,
-      "load_wh_est": 279.1
+      "input_wh_est": 374.9,
+      "load_wh_est": 374.9
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 4437,
+      "idle_sec": 5346,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 13 хв",
+      "idle": "1 год 29 хв",
       "last_charging": null,
       "last_discharging": null
     }
