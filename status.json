@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-08-24T22:50:58",
+  "timestamp": "2026-08-24T23:06:53",
   "grid": true,
   "battery": {
     "soc": 69,
     "min": 10.0,
     "max": 60.0,
-    "eta": "78:29"
+    "eta": "85:58"
   },
   "power": {
-    "in": 23,
-    "out": 23,
-    "acOut": 23,
+    "in": 21,
+    "out": 21,
+    "acOut": 21,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 229.56,
+    "inputVoltage": 228.056,
     "inputFreq": 50.0,
-    "outputVoltage": 230.358
+    "outputVoltage": 228.861
   },
   "temps": {
     "battery": 31,
@@ -50,15 +50,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 1084,
-    "from": "2026-08-23T22:51:21",
-    "to": "2026-08-24T22:50:58",
+    "from": "2026-08-23T23:07:05",
+    "to": "2026-08-24T23:06:53",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 69.0,
-      "ac_v": 229.56,
-      "in_w": 23.0,
-      "out_w": 23.0,
+      "ac_v": 228.056,
+      "in_w": 21.0,
+      "out_w": 21.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-23T22:51:21"
+        "ts": "2026-08-23T23:07:05"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-23T22:51:21"
+        "ts": "2026-08-23T23:07:05"
       }
     },
     "soc": {
@@ -86,7 +86,7 @@
       },
       "max": {
         "value": 75.0,
-        "ts": "2026-08-23T22:51:21"
+        "ts": "2026-08-23T23:07:05"
       }
     },
     "power": {
@@ -104,13 +104,13 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 34,
-      "input_wh_est": 1267.6,
-      "load_wh_est": 1267.6
+      "input_wh_est": 1267.2,
+      "load_wh_est": 1267.2
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 70364,
+      "idle_sec": 70375,
       "charging": "0 сек",
       "discharging": "0 сек",
       "idle": "19 год 32 хв",
