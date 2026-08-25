@@ -1,8 +1,8 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-08-25T13:46:34",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "timestamp": "2026-08-25T17:46:33",
+  "error": "[Errno 60] Operation timed out",
   "history": [
     {
       "ts": "2026-08-05T08:33:17",
@@ -26,8 +26,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 666,
-    "from": "2026-08-24T13:46:44",
+    "sample_count": 512,
+    "from": "2026-08-24T18:07:16",
     "to": "2026-08-25T12:24:01",
     "latest": {
       "mode": "idle",
@@ -40,8 +40,8 @@
     },
     "voltage": {
       "min": {
-        "value": 220.4,
-        "ts": "2026-08-24T15:38:15"
+        "value": 220.5,
+        "ts": "2026-08-24T20:38:55"
       },
       "max": {
         "value": 230.2,
@@ -49,11 +49,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-08-24T13:46:44"
+        "ts": "2026-08-24T18:07:16"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-08-24T13:46:44"
+        "ts": "2026-08-24T18:07:16"
       }
     },
     "soc": {
@@ -62,8 +62,8 @@
         "ts": "2026-08-25T12:10:12"
       },
       "max": {
-        "value": 71.0,
-        "ts": "2026-08-24T13:46:44"
+        "value": 70.0,
+        "ts": "2026-08-24T18:07:16"
       }
     },
     "power": {
@@ -81,16 +81,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 30,
-      "input_wh_est": 454.0,
-      "load_wh_est": 454.0
+      "input_wh_est": 393.5,
+      "load_wh_est": 393.5
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 44891,
+      "idle_sec": 34545,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "12 год 28 хв",
+      "idle": "9 год 35 хв",
       "last_charging": null,
       "last_discharging": null
     }
