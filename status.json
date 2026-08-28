@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-08-28T15:43:18",
-  "grid": true,
-  "battery": {
-    "soc": 71,
-    "min": 10.0,
-    "max": 60.0,
-    "eta": "6:50"
-  },
-  "power": {
-    "in": 273,
-    "out": 273,
-    "acOut": 273,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 219.051,
-    "inputFreq": 50.0,
-    "outputVoltage": 219.783
-  },
-  "temps": {
-    "battery": 29,
-    "inverter": 35,
-    "mppt": 38
-  },
+  "timestamp": "2026-08-28T18:03:09",
+  "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",
   "history": [
     {
       "ts": "2026-08-05T08:33:17",
