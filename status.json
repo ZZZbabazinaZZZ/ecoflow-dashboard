@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-09-07T18:13:27",
+  "timestamp": "2026-09-07T18:44:31",
   "grid": true,
   "battery": {
     "soc": 58,
     "min": 10.0,
     "max": 60.0,
-    "eta": "3:46"
+    "eta": "4:48"
   },
   "power": {
-    "in": 389,
-    "out": 389,
-    "acOut": 389,
+    "in": 305,
+    "out": 305,
+    "acOut": 305,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 229.079,
+    "inputVoltage": 223.106,
     "inputFreq": 50.0,
-    "outputVoltage": 229.865
+    "outputVoltage": 223.399
   },
   "temps": {
     "battery": 29,
@@ -50,21 +50,21 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 25,
-    "from": "2026-09-06T18:16:50",
-    "to": "2026-09-07T18:13:27",
+    "from": "2026-09-06T19:23:40",
+    "to": "2026-09-07T18:44:31",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 58.0,
-      "ac_v": 229.079,
-      "in_w": 389.0,
-      "out_w": 389.0,
+      "ac_v": 223.106,
+      "in_w": 305.0,
+      "out_w": 305.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
       "min": {
-        "value": 221.8,
-        "ts": "2026-09-06T18:16:50"
+        "value": 222.7,
+        "ts": "2026-09-07T12:31:40"
       },
       "max": {
         "value": 229.7,
@@ -72,11 +72,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-06T18:16:50"
+        "ts": "2026-09-06T19:23:40"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-06T18:16:50"
+        "ts": "2026-09-06T19:23:40"
       }
     },
     "soc": {
@@ -86,7 +86,7 @@
       },
       "max": {
         "value": 64.0,
-        "ts": "2026-09-06T18:16:50"
+        "ts": "2026-09-06T19:23:40"
       }
     },
     "power": {
@@ -104,8 +104,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 48,
-      "input_wh_est": 345.9,
-      "load_wh_est": 334.7
+      "input_wh_est": 345.6,
+      "load_wh_est": 334.4
     },
     "modes": {
       "charging_sec": 180,
