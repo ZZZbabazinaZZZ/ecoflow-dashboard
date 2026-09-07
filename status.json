@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-09-08T01:26:43",
-  "grid": true,
-  "battery": {
-    "soc": 58,
-    "min": 10.0,
-    "max": 60.0,
-    "eta": "73:26"
-  },
-  "power": {
-    "in": 20,
-    "out": 20,
-    "acOut": 20,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 228.415,
-    "inputFreq": 50.0,
-    "outputVoltage": 228.749
-  },
-  "temps": {
-    "battery": 29,
-    "inverter": 34,
-    "mppt": 37
-  },
+  "timestamp": "2026-09-08T02:12:41",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
   "history": [
     {
       "ts": "2026-08-05T08:33:17",
@@ -49,8 +26,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 27,
-    "from": "2026-09-07T01:31:21",
+    "sample_count": 26,
+    "from": "2026-09-07T02:17:25",
     "to": "2026-09-08T01:26:43",
     "latest": {
       "mode": "idle",
@@ -72,11 +49,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-07T01:31:21"
+        "ts": "2026-09-07T02:17:25"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-07T01:31:21"
+        "ts": "2026-09-07T02:17:25"
       }
     },
     "soc": {
@@ -85,8 +62,8 @@
         "ts": "2026-09-07T12:31:40"
       },
       "max": {
-        "value": 62.0,
-        "ts": "2026-09-07T01:31:21"
+        "value": 61.0,
+        "ts": "2026-09-07T02:17:25"
       }
     },
     "power": {
@@ -104,16 +81,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 129,
-      "input_wh_est": 404.9,
-      "load_wh_est": 328.7
+      "input_wh_est": 385.3,
+      "load_wh_est": 309.1
     },
     "modes": {
       "charging_sec": 360,
       "discharging_sec": 0,
-      "idle_sec": 3370,
+      "idle_sec": 3190,
       "charging": "6 хв",
       "discharging": "0 сек",
-      "idle": "56 хв",
+      "idle": "53 хв",
       "last_charging": {
         "ts": "2026-09-07T20:16:38",
         "grid": true,
