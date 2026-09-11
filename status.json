@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-09-11T07:42:36",
+  "timestamp": "2026-09-11T08:43:15",
   "grid": true,
   "battery": {
-    "soc": 66,
+    "soc": 65,
     "min": 10.0,
     "max": 61.0,
-    "eta": "81:36"
+    "eta": "73:10"
   },
   "power": {
-    "in": 21,
-    "out": 21,
-    "acOut": 21,
+    "in": 23,
+    "out": 23,
+    "acOut": 23,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 226.965,
+    "inputVoltage": 224.608,
     "inputFreq": 50.0,
-    "outputVoltage": 228.238
+    "outputVoltage": 225.417
   },
   "temps": {
     "battery": 29,
@@ -50,15 +50,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 18,
-    "from": "2026-09-10T08:19:29",
-    "to": "2026-09-11T07:42:36",
+    "from": "2026-09-10T09:20:08",
+    "to": "2026-09-11T08:43:15",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 66.0,
-      "ac_v": 226.965,
-      "in_w": 21.0,
-      "out_w": 21.0,
+      "soc": 65.0,
+      "ac_v": 224.608,
+      "in_w": 23.0,
+      "out_w": 23.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -72,21 +72,21 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-10T08:19:29"
+        "ts": "2026-09-10T09:20:08"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-10T08:19:29"
+        "ts": "2026-09-10T09:20:08"
       }
     },
     "soc": {
       "min": {
-        "value": 66.0,
-        "ts": "2026-09-11T05:40:04"
+        "value": 65.0,
+        "ts": "2026-09-11T08:43:15"
       },
       "max": {
         "value": 73.0,
-        "ts": "2026-09-10T08:19:29"
+        "ts": "2026-09-10T09:20:08"
       }
     },
     "power": {
@@ -104,8 +104,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 19,
-      "input_wh_est": 30.4,
-      "load_wh_est": 30.4
+      "input_wh_est": 30.3,
+      "load_wh_est": 30.3
     },
     "modes": {
       "charging_sec": 0,
