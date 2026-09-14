@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-09-14T09:30:48",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+  "device": "DELTA Pro",
+  "timestamp": "2026-09-14T09:46:30",
+  "grid": true,
+  "battery": {
+    "soc": 76,
+    "min": 10.0,
+    "max": 66.0,
+    "eta": "33:39"
+  },
+  "power": {
+    "in": 60,
+    "out": 60,
+    "acOut": 60,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 225.962,
+    "inputFreq": 50.0,
+    "outputVoltage": 226.75
+  },
+  "temps": {
+    "battery": 28,
+    "inverter": 33,
+    "mppt": 36
+  },
   "history": [
     {
       "ts": "2026-08-05T08:33:17",
@@ -26,7 +49,73 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 0,
-    "message": "Недостатньо даних за останні 24 години."
+    "sample_count": 6,
+    "from": "2026-09-14T09:40:56",
+    "to": "2026-09-14T09:46:30",
+    "latest": {
+      "mode": "idle",
+      "grid": true,
+      "soc": 76.0,
+      "ac_v": 225.962,
+      "in_w": 60.0,
+      "out_w": 60.0,
+      "charge_limit_w": 1300.0
+    },
+    "voltage": {
+      "min": {
+        "value": 225.6,
+        "ts": "2026-09-14T09:44:28"
+      },
+      "max": {
+        "value": 227.3,
+        "ts": "2026-09-14T09:42:25"
+      },
+      "frequency_min": {
+        "value": 50.0,
+        "ts": "2026-09-14T09:40:56"
+      },
+      "frequency_max": {
+        "value": 50.0,
+        "ts": "2026-09-14T09:40:56"
+      }
+    },
+    "soc": {
+      "min": {
+        "value": 76.0,
+        "ts": "2026-09-14T09:40:56"
+      },
+      "max": {
+        "value": 76.0,
+        "ts": "2026-09-14T09:40:56"
+      }
+    },
+    "power": {
+      "max_load": {
+        "value": 62.0,
+        "ts": "2026-09-14T09:40:56"
+      },
+      "max_input": {
+        "value": 62.0,
+        "ts": "2026-09-14T09:40:56"
+      },
+      "max_ac_output": {
+        "value": 62.0,
+        "ts": "2026-09-14T09:40:56"
+      },
+      "charge_limit_w": 1300.0,
+      "max_input_pct_of_current_limit": 5,
+      "input_wh_est": 5.6,
+      "load_wh_est": 5.6
+    },
+    "modes": {
+      "charging_sec": 0,
+      "discharging_sec": 0,
+      "idle_sec": 334,
+      "charging": "0 сек",
+      "discharging": "0 сек",
+      "idle": "5 хв",
+      "last_charging": null,
+      "last_discharging": null
+    }
   }
 }
