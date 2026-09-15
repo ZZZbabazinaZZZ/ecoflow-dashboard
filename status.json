@@ -1,8 +1,8 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-09-15T21:16:08",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "timestamp": "2026-09-15T23:08:51",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
   "history": [
     {
       "ts": "2026-09-14T11:26:16",
@@ -46,15 +46,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 25,
-    "from": "2026-09-14T22:55:20",
-    "to": "2026-09-15T20:15:15",
+    "from": "2026-09-14T23:12:47",
+    "to": "2026-09-15T21:30:00",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 72.0,
-      "ac_v": 223.326,
-      "in_w": 59.0,
-      "out_w": 59.0,
+      "ac_v": 226.318,
+      "in_w": 345.0,
+      "out_w": 345.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -68,11 +68,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-14T22:55:20"
+        "ts": "2026-09-14T23:12:47"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-14T22:55:20"
+        "ts": "2026-09-14T23:12:47"
       }
     },
     "soc": {
@@ -82,26 +82,26 @@
       },
       "max": {
         "value": 79.0,
-        "ts": "2026-09-14T22:55:20"
+        "ts": "2026-09-14T23:12:47"
       }
     },
     "power": {
       "max_load": {
-        "value": 338.0,
-        "ts": "2026-09-15T13:01:35"
+        "value": 345.0,
+        "ts": "2026-09-15T21:30:00"
       },
       "max_input": {
-        "value": 338.0,
-        "ts": "2026-09-15T13:01:35"
+        "value": 345.0,
+        "ts": "2026-09-15T21:30:00"
       },
       "max_ac_output": {
-        "value": 338.0,
-        "ts": "2026-09-15T13:01:35"
+        "value": 345.0,
+        "ts": "2026-09-15T21:30:00"
       },
       "charge_limit_w": 1300.0,
-      "max_input_pct_of_current_limit": 26,
-      "input_wh_est": 90.2,
-      "load_wh_est": 90.2
+      "max_input_pct_of_current_limit": 27,
+      "input_wh_est": 92.0,
+      "load_wh_est": 92.0
     },
     "modes": {
       "charging_sec": 0,
