@@ -1,7 +1,7 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-09-15T23:08:51",
+  "timestamp": "2026-09-15T23:50:32",
   "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
   "history": [
     {
@@ -45,8 +45,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 25,
-    "from": "2026-09-14T23:12:47",
+    "sample_count": 23,
+    "from": "2026-09-15T00:57:43",
     "to": "2026-09-15T21:30:00",
     "latest": {
       "mode": "idle",
@@ -68,11 +68,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-14T23:12:47"
+        "ts": "2026-09-15T00:57:43"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-14T23:12:47"
+        "ts": "2026-09-15T00:57:43"
       }
     },
     "soc": {
@@ -81,8 +81,8 @@
         "ts": "2026-09-15T19:14:11"
       },
       "max": {
-        "value": 79.0,
-        "ts": "2026-09-14T23:12:47"
+        "value": 78.0,
+        "ts": "2026-09-15T00:57:43"
       }
     },
     "power": {
@@ -100,16 +100,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 27,
-      "input_wh_est": 92.0,
-      "load_wh_est": 92.0
+      "input_wh_est": 85.9,
+      "load_wh_est": 85.9
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 3882,
+      "idle_sec": 3522,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 04 хв",
+      "idle": "58 хв",
       "last_charging": null,
       "last_discharging": null
     }
