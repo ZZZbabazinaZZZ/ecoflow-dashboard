@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-09-19T10:40:36",
-  "grid": true,
-  "battery": {
-    "soc": 71,
-    "min": 10.0,
-    "max": 61.0,
-    "eta": "88:53"
-  },
-  "power": {
-    "in": 21,
-    "out": 21,
-    "acOut": 21,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 221.337,
-    "inputFreq": 50.0,
-    "outputVoltage": 222.095
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 33,
-    "mppt": 36
-  },
+  "timestamp": "2026-09-19T11:50:42",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
       "ts": "2026-09-14T11:26:16",
@@ -68,8 +45,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 61,
-    "from": "2026-09-18T11:03:35",
+    "sample_count": 41,
+    "from": "2026-09-18T12:28:35",
     "to": "2026-09-19T10:40:36",
     "latest": {
       "mode": "idle",
@@ -91,11 +68,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-18T11:03:35"
+        "ts": "2026-09-18T12:28:35"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-18T11:03:35"
+        "ts": "2026-09-18T12:28:35"
       }
     },
     "soc": {
@@ -123,16 +100,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 38,
-      "input_wh_est": 253.9,
-      "load_wh_est": 253.9
+      "input_wh_est": 139.7,
+      "load_wh_est": 139.7
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 6449,
+      "idle_sec": 5105,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 47 хв",
+      "idle": "1 год 25 хв",
       "last_charging": null,
       "last_discharging": null
     }
