@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-09-23T15:27:15",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "device": "DELTA Pro",
+  "timestamp": "2026-09-23T16:10:43",
+  "grid": true,
+  "battery": {
+    "soc": 67,
+    "min": 10.0,
+    "max": 62.0,
+    "eta": "30:36"
+  },
+  "power": {
+    "in": 57,
+    "out": 57,
+    "acOut": 57,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 220.672,
+    "inputFreq": 50.0,
+    "outputVoltage": 221.467
+  },
+  "temps": {
+    "battery": 26,
+    "inverter": 26,
+    "mppt": 28
+  },
   "history": [
     {
       "ts": "2026-09-14T11:26:16",
@@ -45,22 +68,22 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 32,
+    "sample_count": 33,
     "from": "2026-09-22T18:24:44",
-    "to": "2026-09-23T13:55:17",
+    "to": "2026-09-23T16:10:43",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 68.0,
-      "ac_v": 221.011,
-      "in_w": 346.0,
-      "out_w": 346.0,
+      "soc": 67.0,
+      "ac_v": 220.672,
+      "in_w": 57.0,
+      "out_w": 57.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
       "min": {
-        "value": 221.0,
-        "ts": "2026-09-23T13:55:17"
+        "value": 220.7,
+        "ts": "2026-09-23T16:10:43"
       },
       "max": {
         "value": 228.3,
@@ -77,8 +100,8 @@
     },
     "soc": {
       "min": {
-        "value": 68.0,
-        "ts": "2026-09-23T13:07:10"
+        "value": 67.0,
+        "ts": "2026-09-23T16:10:43"
       },
       "max": {
         "value": 75.0,
@@ -100,16 +123,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 27,
-      "input_wh_est": 50.7,
-      "load_wh_est": 50.7
+      "input_wh_est": 68.0,
+      "load_wh_est": 68.0
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 3678,
+      "idle_sec": 3858,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 01 хв",
+      "idle": "1 год 04 хв",
       "last_charging": null,
       "last_discharging": null
     }
