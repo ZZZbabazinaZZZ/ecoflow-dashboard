@@ -2,29 +2,29 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-09-26T09:03:18",
+  "timestamp": "2026-09-26T09:49:22",
   "grid": true,
   "battery": {
     "soc": 64,
     "min": 10.0,
     "max": 62.0,
-    "eta": "30:36"
+    "eta": "3:38"
   },
   "power": {
-    "in": 54,
-    "out": 54,
-    "acOut": 54,
+    "in": 454,
+    "out": 454,
+    "acOut": 454,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 223.515,
+    "inputVoltage": 224.916,
     "inputFreq": 50.0,
-    "outputVoltage": 224.29
+    "outputVoltage": 225.691
   },
   "temps": {
     "battery": 26,
-    "inverter": 32,
-    "mppt": 34
+    "inverter": 23,
+    "mppt": 23
   },
   "history": [
     {
@@ -69,21 +69,21 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 34,
-    "from": "2026-09-25T09:07:25",
-    "to": "2026-09-26T09:03:18",
+    "from": "2026-09-25T09:53:30",
+    "to": "2026-09-26T09:49:22",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 64.0,
-      "ac_v": 223.515,
-      "in_w": 54.0,
-      "out_w": 54.0,
+      "ac_v": 224.916,
+      "in_w": 454.0,
+      "out_w": 454.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
       "min": {
-        "value": 218.5,
-        "ts": "2026-09-25T09:07:25"
+        "value": 220.8,
+        "ts": "2026-09-25T09:53:30"
       },
       "max": {
         "value": 229.8,
@@ -91,11 +91,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-25T09:07:25"
+        "ts": "2026-09-25T09:53:30"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-25T09:07:25"
+        "ts": "2026-09-25T09:53:30"
       }
     },
     "soc": {
@@ -105,7 +105,7 @@
       },
       "max": {
         "value": 72.0,
-        "ts": "2026-09-25T09:07:25"
+        "ts": "2026-09-25T09:53:30"
       }
     },
     "power": {
@@ -123,8 +123,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 45,
-      "input_wh_est": 340.7,
-      "load_wh_est": 340.7
+      "input_wh_est": 342.1,
+      "load_wh_est": 342.1
     },
     "modes": {
       "charging_sec": 0,
