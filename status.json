@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-09-28T10:06:23",
-  "grid": true,
-  "battery": {
-    "soc": 67,
-    "min": 10.0,
-    "max": 61.0,
-    "eta": "87:12"
-  },
-  "power": {
-    "in": 18,
-    "out": 18,
-    "acOut": 18,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 223.19,
-    "inputFreq": 50.0,
-    "outputVoltage": 223.978
-  },
-  "temps": {
-    "battery": 27,
-    "inverter": 33,
-    "mppt": 35
-  },
+  "timestamp": "2026-09-28T12:37:39",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
   "history": [
     {
       "ts": "2026-09-14T11:26:16",
@@ -68,8 +45,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 326,
-    "from": "2026-09-27T11:05:18",
+    "sample_count": 324,
+    "from": "2026-09-27T13:22:28",
     "to": "2026-09-28T10:06:23",
     "latest": {
       "mode": "idle",
@@ -91,11 +68,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-27T11:05:18"
+        "ts": "2026-09-27T13:22:28"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-27T11:05:18"
+        "ts": "2026-09-27T13:22:28"
       }
     },
     "soc": {
@@ -104,8 +81,8 @@
         "ts": "2026-09-28T10:06:23"
       },
       "max": {
-        "value": 75.0,
-        "ts": "2026-09-27T11:05:18"
+        "value": 74.0,
+        "ts": "2026-09-27T13:22:28"
       }
     },
     "power": {
@@ -123,16 +100,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 44,
-      "input_wh_est": 449.2,
-      "load_wh_est": 449.2
+      "input_wh_est": 430.2,
+      "load_wh_est": 430.2
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 22524,
+      "idle_sec": 22164,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "6 год 15 хв",
+      "idle": "6 год 09 хв",
       "last_charging": null,
       "last_discharging": null
     }
