@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-09-30T13:43:37",
+  "timestamp": "2026-09-30T14:03:15",
   "grid": true,
   "battery": {
     "soc": 71,
     "min": 10.0,
     "max": 61.0,
-    "eta": "4:19"
+    "eta": "4:17"
   },
   "power": {
-    "in": 432,
-    "out": 432,
-    "acOut": 432,
+    "in": 435,
+    "out": 435,
+    "acOut": 435,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 225.109,
+    "inputVoltage": 227.243,
     "inputFreq": 50.0,
-    "outputVoltage": 225.431
+    "outputVoltage": 228.049
   },
   "temps": {
     "battery": 26,
@@ -68,16 +68,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 256,
-    "from": "2026-09-29T13:44:23",
-    "to": "2026-09-30T13:43:37",
+    "sample_count": 240,
+    "from": "2026-09-29T14:04:17",
+    "to": "2026-09-30T14:03:15",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 71.0,
-      "ac_v": 225.109,
-      "in_w": 432.0,
-      "out_w": 432.0,
+      "ac_v": 227.243,
+      "in_w": 435.0,
+      "out_w": 435.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -91,11 +91,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-29T13:44:23"
+        "ts": "2026-09-29T14:04:17"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-29T13:44:23"
+        "ts": "2026-09-29T14:04:17"
       }
     },
     "soc": {
@@ -123,16 +123,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 771.1,
-      "load_wh_est": 463.9
+      "input_wh_est": 816.2,
+      "load_wh_est": 509.0
     },
     "modes": {
       "charging_sec": 851,
       "discharging_sec": 0,
-      "idle_sec": 18035,
+      "idle_sec": 17381,
       "charging": "14 хв",
       "discharging": "0 сек",
-      "idle": "5 год 00 хв",
+      "idle": "4 год 49 хв",
       "last_charging": {
         "ts": "2026-09-29T21:12:45",
         "grid": true,
