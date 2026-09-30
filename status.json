@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-09-30T14:03:15",
+  "timestamp": "2026-09-30T14:19:12",
   "grid": true,
   "battery": {
     "soc": 71,
     "min": 10.0,
     "max": 61.0,
-    "eta": "4:17"
+    "eta": "31:06"
   },
   "power": {
-    "in": 435,
-    "out": 435,
-    "acOut": 435,
+    "in": 60,
+    "out": 60,
+    "acOut": 60,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 227.243,
+    "inputVoltage": 224.616,
     "inputFreq": 50.0,
-    "outputVoltage": 228.049
+    "outputVoltage": 225.46
   },
   "temps": {
     "battery": 26,
@@ -68,16 +68,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 240,
-    "from": "2026-09-29T14:04:17",
-    "to": "2026-09-30T14:03:15",
+    "sample_count": 231,
+    "from": "2026-09-29T16:01:15",
+    "to": "2026-09-30T14:19:12",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 71.0,
-      "ac_v": 227.243,
-      "in_w": 435.0,
-      "out_w": 435.0,
+      "ac_v": 224.616,
+      "in_w": 60.0,
+      "out_w": 60.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -91,11 +91,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-29T14:04:17"
+        "ts": "2026-09-29T16:01:15"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-29T14:04:17"
+        "ts": "2026-09-29T16:01:15"
       }
     },
     "soc": {
@@ -123,16 +123,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 816.2,
-      "load_wh_est": 509.0
+      "input_wh_est": 859.1,
+      "load_wh_est": 551.9
     },
     "modes": {
       "charging_sec": 851,
       "discharging_sec": 0,
-      "idle_sec": 17381,
+      "idle_sec": 16934,
       "charging": "14 хв",
       "discharging": "0 сек",
-      "idle": "4 год 49 хв",
+      "idle": "4 год 42 хв",
       "last_charging": {
         "ts": "2026-09-29T21:12:45",
         "grid": true,
