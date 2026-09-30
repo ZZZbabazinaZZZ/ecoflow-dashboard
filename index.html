@@ -177,12 +177,12 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-09-30T08:54:44 · data 2026-09-30T08:54:44</div>
+      <div class="sub">Cloud MQTT · generated 2026-09-30T10:01:40 · data 2026-09-30T10:01:40</div>
     </div>
     <div class="status offline"><span class="dot"></span><span>Offline</span></div>
   </header>
 
-  <div class='error'>EcoFlow API error 8521: signature is wrong</div>
+  <div class='error'>HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Read timed out. (read timeout=10)</div>
 
   <div class="grid">
     <section>
@@ -217,8 +217,8 @@
         <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1300 W</strong><small>пік входу 1358 W · 104% ліміту</small></div>
         <div class="daily-item"><span class="label">Заряджання</span><strong>14 хв</strong><small>останнє 29.09 21:12</small></div>
         <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>536 Wh / 228 Wh</strong><small>оцінка за sample-ами</small></div>
-        <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>29.09 08:59 / 29.09 08:59</small></div>
+        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>530 Wh / 223 Wh</strong><small>оцінка за sample-ами</small></div>
+        <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>29.09 10:17 / 29.09 10:17</small></div>
       </div>
     </section>
     
@@ -240,8 +240,8 @@
     <pre>{
   &quot;ok&quot;: false,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;timestamp&quot;: &quot;2026-09-30T08:54:44&quot;,
-  &quot;error&quot;: &quot;EcoFlow API error 8521: signature is wrong&quot;,
+  &quot;timestamp&quot;: &quot;2026-09-30T10:01:40&quot;,
+  &quot;error&quot;: &quot;HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Read timed out. (read timeout=10)&quot;,
   &quot;history&quot;: [
     {
       &quot;ts&quot;: &quot;2026-09-14T11:26:16&quot;,
@@ -284,8 +284,8 @@
   ],
   &quot;telemetry&quot;: {
     &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 222,
-    &quot;from&quot;: &quot;2026-09-29T08:59:33&quot;,
+    &quot;sample_count&quot;: 220,
+    &quot;from&quot;: &quot;2026-09-29T10:17:45&quot;,
     &quot;to&quot;: &quot;2026-09-30T07:06:04&quot;,
     &quot;latest&quot;: {
       &quot;mode&quot;: &quot;idle&quot;,
@@ -307,11 +307,11 @@
       },
       &quot;frequency_min&quot;: {
         &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-09-29T08:59:33&quot;
+        &quot;ts&quot;: &quot;2026-09-29T10:17:45&quot;
       },
       &quot;frequency_max&quot;: {
         &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-09-29T08:59:33&quot;
+        &quot;ts&quot;: &quot;2026-09-29T10:17:45&quot;
       }
     },
     &quot;soc&quot;: {
@@ -339,16 +339,16 @@
       },
       &quot;charge_limit_w&quot;: 1300.0,
       &quot;max_input_pct_of_current_limit&quot;: 104,
-      &quot;input_wh_est&quot;: 535.6,
-      &quot;load_wh_est&quot;: 228.4
+      &quot;input_wh_est&quot;: 529.8,
+      &quot;load_wh_est&quot;: 222.6
     },
     &quot;modes&quot;: {
       &quot;charging_sec&quot;: 851,
       &quot;discharging_sec&quot;: 0,
-      &quot;idle_sec&quot;: 15231,
+      &quot;idle_sec&quot;: 14871,
       &quot;charging&quot;: &quot;14 хв&quot;,
       &quot;discharging&quot;: &quot;0 сек&quot;,
-      &quot;idle&quot;: &quot;4 год 13 хв&quot;,
+      &quot;idle&quot;: &quot;4 год 07 хв&quot;,
       &quot;last_charging&quot;: {
         &quot;ts&quot;: &quot;2026-09-29T21:12:45&quot;,
         &quot;grid&quot;: true,
