@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-01T05:17:04",
-  "grid": true,
-  "battery": {
-    "soc": 72,
-    "min": 10.0,
-    "max": 61.0,
-    "eta": "30:36"
-  },
-  "power": {
-    "in": 62,
-    "out": 62,
-    "acOut": 62,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 230.055,
-    "inputFreq": 50.0,
-    "outputVoltage": 230.877
-  },
-  "temps": {
-    "battery": 27,
-    "inverter": 32,
-    "mppt": 35
-  },
+  "timestamp": "2026-10-01T07:18:52",
+  "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
       "ts": "2026-09-14T11:26:16",
@@ -68,8 +45,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 114,
-    "from": "2026-09-30T07:06:04",
+    "sample_count": 113,
+    "from": "2026-09-30T10:02:46",
     "to": "2026-10-01T05:17:04",
     "latest": {
       "mode": "idle",
@@ -82,8 +59,8 @@
     },
     "voltage": {
       "min": {
-        "value": 216.4,
-        "ts": "2026-09-30T07:06:04"
+        "value": 217.6,
+        "ts": "2026-09-30T10:14:01"
       },
       "max": {
         "value": 233.1,
@@ -91,11 +68,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-09-30T07:06:04"
+        "ts": "2026-09-30T10:02:46"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-09-30T07:06:04"
+        "ts": "2026-09-30T10:02:46"
       }
     },
     "soc": {
@@ -123,16 +100,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 100,
-      "input_wh_est": 508.1,
-      "load_wh_est": 443.1
+      "input_wh_est": 505.2,
+      "load_wh_est": 440.2
     },
     "modes": {
       "charging_sec": 180,
       "discharging_sec": 0,
-      "idle_sec": 9755,
+      "idle_sec": 9575,
       "charging": "3 хв",
       "discharging": "0 сек",
-      "idle": "2 год 42 хв",
+      "idle": "2 год 39 хв",
       "last_charging": {
         "ts": "2026-09-30T14:47:28",
         "grid": true,
