@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-05T16:03:20",
+  "timestamp": "2026-10-05T16:27:19",
   "grid": true,
   "battery": {
     "soc": 73,
     "min": 10.0,
     "max": 62.0,
-    "eta": "32:40"
+    "eta": "33:14"
   },
   "power": {
-    "in": 59,
-    "out": 59,
-    "acOut": 59,
+    "in": 58,
+    "out": 58,
+    "acOut": 58,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 224.503,
+    "inputVoltage": 222.642,
     "inputFreq": 50.0,
-    "outputVoltage": 225.289
+    "outputVoltage": 223.432
   },
   "temps": {
     "battery": 27,
@@ -68,16 +68,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 719,
-    "from": "2026-10-04T16:03:40",
-    "to": "2026-10-05T16:03:20",
+    "sample_count": 698,
+    "from": "2026-10-04T16:27:20",
+    "to": "2026-10-05T16:27:19",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 73.0,
-      "ac_v": 224.503,
-      "in_w": 59.0,
-      "out_w": 59.0,
+      "ac_v": 222.642,
+      "in_w": 58.0,
+      "out_w": 58.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -91,11 +91,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-04T16:03:40"
+        "ts": "2026-10-04T16:27:20"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-04T16:03:40"
+        "ts": "2026-10-04T16:27:20"
       }
     },
     "soc": {
@@ -123,16 +123,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 1440.3,
-      "load_wh_est": 1122.1
+      "input_wh_est": 1427.7,
+      "load_wh_est": 1109.4
     },
     "modes": {
       "charging_sec": 882,
       "discharging_sec": 0,
-      "idle_sec": 45074,
+      "idle_sec": 43834,
       "charging": "14 хв",
       "discharging": "0 сек",
-      "idle": "12 год 31 хв",
+      "idle": "12 год 10 хв",
       "last_charging": {
         "ts": "2026-10-04T21:54:23",
         "grid": true,
