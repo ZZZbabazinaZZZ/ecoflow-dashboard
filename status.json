@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-07T12:02:08",
+  "timestamp": "2026-10-07T12:17:25",
   "grid": true,
   "battery": {
     "soc": 76,
@@ -17,9 +17,9 @@
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 224.099,
+    "inputVoltage": 227.691,
     "inputFreq": 50.0,
-    "outputVoltage": 224.887
+    "outputVoltage": 228.49
   },
   "temps": {
     "battery": 27,
@@ -68,14 +68,14 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 334,
+    "sample_count": 349,
     "from": "2026-10-06T12:38:55",
-    "to": "2026-10-07T12:02:08",
+    "to": "2026-10-07T12:17:25",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 76.0,
-      "ac_v": 224.099,
+      "ac_v": 227.691,
       "in_w": 62.0,
       "out_w": 62.0,
       "charge_limit_w": 1300.0
@@ -123,16 +123,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 31,
-      "input_wh_est": 324.3,
-      "load_wh_est": 324.3
+      "input_wh_est": 340.0,
+      "load_wh_est": 340.0
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 24091,
+      "idle_sec": 25008,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "6 год 41 хв",
+      "idle": "6 год 56 хв",
       "last_charging": null,
       "last_discharging": null
     }
