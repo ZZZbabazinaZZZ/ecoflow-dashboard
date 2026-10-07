@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-07T10:38:08",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "device": "DELTA Pro",
+  "timestamp": "2026-10-07T10:54:09",
+  "grid": true,
+  "battery": {
+    "soc": 77,
+    "min": 10.0,
+    "max": 63.0,
+    "eta": "31:32"
+  },
+  "power": {
+    "in": 65,
+    "out": 65,
+    "acOut": 65,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 225.196,
+    "inputFreq": 50.0,
+    "outputVoltage": 225.986
+  },
+  "temps": {
+    "battery": 27,
+    "inverter": 33,
+    "mppt": 35
+  },
   "history": [
     {
       "ts": "2026-09-14T11:26:16",
@@ -45,16 +68,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 305,
-    "from": "2026-10-06T10:47:25",
-    "to": "2026-10-07T09:42:10",
+    "sample_count": 317,
+    "from": "2026-10-06T11:37:48",
+    "to": "2026-10-07T10:54:09",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 77.0,
-      "ac_v": 222.977,
-      "in_w": 23.0,
-      "out_w": 23.0,
+      "ac_v": 225.196,
+      "in_w": 65.0,
+      "out_w": 65.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -68,11 +91,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-06T10:47:25"
+        "ts": "2026-10-06T11:37:48"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-06T10:47:25"
+        "ts": "2026-10-06T11:37:48"
       }
     },
     "soc": {
@@ -100,16 +123,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 31,
-      "input_wh_est": 293.1,
-      "load_wh_est": 293.1
+      "input_wh_est": 305.8,
+      "load_wh_est": 305.8
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 21953,
+      "idle_sec": 22815,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "6 год 05 хв",
+      "idle": "6 год 20 хв",
       "last_charging": null,
       "last_discharging": null
     }
