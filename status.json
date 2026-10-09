@@ -1,8 +1,8 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-09T02:53:10",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "timestamp": "2026-10-09T03:29:58",
+  "error": "[Errno 54] Connection reset by peer",
   "history": [
     {
       "ts": "2026-09-14T11:26:16",
