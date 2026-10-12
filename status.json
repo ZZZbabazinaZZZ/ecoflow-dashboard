@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-12T12:31:25",
-  "grid": false,
-  "battery": {
-    "soc": 80,
-    "min": 10.0,
-    "max": 80.0,
-    "eta": "30:36"
-  },
-  "power": {
-    "in": 0,
-    "out": 70,
-    "acOut": 70,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 0.0,
-    "inputFreq": 0.0,
-    "outputVoltage": 229.902
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 57,
-    "mppt": 43
-  },
+  "timestamp": "2026-10-12T13:00:03",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
       "ts": "2026-10-12T10:17:15",
@@ -77,8 +54,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 36,
-    "from": "2026-10-11T12:37:42",
+    "sample_count": 35,
+    "from": "2026-10-11T15:40:33",
     "to": "2026-10-12T12:31:25",
     "latest": {
       "mode": "discharging",
@@ -100,11 +77,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-11T12:37:42"
+        "ts": "2026-10-11T15:40:33"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-11T12:37:42"
+        "ts": "2026-10-11T15:40:33"
       }
     },
     "soc": {
@@ -132,16 +109,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 45,
-      "input_wh_est": 223.0,
-      "load_wh_est": 248.0
+      "input_wh_est": 196.0,
+      "load_wh_est": 221.0
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 860,
-      "idle_sec": 3371,
+      "idle_sec": 3191,
       "charging": "0 сек",
       "discharging": "14 хв",
-      "idle": "56 хв",
+      "idle": "53 хв",
       "last_charging": null,
       "last_discharging": {
         "ts": "2026-10-12T12:31:25",
