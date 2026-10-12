@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-12T11:52:52",
-  "error": "timed out",
+  "device": "DELTA Pro",
+  "timestamp": "2026-10-12T12:31:25",
+  "grid": false,
+  "battery": {
+    "soc": 80,
+    "min": 10.0,
+    "max": 80.0,
+    "eta": "30:36"
+  },
+  "power": {
+    "in": 0,
+    "out": 70,
+    "acOut": 70,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 0.0,
+    "inputFreq": 0.0,
+    "outputVoltage": 229.902
+  },
+  "temps": {
+    "battery": 28,
+    "inverter": 57,
+    "mppt": 43
+  },
   "history": [
     {
       "ts": "2026-10-12T10:17:15",
@@ -54,16 +77,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 35,
+    "sample_count": 36,
     "from": "2026-10-11T12:37:42",
-    "to": "2026-10-12T11:17:22",
+    "to": "2026-10-12T12:31:25",
     "latest": {
       "mode": "discharging",
       "grid": false,
-      "soc": 83.0,
+      "soc": 80.0,
       "ac_v": 0.0,
       "in_w": 0.0,
-      "out_w": 69.0,
+      "out_w": 70.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -110,28 +133,28 @@
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 45,
       "input_wh_est": 223.0,
-      "load_wh_est": 244.6
+      "load_wh_est": 248.0
     },
     "modes": {
       "charging_sec": 0,
-      "discharging_sec": 680,
+      "discharging_sec": 860,
       "idle_sec": 3371,
       "charging": "0 сек",
-      "discharging": "11 хв",
+      "discharging": "14 хв",
       "idle": "56 хв",
       "last_charging": null,
       "last_discharging": {
-        "ts": "2026-10-12T11:17:22",
+        "ts": "2026-10-12T12:31:25",
         "grid": false,
         "ac_v": 0.0,
         "ac_f": 0.0,
         "in_w": 0.0,
-        "out_w": 69.0,
-        "ac_out_w": 69.0,
-        "soc": 83.0,
+        "out_w": 70.0,
+        "ac_out_w": 70.0,
+        "soc": 80.0,
         "charge_limit_w": 1300.0,
-        "net_w": -69.0,
-        "epoch": 1791793042.0,
+        "net_w": -70.0,
+        "epoch": 1791797485.0,
         "mode": "discharging"
       }
     }
