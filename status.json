@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-12T11:16:16",
-  "grid": false,
-  "battery": {
-    "soc": 83,
-    "min": 10.0,
-    "max": 80.0,
-    "eta": "31:27"
-  },
-  "power": {
-    "in": 0,
-    "out": 71,
-    "acOut": 71,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 0.0,
-    "inputFreq": 0.0,
-    "outputVoltage": 230.138
-  },
-  "temps": {
-    "battery": 27,
-    "inverter": 47,
-    "mppt": 34
-  },
+  "timestamp": "2026-10-12T11:52:52",
+  "error": "timed out",
   "history": [
     {
       "ts": "2026-10-12T10:17:15",
@@ -77,16 +54,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 34,
+    "sample_count": 35,
     "from": "2026-10-11T12:37:42",
-    "to": "2026-10-12T11:16:16",
+    "to": "2026-10-12T11:17:22",
     "latest": {
       "mode": "discharging",
       "grid": false,
       "soc": 83.0,
       "ac_v": 0.0,
       "in_w": 0.0,
-      "out_w": 71.0,
+      "out_w": 69.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -133,28 +110,28 @@
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 45,
       "input_wh_est": 223.0,
-      "load_wh_est": 243.3
+      "load_wh_est": 244.6
     },
     "modes": {
       "charging_sec": 0,
-      "discharging_sec": 614,
+      "discharging_sec": 680,
       "idle_sec": 3371,
       "charging": "0 сек",
-      "discharging": "10 хв",
+      "discharging": "11 хв",
       "idle": "56 хв",
       "last_charging": null,
       "last_discharging": {
-        "ts": "2026-10-12T11:16:16",
+        "ts": "2026-10-12T11:17:22",
         "grid": false,
         "ac_v": 0.0,
         "ac_f": 0.0,
         "in_w": 0.0,
-        "out_w": 71.0,
-        "ac_out_w": 71.0,
+        "out_w": 69.0,
+        "ac_out_w": 69.0,
         "soc": 83.0,
         "charge_limit_w": 1300.0,
-        "net_w": -71.0,
-        "epoch": 1791792976.0,
+        "net_w": -69.0,
+        "epoch": 1791793042.0,
         "mode": "discharging"
       }
     }
