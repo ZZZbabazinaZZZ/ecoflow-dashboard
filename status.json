@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-12T22:31:59",
-  "grid": true,
-  "battery": {
-    "soc": 78,
-    "min": 10.0,
-    "max": 80.0,
-    "eta": "33:01"
-  },
-  "power": {
-    "in": 63,
-    "out": 63,
-    "acOut": 63,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 229.374,
-    "inputFreq": 50.0,
-    "outputVoltage": 230.182
-  },
-  "temps": {
-    "battery": 27,
-    "inverter": 33,
-    "mppt": 35
-  },
+  "timestamp": "2026-10-12T23:32:36",
+  "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
       "ts": "2026-10-12T16:07:18",
@@ -87,8 +64,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 30,
-    "from": "2026-10-11T22:58:00",
+    "sample_count": 29,
+    "from": "2026-10-12T00:59:20",
     "to": "2026-10-12T22:31:59",
     "latest": {
       "mode": "idle",
@@ -110,11 +87,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-11T22:58:00"
+        "ts": "2026-10-12T00:59:20"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-11T22:58:00"
+        "ts": "2026-10-12T00:59:20"
       }
     },
     "soc": {
@@ -123,8 +100,8 @@
         "ts": "2026-10-12T14:55:48"
       },
       "max": {
-        "value": 90.0,
-        "ts": "2026-10-11T22:58:00"
+        "value": 89.0,
+        "ts": "2026-10-12T00:59:20"
       }
     },
     "power": {
@@ -142,16 +119,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 12,
-      "input_wh_est": 32.2,
-      "load_wh_est": 69.6
+      "input_wh_est": 29.1,
+      "load_wh_est": 66.4
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 1400,
-      "idle_sec": 2779,
+      "idle_sec": 2599,
       "charging": "0 сек",
       "discharging": "23 хв",
-      "idle": "46 хв",
+      "idle": "43 хв",
       "last_charging": null,
       "last_discharging": {
         "ts": "2026-10-12T15:24:44",
