@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-13T18:04:20",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+  "device": "DELTA Pro",
+  "timestamp": "2026-10-13T18:40:32",
+  "grid": true,
+  "battery": {
+    "soc": 79,
+    "min": 10.0,
+    "max": 80.0,
+    "eta": "35:11"
+  },
+  "power": {
+    "in": 60,
+    "out": 60,
+    "acOut": 60,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 225.694,
+    "inputFreq": 50.0,
+    "outputVoltage": 226.503
+  },
+  "temps": {
+    "battery": 27,
+    "inverter": 32,
+    "mppt": 34
+  },
   "history": [
     {
       "ts": "2026-10-12T16:07:18",
@@ -65,15 +88,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 23,
-    "from": "2026-10-12T18:13:18",
-    "to": "2026-10-13T17:11:37",
+    "from": "2026-10-12T20:29:52",
+    "to": "2026-10-13T18:40:32",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 79.0,
-      "ac_v": 223.511,
-      "in_w": 58.0,
-      "out_w": 58.0,
+      "ac_v": 225.694,
+      "in_w": 60.0,
+      "out_w": 60.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -87,11 +110,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-12T18:13:18"
+        "ts": "2026-10-12T20:29:52"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-12T18:13:18"
+        "ts": "2026-10-12T20:29:52"
       }
     },
     "soc": {
@@ -119,8 +142,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 44,
-      "input_wh_est": 204.2,
-      "load_wh_est": 204.2
+      "input_wh_est": 206.0,
+      "load_wh_est": 206.0
     },
     "modes": {
       "charging_sec": 0,
