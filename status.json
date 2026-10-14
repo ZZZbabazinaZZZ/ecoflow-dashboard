@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-14T19:22:39",
+  "timestamp": "2026-10-14T20:23:43",
   "grid": true,
   "battery": {
-    "soc": 75,
+    "soc": 74,
     "min": 10.0,
     "max": 72.0,
-    "eta": "3:28"
+    "eta": "31:05"
   },
   "power": {
-    "in": 572,
-    "out": 572,
-    "acOut": 572,
+    "in": 63,
+    "out": 63,
+    "acOut": 63,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 221.014,
+    "inputVoltage": 225.402,
     "inputFreq": 50.0,
-    "outputVoltage": 221.763
+    "outputVoltage": 226.194
   },
   "temps": {
     "battery": 26,
@@ -88,15 +88,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 436,
-    "from": "2026-10-13T19:43:00",
-    "to": "2026-10-14T19:22:39",
+    "from": "2026-10-13T21:44:19",
+    "to": "2026-10-14T20:23:43",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 75.0,
-      "ac_v": 221.014,
-      "in_w": 572.0,
-      "out_w": 572.0,
+      "soc": 74.0,
+      "ac_v": 225.402,
+      "in_w": 63.0,
+      "out_w": 63.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -110,21 +110,21 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-13T19:43:00"
+        "ts": "2026-10-13T21:44:19"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-13T19:43:00"
+        "ts": "2026-10-13T21:44:19"
       }
     },
     "soc": {
       "min": {
-        "value": 75.0,
-        "ts": "2026-10-14T16:20:04"
+        "value": 74.0,
+        "ts": "2026-10-14T20:23:43"
       },
       "max": {
         "value": 79.0,
-        "ts": "2026-10-13T19:43:00"
+        "ts": "2026-10-14T00:34:04"
       }
     },
     "power": {
@@ -142,8 +142,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 94,
-      "input_wh_est": 491.4,
-      "load_wh_est": 430.0
+      "input_wh_est": 516.7,
+      "load_wh_est": 455.3
     },
     "modes": {
       "charging_sec": 180,
