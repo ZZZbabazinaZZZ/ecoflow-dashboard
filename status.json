@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-14T06:43:55",
-  "grid": true,
-  "battery": {
-    "soc": 77,
-    "min": 10.0,
-    "max": 72.0,
-    "eta": "85:25"
-  },
-  "power": {
-    "in": 24,
-    "out": 24,
-    "acOut": 24,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 228.231,
-    "inputFreq": 50.0,
-    "outputVoltage": 229.018
-  },
-  "temps": {
-    "battery": 26,
-    "inverter": 31,
-    "mppt": 34
-  },
+  "timestamp": "2026-10-14T07:12:26",
+  "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
       "ts": "2026-10-12T16:07:18",
