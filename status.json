@@ -2,29 +2,29 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-15T00:13:06",
+  "timestamp": "2026-10-15T00:28:20",
   "grid": true,
   "battery": {
     "soc": 80,
     "min": 10.0,
     "max": 75.0,
-    "eta": "37:34"
+    "eta": "36:18"
   },
   "power": {
-    "in": 57,
-    "out": 57,
-    "acOut": 57,
+    "in": 59,
+    "out": 59,
+    "acOut": 59,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 224.361,
+    "inputVoltage": 224.567,
     "inputFreq": 50.0,
-    "outputVoltage": 224.723
+    "outputVoltage": 225.824
   },
   "temps": {
     "battery": 26,
-    "inverter": 37,
-    "mppt": 33
+    "inverter": 34,
+    "mppt": 34
   },
   "history": [
     {
@@ -88,15 +88,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 533,
-    "from": "2026-10-14T00:13:12",
-    "to": "2026-10-15T00:13:06",
+    "from": "2026-10-14T00:29:00",
+    "to": "2026-10-15T00:28:20",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 80.0,
-      "ac_v": 224.361,
-      "in_w": 57.0,
-      "out_w": 57.0,
+      "ac_v": 224.567,
+      "in_w": 59.0,
+      "out_w": 59.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -110,11 +110,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-14T00:13:12"
+        "ts": "2026-10-14T00:29:00"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-14T00:13:12"
+        "ts": "2026-10-14T00:29:00"
       }
     },
     "soc": {
@@ -142,16 +142,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 100,
-      "input_wh_est": 895.7,
-      "load_wh_est": 528.3
+      "input_wh_est": 903.6,
+      "load_wh_est": 536.1
     },
     "modes": {
       "charging_sec": 1035,
       "discharging_sec": 0,
-      "idle_sec": 34411,
+      "idle_sec": 34377,
       "charging": "17 хв",
       "discharging": "0 сек",
-      "idle": "9 год 33 хв",
+      "idle": "9 год 32 хв",
       "last_charging": {
         "ts": "2026-10-14T23:51:44",
         "grid": true,
