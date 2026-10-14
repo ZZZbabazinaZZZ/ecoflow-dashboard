@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-14T17:20:38",
+  "timestamp": "2026-10-14T18:21:34",
   "grid": true,
   "battery": {
     "soc": 75,
     "min": 10.0,
     "max": 72.0,
-    "eta": "29:15"
+    "eta": "3:29"
   },
   "power": {
-    "in": 68,
-    "out": 68,
-    "acOut": 68,
+    "in": 571,
+    "out": 571,
+    "acOut": 571,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 222.534,
+    "inputVoltage": 220.679,
     "inputFreq": 50.0,
-    "outputVoltage": 223.323
+    "outputVoltage": 220.973
   },
   "temps": {
     "battery": 26,
@@ -87,16 +87,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 435,
+    "sample_count": 436,
     "from": "2026-10-13T18:40:32",
-    "to": "2026-10-14T17:20:38",
+    "to": "2026-10-14T18:21:34",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 75.0,
-      "ac_v": 222.534,
-      "in_w": 68.0,
-      "out_w": 68.0,
+      "ac_v": 220.679,
+      "in_w": 571.0,
+      "out_w": 571.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -129,29 +129,29 @@
     },
     "power": {
       "max_load": {
-        "value": 569.0,
-        "ts": "2026-10-14T14:06:20"
+        "value": 571.0,
+        "ts": "2026-10-14T18:21:34"
       },
       "max_input": {
         "value": 1228.0,
         "ts": "2026-10-14T00:29:00"
       },
       "max_ac_output": {
-        "value": 569.0,
-        "ts": "2026-10-14T14:06:20"
+        "value": 571.0,
+        "ts": "2026-10-14T18:21:34"
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 94,
-      "input_wh_est": 462.4,
-      "load_wh_est": 401.0
+      "input_wh_est": 465.8,
+      "load_wh_est": 404.4
     },
     "modes": {
       "charging_sec": 180,
       "discharging_sec": 0,
-      "idle_sec": 29351,
+      "idle_sec": 29531,
       "charging": "3 хв",
       "discharging": "0 сек",
-      "idle": "8 год 09 хв",
+      "idle": "8 год 12 хв",
       "last_charging": {
         "ts": "2026-10-14T00:29:00",
         "grid": true,
