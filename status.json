@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-15T02:30:25",
+  "timestamp": "2026-10-15T02:45:40",
   "grid": true,
   "battery": {
     "soc": 79,
     "min": 10.0,
     "max": 75.0,
-    "eta": "35:47"
+    "eta": "37:42"
   },
   "power": {
-    "in": 59,
-    "out": 59,
-    "acOut": 59,
+    "in": 56,
+    "out": 56,
+    "acOut": 56,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 225.785,
+    "inputVoltage": 224.571,
     "inputFreq": 50.0,
-    "outputVoltage": 226.589
+    "outputVoltage": 225.369
   },
   "temps": {
     "battery": 26,
@@ -106,16 +106,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 542,
-    "from": "2026-10-14T02:30:50",
-    "to": "2026-10-15T02:30:25",
+    "sample_count": 543,
+    "from": "2026-10-14T02:45:43",
+    "to": "2026-10-15T02:45:40",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 79.0,
-      "ac_v": 225.785,
-      "in_w": 59.0,
-      "out_w": 59.0,
+      "ac_v": 224.571,
+      "in_w": 56.0,
+      "out_w": 56.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -129,11 +129,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-14T02:30:50"
+        "ts": "2026-10-14T02:45:43"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-14T02:30:50"
+        "ts": "2026-10-14T02:45:43"
       }
     },
     "soc": {
@@ -161,16 +161,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 100,
-      "input_wh_est": 842.7,
-      "load_wh_est": 536.6
+      "input_wh_est": 842.6,
+      "load_wh_est": 536.5
     },
     "modes": {
       "charging_sec": 855,
       "discharging_sec": 0,
-      "idle_sec": 34787,
+      "idle_sec": 34809,
       "charging": "14 хв",
       "discharging": "0 сек",
-      "idle": "9 год 39 хв",
+      "idle": "9 год 40 хв",
       "last_charging": {
         "ts": "2026-10-14T23:51:44",
         "grid": true,
