@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-14T08:37:51",
+  "timestamp": "2026-10-14T09:11:05",
   "grid": true,
   "battery": {
     "soc": 77,
     "min": 10.0,
     "max": 72.0,
-    "eta": "89:08"
+    "eta": "35:58"
   },
   "power": {
-    "in": 23,
-    "out": 23,
-    "acOut": 23,
+    "in": 57,
+    "out": 57,
+    "acOut": 57,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 228.016,
+    "inputVoltage": 226.051,
     "inputFreq": 50.0,
-    "outputVoltage": 228.796
+    "outputVoltage": 226.834
   },
   "temps": {
     "battery": 26,
@@ -87,16 +87,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 437,
-    "from": "2026-10-13T08:42:16",
-    "to": "2026-10-14T08:37:51",
+    "sample_count": 438,
+    "from": "2026-10-13T09:43:16",
+    "to": "2026-10-14T09:11:05",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 77.0,
-      "ac_v": 228.016,
-      "in_w": 23.0,
-      "out_w": 23.0,
+      "ac_v": 226.051,
+      "in_w": 57.0,
+      "out_w": 57.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -110,11 +110,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-13T08:42:16"
+        "ts": "2026-10-13T09:43:16"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-13T08:42:16"
+        "ts": "2026-10-13T09:43:16"
       }
     },
     "soc": {
@@ -142,16 +142,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 94,
-      "input_wh_est": 567.7,
-      "load_wh_est": 506.3
+      "input_wh_est": 566.1,
+      "load_wh_est": 504.7
     },
     "modes": {
       "charging_sec": 180,
       "discharging_sec": 0,
-      "idle_sec": 29826,
+      "idle_sec": 29891,
       "charging": "3 хв",
       "discharging": "0 сек",
-      "idle": "8 год 17 хв",
+      "idle": "8 год 18 хв",
       "last_charging": {
         "ts": "2026-10-14T00:29:00",
         "grid": true,
