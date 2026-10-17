@@ -1,9 +1,19 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-17T19:24:56",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
+  "timestamp": "2026-10-17T20:24:56",
+  "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))",
   "history": [
+    {
+      "ts": "2026-10-17T19:36:31",
+      "type": "power_on",
+      "title": "Світло з'явилось",
+      "ac_v": 213.686,
+      "freq": 50.0,
+      "soc": 65,
+      "load_w": 144,
+      "duration": "2 год 07 хв"
+    },
     {
       "ts": "2026-10-17T17:29:23",
       "type": "power_off",
@@ -92,22 +102,22 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 50,
-    "from": "2026-10-16T19:30:23",
-    "to": "2026-10-17T18:53:41",
+    "sample_count": 48,
+    "from": "2026-10-16T20:32:08",
+    "to": "2026-10-17T19:36:31",
     "latest": {
-      "mode": "discharging",
-      "grid": false,
-      "soc": 57.0,
-      "ac_v": 0.0,
-      "in_w": 0.0,
-      "out_w": 65.0,
+      "mode": "charging",
+      "grid": true,
+      "soc": 65.0,
+      "ac_v": 213.686,
+      "in_w": 1443.0,
+      "out_w": 144.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
       "min": {
-        "value": 216.4,
-        "ts": "2026-10-17T13:48:57"
+        "value": 213.7,
+        "ts": "2026-10-17T19:36:31"
       },
       "max": {
         "value": 234.2,
@@ -115,11 +125,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-16T19:30:23"
+        "ts": "2026-10-16T20:32:08"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-16T19:30:23"
+        "ts": "2026-10-16T20:32:08"
       }
     },
     "soc": {
@@ -138,26 +148,39 @@
         "ts": "2026-10-17T17:52:35"
       },
       "max_input": {
-        "value": 574.0,
-        "ts": "2026-10-17T15:05:15"
+        "value": 1443.0,
+        "ts": "2026-10-17T19:36:31"
       },
       "max_ac_output": {
         "value": 594.0,
         "ts": "2026-10-17T17:52:35"
       },
       "charge_limit_w": 1300.0,
-      "max_input_pct_of_current_limit": 44,
-      "input_wh_est": 319.4,
-      "load_wh_est": 376.5
+      "max_input_pct_of_current_limit": 111,
+      "input_wh_est": 311.7,
+      "load_wh_est": 372.1
     },
     "modes": {
       "charging_sec": 0,
-      "discharging_sec": 540,
-      "idle_sec": 8280,
+      "discharging_sec": 720,
+      "idle_sec": 7740,
       "charging": "0 сек",
-      "discharging": "9 хв",
-      "idle": "2 год 18 хв",
-      "last_charging": null,
+      "discharging": "12 хв",
+      "idle": "2 год 09 хв",
+      "last_charging": {
+        "ts": "2026-10-17T19:36:31",
+        "grid": true,
+        "ac_v": 213.686,
+        "ac_f": 50.0,
+        "in_w": 1443.0,
+        "out_w": 144.0,
+        "ac_out_w": 144.0,
+        "soc": 65.0,
+        "charge_limit_w": 1300.0,
+        "net_w": 1299.0,
+        "epoch": 1792254991.0,
+        "mode": "charging"
+      },
       "last_discharging": {
         "ts": "2026-10-17T18:53:41",
         "grid": false,
