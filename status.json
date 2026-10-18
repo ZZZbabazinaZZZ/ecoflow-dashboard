@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-18T13:43:03",
+  "timestamp": "2026-10-18T14:28:04",
   "grid": true,
   "battery": {
     "soc": 96,
     "min": 10.0,
     "max": 87.0,
-    "eta": "6:06"
+    "eta": "5:37"
   },
   "power": {
-    "in": 431,
-    "out": 431,
-    "acOut": 431,
+    "in": 468,
+    "out": 468,
+    "acOut": 468,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 224.188,
+    "inputVoltage": 226.141,
     "inputFreq": 50.0,
-    "outputVoltage": 224.963
+    "outputVoltage": 226.909
   },
   "temps": {
     "battery": 26,
@@ -125,16 +125,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 48,
-    "from": "2026-10-17T13:48:57",
-    "to": "2026-10-18T13:43:03",
+    "sample_count": 47,
+    "from": "2026-10-17T14:34:14",
+    "to": "2026-10-18T14:28:04",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 96.0,
-      "ac_v": 224.188,
-      "in_w": 431.0,
-      "out_w": 431.0,
+      "ac_v": 226.141,
+      "in_w": 468.0,
+      "out_w": 468.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -148,11 +148,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-17T13:48:57"
+        "ts": "2026-10-17T14:34:14"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-17T13:48:57"
+        "ts": "2026-10-17T14:34:14"
       }
     },
     "soc": {
@@ -180,16 +180,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 111,
-      "input_wh_est": 553.5,
-      "load_wh_est": 548.9
+      "input_wh_est": 519.8,
+      "load_wh_est": 515.2
     },
     "modes": {
       "charging_sec": 180,
       "discharging_sec": 720,
-      "idle_sec": 7560,
+      "idle_sec": 7380,
       "charging": "3 хв",
       "discharging": "12 хв",
-      "idle": "2 год 06 хв",
+      "idle": "2 год 03 хв",
       "last_charging": {
         "ts": "2026-10-17T19:36:31",
         "grid": true,
