@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-18T20:14:58",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
+  "device": "DELTA Pro",
+  "timestamp": "2026-10-18T20:46:03",
+  "grid": true,
+  "battery": {
+    "soc": 94,
+    "min": 10.0,
+    "max": 87.0,
+    "eta": "4:47"
+  },
+  "power": {
+    "in": 536,
+    "out": 536,
+    "acOut": 536,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 226.922,
+    "inputFreq": 50.0,
+    "outputVoltage": 228.192
+  },
+  "temps": {
+    "battery": 26,
+    "inverter": 32,
+    "mppt": 34
+  },
   "history": [
     {
       "ts": "2026-10-17T19:36:31",
@@ -103,15 +126,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 47,
-    "from": "2026-10-17T20:40:18",
-    "to": "2026-10-18T19:48:47",
+    "from": "2026-10-17T21:11:22",
+    "to": "2026-10-18T20:46:03",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 94.0,
-      "ac_v": 223.18,
-      "in_w": 484.0,
-      "out_w": 484.0,
+      "ac_v": 226.922,
+      "in_w": 536.0,
+      "out_w": 536.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -125,11 +148,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-17T20:40:18"
+        "ts": "2026-10-17T21:11:22"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-17T20:40:18"
+        "ts": "2026-10-17T21:11:22"
       }
     },
     "soc": {
@@ -139,7 +162,7 @@
       },
       "max": {
         "value": 100.0,
-        "ts": "2026-10-17T20:40:18"
+        "ts": "2026-10-17T21:11:22"
       }
     },
     "power": {
@@ -157,8 +180,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 48,
-      "input_wh_est": 548.7,
-      "load_wh_est": 548.7
+      "input_wh_est": 562.3,
+      "load_wh_est": 562.3
     },
     "modes": {
       "charging_sec": 0,
