@@ -1,9 +1,42 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-20T16:55:28",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "device": "DELTA Pro",
+  "timestamp": "2026-10-20T17:56:33",
+  "grid": true,
+  "battery": {
+    "soc": 80,
+    "min": 10.0,
+    "max": 80.0,
+    "eta": "42:00"
+  },
+  "power": {
+    "in": 51,
+    "out": 51,
+    "acOut": 51,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 223.763,
+    "inputFreq": 50.0,
+    "outputVoltage": 224.549
+  },
+  "temps": {
+    "battery": 29,
+    "inverter": 33,
+    "mppt": 35
+  },
   "history": [
+    {
+      "ts": "2026-10-20T17:56:33",
+      "type": "power_on",
+      "title": "Світло з'явилось",
+      "ac_v": 223.763,
+      "freq": 50.0,
+      "soc": 80,
+      "load_w": 51,
+      "duration": "18 год 19 хв"
+    },
     {
       "ts": "2026-10-19T23:36:51",
       "type": "power_off",
@@ -107,30 +140,20 @@
       "freq": 0.0,
       "soc": 75,
       "load_w": 347
-    },
-    {
-      "ts": "2026-08-05T08:33:17",
-      "type": "power_on",
-      "title": "Світло з'явилось",
-      "ac_v": 223.181,
-      "freq": 50.0,
-      "soc": 78,
-      "load_w": 56,
-      "duration": "237 год 04 хв"
     }
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 493,
-    "from": "2026-10-19T17:09:52",
-    "to": "2026-10-20T14:54:03",
+    "sample_count": 484,
+    "from": "2026-10-19T17:56:51",
+    "to": "2026-10-20T17:56:33",
     "latest": {
       "mode": "idle",
-      "grid": false,
-      "soc": 78.0,
-      "ac_v": 0.0,
-      "in_w": 0.0,
-      "out_w": 0.0,
+      "grid": true,
+      "soc": 80.0,
+      "ac_v": 223.763,
+      "in_w": 51.0,
+      "out_w": 51.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -177,15 +200,15 @@
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 103,
       "input_wh_est": 518.0,
-      "load_wh_est": 456.0
+      "load_wh_est": 446.5
     },
     "modes": {
       "charging_sec": 753,
-      "discharging_sec": 10119,
-      "idle_sec": 21430,
+      "discharging_sec": 9759,
+      "idle_sec": 21001,
       "charging": "12 хв",
-      "discharging": "2 год 48 хв",
-      "idle": "5 год 57 хв",
+      "discharging": "2 год 42 хв",
+      "idle": "5 год 50 хв",
       "last_charging": {
         "ts": "2026-10-19T21:48:16",
         "grid": true,
