@@ -2,28 +2,28 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-21T00:53:25",
+  "timestamp": "2026-10-21T01:08:39",
   "grid": true,
   "battery": {
     "soc": 85,
     "min": 10.0,
     "max": 75.0,
-    "eta": "39:34"
+    "eta": "85:00"
   },
   "power": {
-    "in": 58,
-    "out": 58,
-    "acOut": 58,
+    "in": 27,
+    "out": 27,
+    "acOut": 27,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 227.175,
+    "inputVoltage": 225.678,
     "inputFreq": 50.0,
-    "outputVoltage": 227.972
+    "outputVoltage": 226.453
   },
   "temps": {
     "battery": 29,
-    "inverter": 34,
+    "inverter": 33,
     "mppt": 36
   },
   "history": [
@@ -145,15 +145,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 332,
-    "from": "2026-10-20T00:54:06",
-    "to": "2026-10-21T00:53:25",
+    "from": "2026-10-20T01:09:21",
+    "to": "2026-10-21T01:08:39",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 85.0,
-      "ac_v": 227.175,
-      "in_w": 58.0,
-      "out_w": 58.0,
+      "ac_v": 225.678,
+      "in_w": 27.0,
+      "out_w": 27.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -180,8 +180,8 @@
         "ts": "2026-10-20T12:40:58"
       },
       "max": {
-        "value": 86.0,
-        "ts": "2026-10-20T00:54:06"
+        "value": 85.0,
+        "ts": "2026-10-20T01:09:21"
       }
     },
     "power": {
@@ -199,16 +199,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 549.1,
-      "load_wh_est": 358.4
+      "input_wh_est": 562.1,
+      "load_wh_est": 356.1
     },
     "modes": {
       "charging_sec": 792,
-      "discharging_sec": 4660,
-      "idle_sec": 16359,
+      "discharging_sec": 3745,
+      "idle_sec": 17273,
       "charging": "13 хв",
-      "discharging": "1 год 17 хв",
-      "idle": "4 год 32 хв",
+      "discharging": "1 год 02 хв",
+      "idle": "4 год 47 хв",
       "last_charging": {
         "ts": "2026-10-20T22:19:37",
         "grid": true,
