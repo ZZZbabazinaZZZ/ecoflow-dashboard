@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-21T16:41:56",
-  "grid": true,
-  "battery": {
-    "soc": 81,
-    "min": 10.0,
-    "max": 75.0,
-    "eta": "35:36"
-  },
-  "power": {
-    "in": 61,
-    "out": 61,
-    "acOut": 61,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 226.626,
-    "inputFreq": 50.0,
-    "outputVoltage": 227.407
-  },
-  "temps": {
-    "battery": 26,
-    "inverter": 32,
-    "mppt": 34
-  },
+  "timestamp": "2026-10-21T17:27:42",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
   "history": [
     {
       "ts": "2026-10-20T17:56:33",
