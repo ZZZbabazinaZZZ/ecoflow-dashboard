@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-21T18:59:18",
+  "timestamp": "2026-10-21T19:19:06",
   "grid": true,
   "battery": {
-    "soc": 81,
+    "soc": 80,
     "min": 10.0,
     "max": 75.0,
-    "eta": "37:27"
+    "eta": "28:11"
   },
   "power": {
-    "in": 58,
-    "out": 58,
-    "acOut": 58,
+    "in": 76,
+    "out": 76,
+    "acOut": 76,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 227.681,
+    "inputVoltage": 230.945,
     "inputFreq": 50.0,
-    "outputVoltage": 228.514
+    "outputVoltage": 231.784
   },
   "temps": {
     "battery": 26,
@@ -145,15 +145,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 274,
-    "from": "2026-10-20T19:10:55",
-    "to": "2026-10-21T18:59:18",
+    "from": "2026-10-20T20:20:20",
+    "to": "2026-10-21T19:19:06",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 81.0,
-      "ac_v": 227.681,
-      "in_w": 58.0,
-      "out_w": 58.0,
+      "soc": 80.0,
+      "ac_v": 230.945,
+      "in_w": 76.0,
+      "out_w": 76.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -162,22 +162,22 @@
         "ts": "2026-10-20T21:34:36"
       },
       "max": {
-        "value": 230.2,
-        "ts": "2026-10-21T00:28:01"
+        "value": 230.9,
+        "ts": "2026-10-21T19:19:06"
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-20T19:10:55"
+        "ts": "2026-10-20T20:20:20"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-20T19:10:55"
+        "ts": "2026-10-20T20:20:20"
       }
     },
     "soc": {
       "min": {
         "value": 79.0,
-        "ts": "2026-10-20T19:10:55"
+        "ts": "2026-10-20T20:20:20"
       },
       "max": {
         "value": 85.0,
@@ -199,8 +199,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 592.0,
-      "load_wh_est": 306.2
+      "input_wh_est": 578.5,
+      "load_wh_est": 292.7
     },
     "modes": {
       "charging_sec": 792,
