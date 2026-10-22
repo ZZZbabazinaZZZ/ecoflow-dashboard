@@ -2,29 +2,29 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-22T12:59:02",
+  "timestamp": "2026-10-22T13:49:58",
   "grid": true,
   "battery": {
-    "soc": 77,
+    "soc": 80,
     "min": 10.0,
     "max": 80.0,
-    "eta": "4:38"
+    "eta": "4:02"
   },
   "power": {
-    "in": 1741,
-    "out": 441,
-    "acOut": 441,
+    "in": 531,
+    "out": 531,
+    "acOut": 531,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 223.839,
+    "inputVoltage": 221.504,
     "inputFreq": 50.0,
-    "outputVoltage": 224.445
+    "outputVoltage": 222.285
   },
   "temps": {
-    "battery": 25,
-    "inverter": 39,
-    "mppt": 24
+    "battery": 26,
+    "inverter": 32,
+    "mppt": 32
   },
   "history": [
     {
@@ -144,16 +144,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 231,
-    "from": "2026-10-21T13:23:52",
-    "to": "2026-10-22T12:59:02",
+    "sample_count": 232,
+    "from": "2026-10-21T13:54:13",
+    "to": "2026-10-22T13:49:58",
     "latest": {
-      "mode": "charging",
+      "mode": "idle",
       "grid": true,
-      "soc": 77.0,
-      "ac_v": 223.839,
-      "in_w": 1741.0,
-      "out_w": 441.0,
+      "soc": 80.0,
+      "ac_v": 221.504,
+      "in_w": 531.0,
+      "out_w": 531.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -167,11 +167,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-21T13:23:52"
+        "ts": "2026-10-21T13:54:13"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-21T13:23:52"
+        "ts": "2026-10-21T13:54:13"
       }
     },
     "soc": {
@@ -181,46 +181,46 @@
       },
       "max": {
         "value": 82.0,
-        "ts": "2026-10-21T13:23:52"
+        "ts": "2026-10-21T13:54:13"
       }
     },
     "power": {
       "max_load": {
-        "value": 512.0,
-        "ts": "2026-10-22T12:34:41"
+        "value": 531.0,
+        "ts": "2026-10-22T13:49:58"
       },
       "max_input": {
         "value": 1741.0,
         "ts": "2026-10-22T12:59:02"
       },
       "max_ac_output": {
-        "value": 512.0,
-        "ts": "2026-10-22T12:34:41"
+        "value": 531.0,
+        "ts": "2026-10-22T13:49:58"
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 134,
-      "input_wh_est": 327.3,
-      "load_wh_est": 336.8
+      "input_wh_est": 445.6,
+      "load_wh_est": 364.5
     },
     "modes": {
-      "charging_sec": 0,
+      "charging_sec": 251,
       "discharging_sec": 180,
-      "idle_sec": 18434,
-      "charging": "0 сек",
+      "idle_sec": 18254,
+      "charging": "4 хв",
       "discharging": "3 хв",
-      "idle": "5 год 07 хв",
+      "idle": "5 год 04 хв",
       "last_charging": {
-        "ts": "2026-10-22T12:59:02",
+        "ts": "2026-10-22T13:00:13",
         "grid": true,
-        "ac_v": 223.839,
+        "ac_v": 223.613,
         "ac_f": 50.0,
-        "in_w": 1741.0,
-        "out_w": 441.0,
-        "ac_out_w": 441.0,
+        "in_w": 1739.0,
+        "out_w": 440.0,
+        "ac_out_w": 440.0,
         "soc": 77.0,
         "charge_limit_w": 1300.0,
-        "net_w": 1300.0,
-        "epoch": 1792663142.0,
+        "net_w": 1299.0,
+        "epoch": 1792663213.0,
         "mode": "charging"
       },
       "last_discharging": {
