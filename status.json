@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-22T11:41:20",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+  "device": "DELTA Pro",
+  "timestamp": "2026-10-22T12:16:20",
+  "grid": true,
+  "battery": {
+    "soc": 75,
+    "min": 10.0,
+    "max": 75.0,
+    "eta": "99:27"
+  },
+  "power": {
+    "in": 18,
+    "out": 18,
+    "acOut": 18,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 225.148,
+    "inputFreq": 50.0,
+    "outputVoltage": 225.934
+  },
+  "temps": {
+    "battery": 26,
+    "inverter": 31,
+    "mppt": 34
+  },
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -122,15 +145,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 221,
-    "from": "2026-10-21T12:07:16",
-    "to": "2026-10-22T11:13:32",
+    "from": "2026-10-21T12:52:49",
+    "to": "2026-10-22T12:16:20",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 76.0,
-      "ac_v": 218.254,
-      "in_w": 70.0,
-      "out_w": 70.0,
+      "soc": 75.0,
+      "ac_v": 225.148,
+      "in_w": 18.0,
+      "out_w": 18.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -144,21 +167,21 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-21T12:07:16"
+        "ts": "2026-10-21T12:52:49"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-21T12:07:16"
+        "ts": "2026-10-21T12:52:49"
       }
     },
     "soc": {
       "min": {
-        "value": 76.0,
-        "ts": "2026-10-22T10:26:05"
+        "value": 75.0,
+        "ts": "2026-10-22T12:16:20"
       },
       "max": {
         "value": 82.0,
-        "ts": "2026-10-21T12:07:16"
+        "ts": "2026-10-21T12:52:49"
       }
     },
     "power": {
@@ -176,8 +199,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 15,
-      "input_wh_est": 249.6,
-      "load_wh_est": 259.1
+      "input_wh_est": 250.1,
+      "load_wh_est": 259.7
     },
     "modes": {
       "charging_sec": 0,
