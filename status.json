@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-25T03:33:21",
+  "timestamp": "2026-10-25T03:19:08",
   "grid": true,
   "battery": {
-    "soc": 75,
+    "soc": 74,
     "min": 10.0,
     "max": 71.0,
-    "eta": "32:36"
+    "eta": "81:36"
   },
   "power": {
-    "in": 61,
-    "out": 61,
-    "acOut": 61,
+    "in": 24,
+    "out": 24,
+    "acOut": 24,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 229.286,
+    "inputVoltage": 228.27,
     "inputFreq": 50.0,
-    "outputVoltage": 230.1
+    "outputVoltage": 229.559
   },
   "temps": {
     "battery": 26,
