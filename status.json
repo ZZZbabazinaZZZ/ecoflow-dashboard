@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-26T05:02:31",
-  "grid": true,
-  "battery": {
-    "soc": 78,
-    "min": 10.0,
-    "max": 70.0,
-    "eta": "35:16"
-  },
-  "power": {
-    "in": 59,
-    "out": 59,
-    "acOut": 59,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 231.87,
-    "inputFreq": 50.0,
-    "outputVoltage": 232.683
-  },
-  "temps": {
-    "battery": 26,
-    "inverter": 31,
-    "mppt": 34
-  },
+  "timestamp": "2026-10-26T07:48:55",
+  "error": "[Errno 54] Connection reset by peer",
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 117,
-    "from": "2026-10-25T05:21:15",
+    "sample_count": 113,
+    "from": "2026-10-25T08:24:06",
     "to": "2026-10-26T05:02:31",
     "latest": {
       "mode": "idle",
@@ -167,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-25T05:21:15"
+        "ts": "2026-10-25T08:24:06"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-25T05:21:15"
+        "ts": "2026-10-25T08:24:06"
       }
     },
     "soc": {
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 45,
-      "input_wh_est": 1035.8,
-      "load_wh_est": 1035.8
+      "input_wh_est": 1025.7,
+      "load_wh_est": 1025.7
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 9880,
+      "idle_sec": 9160,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "2 год 44 хв",
+      "idle": "2 год 32 хв",
       "last_charging": null,
       "last_discharging": null
     }
