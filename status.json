@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-26T15:09:06",
+  "timestamp": "2026-10-26T15:33:29",
   "grid": true,
   "battery": {
-    "soc": 75,
+    "soc": 74,
     "min": 10.0,
     "max": 70.0,
-    "eta": "31:34"
+    "eta": "75:19"
   },
   "power": {
-    "in": 63,
-    "out": 63,
-    "acOut": 63,
+    "in": 26,
+    "out": 26,
+    "acOut": 26,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 224.821,
+    "inputVoltage": 229.284,
     "inputFreq": 50.0,
-    "outputVoltage": 225.629
+    "outputVoltage": 230.113
   },
   "temps": {
     "battery": 25,
@@ -144,16 +144,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 125,
-    "from": "2026-10-25T15:09:40",
-    "to": "2026-10-26T15:09:06",
+    "sample_count": 105,
+    "from": "2026-10-25T15:34:29",
+    "to": "2026-10-26T15:33:29",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 75.0,
-      "ac_v": 224.821,
-      "in_w": 63.0,
-      "out_w": 63.0,
+      "soc": 74.0,
+      "ac_v": 229.284,
+      "in_w": 26.0,
+      "out_w": 26.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -167,11 +167,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-25T15:09:40"
+        "ts": "2026-10-25T15:34:29"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-25T15:09:40"
+        "ts": "2026-10-25T15:34:29"
       }
     },
     "soc": {
@@ -199,16 +199,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 44,
-      "input_wh_est": 533.7,
-      "load_wh_est": 533.7
+      "input_wh_est": 357.3,
+      "load_wh_est": 357.3
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 9925,
+      "idle_sec": 8745,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "2 год 45 хв",
+      "idle": "2 год 25 хв",
       "last_charging": null,
       "last_discharging": null
     }
