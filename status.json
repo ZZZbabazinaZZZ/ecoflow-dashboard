@@ -1,8 +1,31 @@
 {
-  "ok": false,
+  "ok": true,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-28T14:41:22",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "device": "DELTA Pro",
+  "timestamp": "2026-10-28T14:57:25",
+  "grid": true,
+  "battery": {
+    "soc": 75,
+    "min": 10.0,
+    "max": 71.0,
+    "eta": "33:42"
+  },
+  "power": {
+    "in": 59,
+    "out": 59,
+    "acOut": 59,
+    "chargeLimit": 1300
+  },
+  "ac": {
+    "inputVoltage": 223.701,
+    "inputFreq": 50.0,
+    "outputVoltage": 224.495
+  },
+  "temps": {
+    "battery": 25,
+    "inverter": 30,
+    "mppt": 33
+  },
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -121,16 +144,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 106,
+    "sample_count": 107,
     "from": "2026-10-27T15:08:50",
-    "to": "2026-10-28T14:10:15",
+    "to": "2026-10-28T14:57:25",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 75.0,
-      "ac_v": 224.006,
-      "in_w": 26.0,
-      "out_w": 26.0,
+      "ac_v": 223.701,
+      "in_w": 59.0,
+      "out_w": 59.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -176,16 +199,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 16,
-      "input_wh_est": 121.5,
-      "load_wh_est": 121.5
+      "input_wh_est": 122.8,
+      "load_wh_est": 122.8
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 8880,
+      "idle_sec": 9060,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "2 год 28 хв",
+      "idle": "2 год 31 хв",
       "last_charging": null,
       "last_discharging": null
     }
