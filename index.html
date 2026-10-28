@@ -177,12 +177,12 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-10-28T17:05:53 · data 2026-10-28T17:05:53</div>
+      <div class="sub">Cloud MQTT · generated 2026-10-28T17:35:53 · data 2026-10-28T17:35:53</div>
     </div>
     <div class="status offline"><span class="dot"></span><span>Offline</span></div>
   </header>
 
-  <div class='error'>timed out</div>
+  <div class='error'>HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(&quot;HTTPSConnection(host=&#x27;api.ecoflow.com&#x27;, port=443): Failed to resolve &#x27;api.ecoflow.com&#x27; ([Errno 8] nodename nor servname provided, or not known)&quot;))</div>
 
   <div class="grid">
     <section>
@@ -212,12 +212,12 @@
       <h2>Останні 24 години</h2>
       <div class="daily-grid">
         <div class="daily-item"><span class="label">Напруга min / max</span><strong>219 V / 239 V</strong><small>28.10 11:55 / 28.10 04:46</small></div>
-        <div class="daily-item"><span class="label">SOC min / max</span><strong>75% / 80%</strong><small>28.10 13:34 / 28.10 00:43</small></div>
+        <div class="daily-item"><span class="label">SOC min / max</span><strong>74% / 80%</strong><small>28.10 17:11 / 28.10 00:43</small></div>
         <div class="daily-item"><span class="label">Пік навантаження</span><strong>202 W</strong><small>27.10 20:39</small></div>
         <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1300 W</strong><small>пік входу 202 W · 16% ліміту</small></div>
         <div class="daily-item"><span class="label">Заряджання</span><strong>0 сек</strong><small>--</small></div>
         <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>151 Wh / 151 Wh</strong><small>оцінка за sample-ами</small></div>
+        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>154 Wh / 154 Wh</strong><small>оцінка за sample-ами</small></div>
         <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>27.10 19:38 / 27.10 19:38</small></div>
       </div>
     </section>
@@ -248,8 +248,8 @@
     <pre>{
   &quot;ok&quot;: false,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;timestamp&quot;: &quot;2026-10-28T17:05:53&quot;,
-  &quot;error&quot;: &quot;timed out&quot;,
+  &quot;timestamp&quot;: &quot;2026-10-28T17:35:53&quot;,
+  &quot;error&quot;: &quot;HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\&quot;HTTPSConnection(host=&#x27;api.ecoflow.com&#x27;, port=443): Failed to resolve &#x27;api.ecoflow.com&#x27; ([Errno 8] nodename nor servname provided, or not known)\&quot;))&quot;,
   &quot;history&quot;: [
     {
       &quot;ts&quot;: &quot;2026-10-22T10:26:05&quot;,
@@ -368,16 +368,16 @@
   ],
   &quot;telemetry&quot;: {
     &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 151,
+    &quot;sample_count&quot;: 152,
     &quot;from&quot;: &quot;2026-10-27T19:38:19&quot;,
-    &quot;to&quot;: &quot;2026-10-28T16:34:05&quot;,
+    &quot;to&quot;: &quot;2026-10-28T17:11:43&quot;,
     &quot;latest&quot;: {
       &quot;mode&quot;: &quot;idle&quot;,
       &quot;grid&quot;: true,
-      &quot;soc&quot;: 75.0,
-      &quot;ac_v&quot;: 223.708,
-      &quot;in_w&quot;: 63.0,
-      &quot;out_w&quot;: 63.0,
+      &quot;soc&quot;: 74.0,
+      &quot;ac_v&quot;: 223.712,
+      &quot;in_w&quot;: 58.0,
+      &quot;out_w&quot;: 58.0,
       &quot;charge_limit_w&quot;: 1300.0
     },
     &quot;voltage&quot;: {
@@ -400,8 +400,8 @@
     },
     &quot;soc&quot;: {
       &quot;min&quot;: {
-        &quot;value&quot;: 75.0,
-        &quot;ts&quot;: &quot;2026-10-28T13:34:57&quot;
+        &quot;value&quot;: 74.0,
+        &quot;ts&quot;: &quot;2026-10-28T17:11:43&quot;
       },
       &quot;max&quot;: {
         &quot;value&quot;: 80.0,
@@ -423,16 +423,16 @@
       },
       &quot;charge_limit_w&quot;: 1300.0,
       &quot;max_input_pct_of_current_limit&quot;: 16,
-      &quot;input_wh_est&quot;: 151.1,
-      &quot;load_wh_est&quot;: 151.1
+      &quot;input_wh_est&quot;: 154.2,
+      &quot;load_wh_est&quot;: 154.2
     },
     &quot;modes&quot;: {
       &quot;charging_sec&quot;: 0,
       &quot;discharging_sec&quot;: 0,
-      &quot;idle_sec&quot;: 12068,
+      &quot;idle_sec&quot;: 12248,
       &quot;charging&quot;: &quot;0 сек&quot;,
       &quot;discharging&quot;: &quot;0 сек&quot;,
-      &quot;idle&quot;: &quot;3 год 21 хв&quot;,
+      &quot;idle&quot;: &quot;3 год 24 хв&quot;,
       &quot;last_charging&quot;: null,
       &quot;last_discharging&quot;: null
     }
