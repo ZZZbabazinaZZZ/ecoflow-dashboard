@@ -177,12 +177,12 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-10-29T20:56:04 · data 2026-10-29T20:56:04</div>
+      <div class="sub">Cloud MQTT · generated 2026-10-29T22:08:54 · data 2026-10-29T22:08:54</div>
     </div>
     <div class="status offline"><span class="dot"></span><span>Offline</span></div>
   </header>
 
-  <div class='error'>EcoFlow API error 8521: signature is wrong</div>
+  <div class='error'>HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Read timed out. (read timeout=10)</div>
 
   <div class="grid">
     <section>
@@ -215,9 +215,9 @@
         <div class="daily-item"><span class="label">SOC min / max</span><strong>69% / 80%</strong><small>29.10 08:27 / 29.10 12:16</small></div>
         <div class="daily-item"><span class="label">Пік навантаження</span><strong>193 W</strong><small>29.10 00:26</small></div>
         <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1300 W</strong><small>пік входу 1299 W · 100% ліміту</small></div>
-        <div class="daily-item"><span class="label">Заряджання</span><strong>0 сек</strong><small>останнє 29.10 19:06</small></div>
+        <div class="daily-item"><span class="label">Заряджання</span><strong>3 хв</strong><small>останнє 29.10 19:06</small></div>
         <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>83 Wh / 83 Wh</strong><small>оцінка за sample-ами</small></div>
+        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>148 Wh / 83 Wh</strong><small>оцінка за sample-ами</small></div>
         <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>29.10 00:19 / 29.10 00:19</small></div>
       </div>
     </section>
@@ -248,8 +248,8 @@
     <pre>{
   &quot;ok&quot;: false,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;timestamp&quot;: &quot;2026-10-29T20:56:04&quot;,
-  &quot;error&quot;: &quot;EcoFlow API error 8521: signature is wrong&quot;,
+  &quot;timestamp&quot;: &quot;2026-10-29T22:08:54&quot;,
+  &quot;error&quot;: &quot;HTTPSConnectionPool(host=&#x27;api.ecoflow.com&#x27;, port=443): Read timed out. (read timeout=10)&quot;,
   &quot;history&quot;: [
     {
       &quot;ts&quot;: &quot;2026-10-22T10:26:05&quot;,
@@ -368,16 +368,16 @@
   ],
   &quot;telemetry&quot;: {
     &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 48,
+    &quot;sample_count&quot;: 49,
     &quot;from&quot;: &quot;2026-10-29T00:19:37&quot;,
-    &quot;to&quot;: &quot;2026-10-29T19:06:24&quot;,
+    &quot;to&quot;: &quot;2026-10-29T21:08:32&quot;,
     &quot;latest&quot;: {
-      &quot;mode&quot;: &quot;charging&quot;,
+      &quot;mode&quot;: &quot;idle&quot;,
       &quot;grid&quot;: true,
-      &quot;soc&quot;: 78.0,
-      &quot;ac_v&quot;: 220.774,
-      &quot;in_w&quot;: 1299.0,
-      &quot;out_w&quot;: 0.0,
+      &quot;soc&quot;: 79.0,
+      &quot;ac_v&quot;: 228.715,
+      &quot;in_w&quot;: 187.0,
+      &quot;out_w&quot;: 187.0,
       &quot;charge_limit_w&quot;: 1300.0
     },
     &quot;voltage&quot;: {
@@ -423,14 +423,14 @@
       },
       &quot;charge_limit_w&quot;: 1300.0,
       &quot;max_input_pct_of_current_limit&quot;: 100,
-      &quot;input_wh_est&quot;: 82.6,
+      &quot;input_wh_est&quot;: 147.6,
       &quot;load_wh_est&quot;: 82.6
     },
     &quot;modes&quot;: {
-      &quot;charging_sec&quot;: 0,
+      &quot;charging_sec&quot;: 180,
       &quot;discharging_sec&quot;: 0,
       &quot;idle_sec&quot;: 5284,
-      &quot;charging&quot;: &quot;0 сек&quot;,
+      &quot;charging&quot;: &quot;3 хв&quot;,
       &quot;discharging&quot;: &quot;0 сек&quot;,
       &quot;idle&quot;: &quot;1 год 28 хв&quot;,
       &quot;last_charging&quot;: {

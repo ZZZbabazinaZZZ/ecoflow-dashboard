@@ -1,8 +1,8 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-29T20:56:04",
-  "error": "EcoFlow API error 8521: signature is wrong",
+  "timestamp": "2026-10-29T22:08:54",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Read timed out. (read timeout=10)",
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -121,16 +121,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 48,
+    "sample_count": 49,
     "from": "2026-10-29T00:19:37",
-    "to": "2026-10-29T19:06:24",
+    "to": "2026-10-29T21:08:32",
     "latest": {
-      "mode": "charging",
+      "mode": "idle",
       "grid": true,
-      "soc": 78.0,
-      "ac_v": 220.774,
-      "in_w": 1299.0,
-      "out_w": 0.0,
+      "soc": 79.0,
+      "ac_v": 228.715,
+      "in_w": 187.0,
+      "out_w": 187.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -176,14 +176,14 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 100,
-      "input_wh_est": 82.6,
+      "input_wh_est": 147.6,
       "load_wh_est": 82.6
     },
     "modes": {
-      "charging_sec": 0,
+      "charging_sec": 180,
       "discharging_sec": 0,
       "idle_sec": 5284,
-      "charging": "0 сек",
+      "charging": "3 хв",
       "discharging": "0 сек",
       "idle": "1 год 28 хв",
       "last_charging": {
