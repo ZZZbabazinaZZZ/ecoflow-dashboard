@@ -1,7 +1,7 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-10-29T18:51:38",
+  "timestamp": "2026-10-29T20:56:04",
   "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
@@ -122,21 +122,21 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 48,
-    "from": "2026-10-28T20:05:25",
-    "to": "2026-10-29T17:09:29",
+    "from": "2026-10-29T00:19:37",
+    "to": "2026-10-29T19:06:24",
     "latest": {
-      "mode": "idle",
+      "mode": "charging",
       "grid": true,
       "soc": 78.0,
-      "ac_v": 225.956,
-      "in_w": 63.0,
-      "out_w": 63.0,
+      "ac_v": 220.774,
+      "in_w": 1299.0,
+      "out_w": 0.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
       "min": {
-        "value": 221.8,
-        "ts": "2026-10-29T13:10:59"
+        "value": 220.8,
+        "ts": "2026-10-29T19:06:24"
       },
       "max": {
         "value": 230.9,
@@ -144,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-28T20:05:25"
+        "ts": "2026-10-29T00:19:37"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-28T20:05:25"
+        "ts": "2026-10-29T00:19:37"
       }
     },
     "soc": {
@@ -167,17 +167,17 @@
         "ts": "2026-10-29T00:26:17"
       },
       "max_input": {
-        "value": 193.0,
-        "ts": "2026-10-29T00:26:17"
+        "value": 1299.0,
+        "ts": "2026-10-29T19:06:24"
       },
       "max_ac_output": {
         "value": 193.0,
         "ts": "2026-10-29T00:26:17"
       },
       "charge_limit_w": 1300.0,
-      "max_input_pct_of_current_limit": 15,
-      "input_wh_est": 88.9,
-      "load_wh_est": 88.9
+      "max_input_pct_of_current_limit": 100,
+      "input_wh_est": 82.6,
+      "load_wh_est": 82.6
     },
     "modes": {
       "charging_sec": 0,
@@ -186,7 +186,20 @@
       "charging": "0 сек",
       "discharging": "0 сек",
       "idle": "1 год 28 хв",
-      "last_charging": null,
+      "last_charging": {
+        "ts": "2026-10-29T19:06:24",
+        "grid": true,
+        "ac_v": 220.774,
+        "ac_f": 50.0,
+        "in_w": 1299.0,
+        "out_w": 0.0,
+        "ac_out_w": 0.0,
+        "soc": 78.0,
+        "charge_limit_w": 1300.0,
+        "net_w": 1299.0,
+        "epoch": 1793293584.0,
+        "mode": "charging"
+      },
       "last_discharging": null
     }
   }
