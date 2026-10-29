@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-10-29T03:12:30",
-  "grid": true,
-  "battery": {
-    "soc": 71,
-    "min": 10.0,
-    "max": 71.0,
-    "eta": "81:09"
-  },
-  "power": {
-    "in": 23,
-    "out": 23,
-    "acOut": 23,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 229.995,
-    "inputFreq": 50.0,
-    "outputVoltage": 230.802
-  },
-  "temps": {
-    "battery": 25,
-    "inverter": 30,
-    "mppt": 33
-  },
+  "timestamp": "2026-10-29T04:16:02",
+  "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 152,
-    "from": "2026-10-28T03:45:46",
+    "sample_count": 151,
+    "from": "2026-10-28T04:46:49",
     "to": "2026-10-29T03:12:30",
     "latest": {
       "mode": "idle",
@@ -167,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-28T03:45:46"
+        "ts": "2026-10-28T04:46:49"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-28T03:45:46"
+        "ts": "2026-10-28T04:46:49"
       }
     },
     "soc": {
@@ -180,8 +157,8 @@
         "ts": "2026-10-29T02:21:39"
       },
       "max": {
-        "value": 79.0,
-        "ts": "2026-10-28T03:45:46"
+        "value": 78.0,
+        "ts": "2026-10-28T04:46:49"
       }
     },
     "power": {
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 15,
-      "input_wh_est": 166.7,
-      "load_wh_est": 166.7
+      "input_wh_est": 163.9,
+      "load_wh_est": 163.9
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 12248,
+      "idle_sec": 12068,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "3 год 24 хв",
+      "idle": "3 год 21 хв",
       "last_charging": null,
       "last_discharging": null
     }
