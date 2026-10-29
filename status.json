@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-10-29T01:21:01",
+  "timestamp": "2026-10-29T02:21:39",
   "grid": true,
   "battery": {
-    "soc": 72,
+    "soc": 71,
     "min": 10.0,
     "max": 71.0,
-    "eta": "82:29"
+    "eta": "31:06"
   },
   "power": {
-    "in": 23,
-    "out": 23,
-    "acOut": 23,
+    "in": 60,
+    "out": 60,
+    "acOut": 60,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 229.528,
+    "inputVoltage": 227.484,
     "inputFreq": 50.0,
-    "outputVoltage": 230.326
+    "outputVoltage": 228.263
   },
   "temps": {
     "battery": 25,
@@ -145,15 +145,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 151,
-    "from": "2026-10-28T01:44:03",
-    "to": "2026-10-29T01:21:01",
+    "from": "2026-10-28T03:45:46",
+    "to": "2026-10-29T02:21:39",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 72.0,
-      "ac_v": 229.528,
-      "in_w": 23.0,
-      "out_w": 23.0,
+      "soc": 71.0,
+      "ac_v": 227.484,
+      "in_w": 60.0,
+      "out_w": 60.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -167,21 +167,21 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-10-28T01:44:03"
+        "ts": "2026-10-28T03:45:46"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-10-28T01:44:03"
+        "ts": "2026-10-28T03:45:46"
       }
     },
     "soc": {
       "min": {
-        "value": 72.0,
-        "ts": "2026-10-29T00:19:37"
+        "value": 71.0,
+        "ts": "2026-10-29T02:21:39"
       },
       "max": {
         "value": 79.0,
-        "ts": "2026-10-28T01:44:03"
+        "ts": "2026-10-28T03:45:46"
       }
     },
     "power": {
@@ -199,8 +199,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 15,
-      "input_wh_est": 163.8,
-      "load_wh_est": 163.8
+      "input_wh_est": 163.7,
+      "load_wh_est": 163.7
     },
     "modes": {
       "charging_sec": 0,
