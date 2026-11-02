@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-11-03T00:17:27",
+  "timestamp": "2026-11-03T01:18:31",
   "grid": true,
   "battery": {
-    "soc": 86,
+    "soc": 85,
     "min": 10.0,
     "max": 86.0,
-    "eta": "43:04"
+    "eta": "40:15"
   },
   "power": {
-    "in": 54,
-    "out": 54,
-    "acOut": 54,
+    "in": 57,
+    "out": 57,
+    "acOut": 57,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 227.61,
+    "inputVoltage": 229.138,
     "inputFreq": 50.0,
-    "outputVoltage": 228.438
+    "outputVoltage": 229.961
   },
   "temps": {
     "battery": 26,
@@ -144,16 +144,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 70,
-    "from": "2026-11-02T00:21:07",
-    "to": "2026-11-03T00:17:27",
+    "sample_count": 69,
+    "from": "2026-11-02T01:24:22",
+    "to": "2026-11-03T01:18:31",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 86.0,
-      "ac_v": 227.61,
-      "in_w": 54.0,
-      "out_w": 54.0,
+      "soc": 85.0,
+      "ac_v": 229.138,
+      "in_w": 57.0,
+      "out_w": 57.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -167,11 +167,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-02T00:21:07"
+        "ts": "2026-11-02T01:24:22"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-02T00:21:07"
+        "ts": "2026-11-02T01:24:22"
       }
     },
     "soc": {
@@ -199,16 +199,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 14,
-      "input_wh_est": 143.4,
-      "load_wh_est": 143.4
+      "input_wh_est": 141.9,
+      "load_wh_est": 141.9
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 8419,
+      "idle_sec": 8239,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "2 год 20 хв",
+      "idle": "2 год 17 хв",
       "last_charging": null,
       "last_discharging": null
     }
