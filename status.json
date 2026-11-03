@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-03T10:58:01",
-  "grid": true,
-  "battery": {
-    "soc": 82,
-    "min": 10.0,
-    "max": 71.0,
-    "eta": "100:08"
-  },
-  "power": {
-    "in": 22,
-    "out": 22,
-    "acOut": 22,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 190.318,
-    "inputFreq": 50.0,
-    "outputVoltage": 190.978
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 32,
-    "mppt": 35
-  },
+  "timestamp": "2026-11-03T11:21:31",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 26,
-    "from": "2026-11-02T11:00:13",
+    "sample_count": 23,
+    "from": "2026-11-02T12:05:59",
     "to": "2026-11-03T10:58:01",
     "latest": {
       "mode": "idle",
@@ -167,17 +144,17 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-02T11:00:13"
+        "ts": "2026-11-02T12:05:59"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-02T11:00:13"
+        "ts": "2026-11-02T12:05:59"
       }
     },
     "soc": {
       "min": {
-        "value": 69.0,
-        "ts": "2026-11-02T11:00:13"
+        "value": 76.0,
+        "ts": "2026-11-02T20:13:43"
       },
       "max": {
         "value": 86.0,
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 5,
-      "input_wh_est": 59.6,
-      "load_wh_est": 59.6
+      "input_wh_est": 54.3,
+      "load_wh_est": 54.3
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 4158,
+      "idle_sec": 3847,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 09 хв",
+      "idle": "1 год 04 хв",
       "last_charging": null,
       "last_discharging": null
     }
