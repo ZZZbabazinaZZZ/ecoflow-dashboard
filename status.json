@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-03T07:12:48",
-  "grid": true,
-  "battery": {
-    "soc": 83,
-    "min": 10.0,
-    "max": 71.0,
-    "eta": "35:27"
-  },
-  "power": {
-    "in": 63,
-    "out": 63,
-    "acOut": 63,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 223.306,
-    "inputFreq": 50.0,
-    "outputVoltage": 224.079
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 34,
-    "mppt": 35
-  },
+  "timestamp": "2026-11-03T08:14:09",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 63,
-    "from": "2026-11-02T07:27:12",
+    "sample_count": 61,
+    "from": "2026-11-02T08:27:56",
     "to": "2026-11-03T07:12:48",
     "latest": {
       "mode": "idle",
@@ -167,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-02T07:27:12"
+        "ts": "2026-11-02T08:27:56"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-02T07:27:12"
+        "ts": "2026-11-02T08:27:56"
       }
     },
     "soc": {
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 14,
-      "input_wh_est": 131.3,
-      "load_wh_est": 131.3
+      "input_wh_est": 125.3,
+      "load_wh_est": 125.3
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 7159,
+      "idle_sec": 6799,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "1 год 59 хв",
+      "idle": "1 год 53 хв",
       "last_charging": null,
       "last_discharging": null
     }
