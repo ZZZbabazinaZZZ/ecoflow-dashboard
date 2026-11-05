@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-05T13:01:55",
-  "grid": true,
-  "battery": {
-    "soc": 82,
-    "min": 10.0,
-    "max": 82.0,
-    "eta": "11:58"
-  },
-  "power": {
-    "in": 184,
-    "out": 184,
-    "acOut": 184,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 223.719,
-    "inputFreq": 50.0,
-    "outputVoltage": 224.496
-  },
-  "temps": {
-    "battery": 26,
-    "inverter": 32,
-    "mppt": 34
-  },
+  "timestamp": "2026-11-05T13:53:54",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
       "ts": "2026-10-22T10:26:05",
@@ -144,16 +121,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 108,
+    "sample_count": 112,
     "from": "2026-11-04T14:43:45",
-    "to": "2026-11-05T13:01:55",
+    "to": "2026-11-05T13:16:24",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 82.0,
-      "ac_v": 223.719,
-      "in_w": 184.0,
-      "out_w": 184.0,
+      "ac_v": 222.364,
+      "in_w": 45.0,
+      "out_w": 45.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 229.9,
-      "load_wh_est": 139.7
+      "input_wh_est": 244.3,
+      "load_wh_est": 154.0
     },
     "modes": {
       "charging_sec": 250,
       "discharging_sec": 0,
-      "idle_sec": 8524,
+      "idle_sec": 9020,
       "charging": "4 хв",
       "discharging": "0 сек",
-      "idle": "2 год 22 хв",
+      "idle": "2 год 30 хв",
       "last_charging": {
         "ts": "2026-11-05T12:00:12",
         "grid": true,
