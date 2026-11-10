@@ -2,24 +2,24 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-11-10T01:35:08",
+  "timestamp": "2026-11-10T02:25:58",
   "grid": true,
   "battery": {
-    "soc": 78,
+    "soc": 77,
     "min": 10.0,
     "max": 70.0,
-    "eta": "3:37"
+    "eta": "3:48"
   },
   "power": {
-    "in": 574,
-    "out": 574,
-    "acOut": 574,
+    "in": 539,
+    "out": 539,
+    "acOut": 539,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 226.068,
+    "inputVoltage": 228.836,
     "inputFreq": 50.0,
-    "outputVoltage": 226.838
+    "outputVoltage": 230.101
   },
   "temps": {
     "battery": 27,
@@ -144,16 +144,16 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 45,
-    "from": "2026-11-09T01:50:56",
-    "to": "2026-11-10T01:35:08",
+    "sample_count": 44,
+    "from": "2026-11-09T02:38:04",
+    "to": "2026-11-10T02:25:58",
     "latest": {
       "mode": "idle",
       "grid": true,
-      "soc": 78.0,
-      "ac_v": 226.068,
-      "in_w": 574.0,
-      "out_w": 574.0,
+      "soc": 77.0,
+      "ac_v": 228.836,
+      "in_w": 539.0,
+      "out_w": 539.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -167,11 +167,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-09T01:50:56"
+        "ts": "2026-11-09T02:38:04"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-09T01:50:56"
+        "ts": "2026-11-09T02:38:04"
       }
     },
     "soc": {
@@ -199,16 +199,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 45,
-      "input_wh_est": 315.1,
-      "load_wh_est": 315.1
+      "input_wh_est": 337.9,
+      "load_wh_est": 337.9
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 7920,
+      "idle_sec": 7740,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "2 год 12 хв",
+      "idle": "2 год 09 хв",
       "last_charging": null,
       "last_discharging": null
     }
