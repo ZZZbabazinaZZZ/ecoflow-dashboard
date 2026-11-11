@@ -2,29 +2,29 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-11-11T09:40:27",
+  "timestamp": "2026-11-11T10:04:41",
   "grid": true,
   "battery": {
     "soc": 70,
     "min": 10.0,
     "max": 70.0,
-    "eta": "68:00"
+    "eta": "27:24"
   },
   "power": {
-    "in": 27,
-    "out": 27,
-    "acOut": 27,
+    "in": 67,
+    "out": 67,
+    "acOut": 67,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 221.489,
+    "inputVoltage": 221.869,
     "inputFreq": 50.0,
-    "outputVoltage": 222.269
+    "outputVoltage": 222.641
   },
   "temps": {
     "battery": 26,
-    "inverter": 34,
-    "mppt": 32
+    "inverter": 32,
+    "mppt": 33
   },
   "history": [
     {
@@ -145,15 +145,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 41,
-    "from": "2026-11-10T10:04:32",
-    "to": "2026-11-11T09:40:27",
+    "from": "2026-11-10T10:52:51",
+    "to": "2026-11-11T10:04:41",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 70.0,
-      "ac_v": 221.489,
-      "in_w": 27.0,
-      "out_w": 27.0,
+      "ac_v": 221.869,
+      "in_w": 67.0,
+      "out_w": 67.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -167,11 +167,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-10T10:04:32"
+        "ts": "2026-11-10T10:52:51"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-10T10:04:32"
+        "ts": "2026-11-10T10:52:51"
       }
     },
     "soc": {
@@ -180,8 +180,8 @@
         "ts": "2026-11-11T06:34:07"
       },
       "max": {
-        "value": 75.0,
-        "ts": "2026-11-10T10:04:32"
+        "value": 74.0,
+        "ts": "2026-11-10T10:52:51"
       }
     },
     "power": {
@@ -199,8 +199,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 6,
-      "input_wh_est": 98.4,
-      "load_wh_est": 98.4
+      "input_wh_est": 96.6,
+      "load_wh_est": 96.6
     },
     "modes": {
       "charging_sec": 0,
