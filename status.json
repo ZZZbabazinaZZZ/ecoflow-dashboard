@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-12T16:46:55",
-  "grid": true,
-  "battery": {
-    "soc": 71,
-    "min": 10.0,
-    "max": 72.0,
-    "eta": "30:06"
-  },
-  "power": {
-    "in": 62,
-    "out": 62,
-    "acOut": 62,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 226.879,
-    "inputFreq": 50.0,
-    "outputVoltage": 227.699
-  },
-  "temps": {
-    "battery": 26,
-    "inverter": 32,
-    "mppt": 35
-  },
+  "timestamp": "2026-11-12T17:11:00",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
       "ts": "2026-11-12T13:42:57",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 59,
-    "from": "2026-11-11T17:02:24",
+    "sample_count": 58,
+    "from": "2026-11-11T17:30:31",
     "to": "2026-11-12T16:46:55",
     "latest": {
       "mode": "idle",
@@ -167,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-11T17:02:24"
+        "ts": "2026-11-11T17:30:31"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-11T17:02:24"
+        "ts": "2026-11-11T17:30:31"
       }
     },
     "soc": {
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 207.3,
-      "load_wh_est": 153.2
+      "input_wh_est": 206.0,
+      "load_wh_est": 151.9
     },
     "modes": {
       "charging_sec": 180,
       "discharging_sec": 540,
-      "idle_sec": 9720,
+      "idle_sec": 9540,
       "charging": "3 хв",
       "discharging": "9 хв",
-      "idle": "2 год 42 хв",
+      "idle": "2 год 39 хв",
       "last_charging": {
         "ts": "2026-11-11T21:15:15",
         "grid": true,
