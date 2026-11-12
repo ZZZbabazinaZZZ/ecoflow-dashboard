@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-12T19:36:29",
-  "grid": true,
-  "battery": {
-    "soc": 71,
-    "min": 10.0,
-    "max": 72.0,
-    "eta": "60:12"
-  },
-  "power": {
-    "in": 31,
-    "out": 31,
-    "acOut": 31,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 227.306,
-    "inputFreq": 50.0,
-    "outputVoltage": 228.111
-  },
-  "temps": {
-    "battery": 26,
-    "inverter": 31,
-    "mppt": 33
-  },
+  "timestamp": "2026-11-12T20:12:25",
+  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
       "ts": "2026-11-12T13:42:57",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 59,
-    "from": "2026-11-11T19:48:44",
+    "sample_count": 57,
+    "from": "2026-11-11T20:31:18",
     "to": "2026-11-12T19:36:29",
     "latest": {
       "mode": "idle",
@@ -167,17 +144,17 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-11T19:48:44"
+        "ts": "2026-11-11T20:31:18"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-11T19:48:44"
+        "ts": "2026-11-11T20:31:18"
       }
     },
     "soc": {
       "min": {
         "value": 69.0,
-        "ts": "2026-11-11T19:48:44"
+        "ts": "2026-11-11T20:31:18"
       },
       "max": {
         "value": 80.0,
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 104,
-      "input_wh_est": 214.8,
-      "load_wh_est": 160.7
+      "input_wh_est": 208.4,
+      "load_wh_est": 154.3
     },
     "modes": {
       "charging_sec": 180,
       "discharging_sec": 540,
-      "idle_sec": 9720,
+      "idle_sec": 9360,
       "charging": "3 хв",
       "discharging": "9 хв",
-      "idle": "2 год 42 хв",
+      "idle": "2 год 36 хв",
       "last_charging": {
         "ts": "2026-11-11T21:15:15",
         "grid": true,
