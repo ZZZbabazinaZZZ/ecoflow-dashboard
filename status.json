@@ -1,8 +1,8 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-11-13T11:37:52",
-  "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
+  "timestamp": "2026-11-13T14:51:28",
+  "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
       "ts": "2026-11-12T13:42:57",
@@ -121,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 205,
-    "from": "2026-11-12T12:06:11",
+    "sample_count": 199,
+    "from": "2026-11-12T15:09:12",
     "to": "2026-11-13T06:45:05",
     "latest": {
       "mode": "idle",
@@ -135,8 +135,8 @@
     },
     "voltage": {
       "min": {
-        "value": 220.7,
-        "ts": "2026-11-12T14:25:08"
+        "value": 223.1,
+        "ts": "2026-11-12T16:27:41"
       },
       "max": {
         "value": 233.5,
@@ -144,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-12T13:42:57"
+        "ts": "2026-11-12T15:09:12"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-12T13:42:57"
+        "ts": "2026-11-12T15:09:12"
       }
     },
     "soc": {
@@ -157,50 +157,37 @@
         "ts": "2026-11-13T06:16:47"
       },
       "max": {
-        "value": 75.0,
-        "ts": "2026-11-12T12:06:11"
+        "value": 72.0,
+        "ts": "2026-11-12T15:09:12"
       }
     },
     "power": {
       "max_load": {
-        "value": 122.0,
-        "ts": "2026-11-12T13:42:57"
+        "value": 82.0,
+        "ts": "2026-11-13T02:51:05"
       },
       "max_input": {
-        "value": 122.0,
-        "ts": "2026-11-12T13:42:57"
+        "value": 82.0,
+        "ts": "2026-11-13T02:51:05"
       },
       "max_ac_output": {
-        "value": 122.0,
-        "ts": "2026-11-12T13:42:57"
+        "value": 82.0,
+        "ts": "2026-11-13T02:51:05"
       },
       "charge_limit_w": 1300.0,
-      "max_input_pct_of_current_limit": 9,
-      "input_wh_est": 216.4,
-      "load_wh_est": 226.0
+      "max_input_pct_of_current_limit": 6,
+      "input_wh_est": 207.4,
+      "load_wh_est": 207.4
     },
     "modes": {
       "charging_sec": 0,
-      "discharging_sec": 540,
-      "idle_sec": 16224,
+      "discharging_sec": 0,
+      "idle_sec": 15684,
       "charging": "0 сек",
-      "discharging": "9 хв",
-      "idle": "4 год 30 хв",
+      "discharging": "0 сек",
+      "idle": "4 год 21 хв",
       "last_charging": null,
-      "last_discharging": {
-        "ts": "2026-11-12T13:25:03",
-        "grid": false,
-        "ac_v": 0.0,
-        "ac_f": 0.0,
-        "in_w": 0.0,
-        "out_w": 56.0,
-        "ac_out_w": 56.0,
-        "soc": 72.0,
-        "charge_limit_w": 1300.0,
-        "net_w": -56.0,
-        "epoch": 1794482703.0,
-        "mode": "discharging"
-      }
+      "last_discharging": null
     }
   }
 }
