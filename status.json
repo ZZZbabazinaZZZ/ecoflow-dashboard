@@ -1,7 +1,7 @@
 {
   "ok": false,
   "source": "Cloud MQTT",
-  "timestamp": "2026-11-16T15:09:01",
+  "timestamp": "2026-11-16T17:27:47",
   "error": "HTTPSConnectionPool(host='api.ecoflow.com', port=443): Max retries exceeded with url: /iot-open/sign/certification (Caused by NameResolutionError(\"HTTPSConnection(host='api.ecoflow.com', port=443): Failed to resolve 'api.ecoflow.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
   "history": [
     {
@@ -121,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 158,
-    "from": "2026-11-15T15:59:26",
+    "sample_count": 156,
+    "from": "2026-11-15T18:12:20",
     "to": "2026-11-15T23:37:24",
     "latest": {
       "mode": "idle",
@@ -135,8 +135,8 @@
     },
     "voltage": {
       "min": {
-        "value": 221.5,
-        "ts": "2026-11-15T15:59:26"
+        "value": 226.1,
+        "ts": "2026-11-15T22:47:25"
       },
       "max": {
         "value": 236.0,
@@ -144,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-15T15:59:26"
+        "ts": "2026-11-15T18:12:20"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-15T15:59:26"
+        "ts": "2026-11-15T18:12:20"
       }
     },
     "soc": {
@@ -157,35 +157,35 @@
         "ts": "2026-11-15T20:58:51"
       },
       "max": {
-        "value": 72.0,
-        "ts": "2026-11-15T15:59:26"
+        "value": 71.0,
+        "ts": "2026-11-15T18:12:20"
       }
     },
     "power": {
       "max_load": {
-        "value": 466.0,
-        "ts": "2026-11-15T15:59:26"
+        "value": 356.0,
+        "ts": "2026-11-15T18:12:20"
       },
       "max_input": {
-        "value": 466.0,
-        "ts": "2026-11-15T15:59:26"
+        "value": 356.0,
+        "ts": "2026-11-15T18:12:20"
       },
       "max_ac_output": {
-        "value": 466.0,
-        "ts": "2026-11-15T15:59:26"
+        "value": 356.0,
+        "ts": "2026-11-15T18:12:20"
       },
       "charge_limit_w": 1300.0,
-      "max_input_pct_of_current_limit": 36,
-      "input_wh_est": 190.9,
-      "load_wh_est": 190.9
+      "max_input_pct_of_current_limit": 27,
+      "input_wh_est": 144.4,
+      "load_wh_est": 144.4
     },
     "modes": {
       "charging_sec": 0,
       "discharging_sec": 0,
-      "idle_sec": 10053,
+      "idle_sec": 9693,
       "charging": "0 сек",
       "discharging": "0 сек",
-      "idle": "2 год 47 хв",
+      "idle": "2 год 41 хв",
       "last_charging": null,
       "last_discharging": null
     }
