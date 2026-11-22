@@ -177,12 +177,12 @@
   <header>
     <div>
       <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-11-22T17:18:09 · data 2026-11-22T17:18:09</div>
+      <div class="sub">Cloud MQTT · generated 2026-11-22T18:19:08 · data 2026-11-22T18:19:08</div>
     </div>
     <div class="status offline"><span class="dot"></span><span>Offline</span></div>
   </header>
 
-  <div class='error'>EcoFlow API error 8521: signature is wrong</div>
+  <div class='error'>[Errno 54] Connection reset by peer</div>
 
   <div class="grid">
     <section>
@@ -212,13 +212,13 @@
       <h2>Останні 24 години</h2>
       <div class="daily-grid">
         <div class="daily-item"><span class="label">Напруга min / max</span><strong>223 V / 232 V</strong><small>22.11 10:11 / 21.11 21:22</small></div>
-        <div class="daily-item"><span class="label">SOC min / max</span><strong>78% / 80%</strong><small>22.11 00:30 / 21.11 18:18</small></div>
+        <div class="daily-item"><span class="label">SOC min / max</span><strong>78% / 80%</strong><small>22.11 00:30 / 22.11 04:00</small></div>
         <div class="daily-item"><span class="label">Пік навантаження</span><strong>354 W</strong><small>22.11 12:13</small></div>
         <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1300 W</strong><small>пік входу 354 W · 27% ліміту</small></div>
         <div class="daily-item"><span class="label">Заряджання</span><strong>0 сек</strong><small>--</small></div>
         <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>55 Wh / 55 Wh</strong><small>оцінка за sample-ами</small></div>
-        <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>21.11 18:18 / 21.11 18:18</small></div>
+        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>52 Wh / 52 Wh</strong><small>оцінка за sample-ами</small></div>
+        <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>21.11 19:08 / 21.11 19:08</small></div>
       </div>
     </section>
     
@@ -248,8 +248,8 @@
     <pre>{
   &quot;ok&quot;: false,
   &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;timestamp&quot;: &quot;2026-11-22T17:18:09&quot;,
-  &quot;error&quot;: &quot;EcoFlow API error 8521: signature is wrong&quot;,
+  &quot;timestamp&quot;: &quot;2026-11-22T18:19:08&quot;,
+  &quot;error&quot;: &quot;[Errno 54] Connection reset by peer&quot;,
   &quot;history&quot;: [
     {
       &quot;ts&quot;: &quot;2026-11-20T21:20:56&quot;,
@@ -368,8 +368,8 @@
   ],
   &quot;telemetry&quot;: {
     &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 18,
-    &quot;from&quot;: &quot;2026-11-21T18:18:46&quot;,
+    &quot;sample_count&quot;: 17,
+    &quot;from&quot;: &quot;2026-11-21T19:08:28&quot;,
     &quot;to&quot;: &quot;2026-11-22T16:06:22&quot;,
     &quot;latest&quot;: {
       &quot;mode&quot;: &quot;idle&quot;,
@@ -391,11 +391,11 @@
       },
       &quot;frequency_min&quot;: {
         &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-11-21T18:18:46&quot;
+        &quot;ts&quot;: &quot;2026-11-21T19:08:28&quot;
       },
       &quot;frequency_max&quot;: {
         &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-11-21T18:18:46&quot;
+        &quot;ts&quot;: &quot;2026-11-21T19:08:28&quot;
       }
     },
     &quot;soc&quot;: {
@@ -405,7 +405,7 @@
       },
       &quot;max&quot;: {
         &quot;value&quot;: 80.0,
-        &quot;ts&quot;: &quot;2026-11-21T18:18:46&quot;
+        &quot;ts&quot;: &quot;2026-11-22T04:00:46&quot;
       }
     },
     &quot;power&quot;: {
@@ -423,16 +423,16 @@
       },
       &quot;charge_limit_w&quot;: 1300.0,
       &quot;max_input_pct_of_current_limit&quot;: 27,
-      &quot;input_wh_est&quot;: 55.0,
-      &quot;load_wh_est&quot;: 55.0
+      &quot;input_wh_est&quot;: 51.8,
+      &quot;load_wh_est&quot;: 51.8
     },
     &quot;modes&quot;: {
       &quot;charging_sec&quot;: 0,
       &quot;discharging_sec&quot;: 0,
-      &quot;idle_sec&quot;: 3060,
+      &quot;idle_sec&quot;: 2880,
       &quot;charging&quot;: &quot;0 сек&quot;,
       &quot;discharging&quot;: &quot;0 сек&quot;,
-      &quot;idle&quot;: &quot;51 хв&quot;,
+      &quot;idle&quot;: &quot;48 хв&quot;,
       &quot;last_charging&quot;: null,
       &quot;last_discharging&quot;: null
     }
