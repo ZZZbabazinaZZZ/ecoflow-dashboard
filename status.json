@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-24T00:24:47",
-  "grid": false,
-  "battery": {
-    "soc": 80,
-    "min": 10.0,
-    "max": 85.0,
-    "eta": "36:55"
-  },
-  "power": {
-    "in": 0,
-    "out": 58,
-    "acOut": 58,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 0.0,
-    "inputFreq": 0.0,
-    "outputVoltage": 230.791
-  },
-  "temps": {
-    "battery": 31,
-    "inverter": 67,
-    "mppt": 53
-  },
+  "timestamp": "2026-11-24T01:36:40",
+  "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
       "ts": "2026-11-23T22:48:34",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 24,
-    "from": "2026-11-23T00:25:47",
+    "sample_count": 23,
+    "from": "2026-11-23T02:35:57",
     "to": "2026-11-24T00:24:47",
     "latest": {
       "mode": "discharging",
@@ -167,11 +144,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-23T00:25:47"
+        "ts": "2026-11-23T02:35:57"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-23T00:25:47"
+        "ts": "2026-11-23T02:35:57"
       }
     },
     "soc": {
@@ -180,8 +157,8 @@
         "ts": "2026-11-23T18:29:44"
       },
       "max": {
-        "value": 86.0,
-        "ts": "2026-11-23T00:25:47"
+        "value": 85.0,
+        "ts": "2026-11-23T02:35:57"
       }
     },
     "power": {
@@ -199,16 +176,16 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 136,
-      "input_wh_est": 226.1,
-      "load_wh_est": 198.8
+      "input_wh_est": 224.7,
+      "load_wh_est": 197.4
     },
     "modes": {
       "charging_sec": 360,
       "discharging_sec": 1260,
-      "idle_sec": 2520,
+      "idle_sec": 2340,
       "charging": "6 хв",
       "discharging": "21 хв",
-      "idle": "42 хв",
+      "idle": "39 хв",
       "last_charging": {
         "ts": "2026-11-23T20:32:00",
         "grid": true,
