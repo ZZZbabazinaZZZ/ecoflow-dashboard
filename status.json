@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-26T07:28:25",
-  "grid": true,
-  "battery": {
-    "soc": 84,
-    "min": 10.0,
-    "max": 84.0,
-    "eta": "94:21"
-  },
-  "power": {
-    "in": 24,
-    "out": 24,
-    "acOut": 24,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 231.829,
-    "inputFreq": 50.0,
-    "outputVoltage": 232.633
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 33,
-    "mppt": 35
-  },
+  "timestamp": "2026-11-26T09:03:20",
+  "error": "_ssl.c:1011: The handshake operation timed out",
   "history": [
     {
       "ts": "2026-11-25T19:12:45",
