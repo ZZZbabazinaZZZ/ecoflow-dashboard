@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-26T01:18:05",
-  "grid": true,
-  "battery": {
-    "soc": 83,
-    "min": 10.0,
-    "max": 84.0,
-    "eta": "79:46"
-  },
-  "power": {
-    "in": 28,
-    "out": 28,
-    "acOut": 28,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 231.993,
-    "inputFreq": 50.0,
-    "outputVoltage": 232.806
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 32,
-    "mppt": 35
-  },
+  "timestamp": "2026-11-26T03:33:53",
+  "error": "EcoFlow API error 8521: signature is wrong",
   "history": [
     {
       "ts": "2026-11-25T19:12:45",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 17,
-    "from": "2026-11-25T01:49:12",
+    "sample_count": 16,
+    "from": "2026-11-25T05:08:21",
     "to": "2026-11-26T01:18:05",
     "latest": {
       "mode": "idle",
@@ -176,8 +153,8 @@
     },
     "soc": {
       "min": {
-        "value": 56.0,
-        "ts": "2026-11-25T01:49:12"
+        "value": 75.0,
+        "ts": "2026-11-25T07:25:40"
       },
       "max": {
         "value": 84.0,
@@ -186,28 +163,28 @@
     },
     "power": {
       "max_load": {
-        "value": 404.0,
-        "ts": "2026-11-25T01:49:12"
+        "value": 180.0,
+        "ts": "2026-11-25T18:11:38"
       },
       "max_input": {
         "value": 74.0,
         "ts": "2026-11-25T14:07:37"
       },
       "max_ac_output": {
-        "value": 404.0,
-        "ts": "2026-11-25T01:49:12"
+        "value": 180.0,
+        "ts": "2026-11-25T18:11:38"
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 6,
       "input_wh_est": 26.4,
-      "load_wh_est": 68.8
+      "load_wh_est": 48.6
     },
     "modes": {
       "charging_sec": 0,
-      "discharging_sec": 1080,
+      "discharging_sec": 900,
       "idle_sec": 1800,
       "charging": "0 сек",
-      "discharging": "18 хв",
+      "discharging": "15 хв",
       "idle": "30 хв",
       "last_charging": null,
       "last_discharging": {
