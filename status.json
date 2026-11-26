@@ -1,31 +1,8 @@
 {
-  "ok": true,
+  "ok": false,
   "source": "Cloud MQTT",
-  "device": "DELTA Pro",
-  "timestamp": "2026-11-26T11:05:38",
-  "grid": true,
-  "battery": {
-    "soc": 83,
-    "min": 10.0,
-    "max": 84.0,
-    "eta": "79:46"
-  },
-  "power": {
-    "in": 28,
-    "out": 28,
-    "acOut": 28,
-    "chargeLimit": 1300
-  },
-  "ac": {
-    "inputVoltage": 226.927,
-    "inputFreq": 50.0,
-    "outputVoltage": 227.719
-  },
-  "temps": {
-    "battery": 28,
-    "inverter": 32,
-    "mppt": 35
-  },
+  "timestamp": "2026-11-26T12:25:46",
+  "error": "_ssl.c:1011: The handshake operation timed out",
   "history": [
     {
       "ts": "2026-11-25T19:12:45",
@@ -144,8 +121,8 @@
   ],
   "telemetry": {
     "window": "24h",
-    "sample_count": 16,
-    "from": "2026-11-25T11:53:29",
+    "sample_count": 15,
+    "from": "2026-11-25T13:06:29",
     "to": "2026-11-26T11:05:38",
     "latest": {
       "mode": "idle",
@@ -177,7 +154,7 @@
     "soc": {
       "min": {
         "value": 79.0,
-        "ts": "2026-11-25T11:53:29"
+        "ts": "2026-11-25T18:11:38"
       },
       "max": {
         "value": 84.0,
@@ -200,14 +177,14 @@
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 6,
       "input_wh_est": 28.1,
-      "load_wh_est": 47.3
+      "load_wh_est": 42.2
     },
     "modes": {
       "charging_sec": 0,
-      "discharging_sec": 720,
+      "discharging_sec": 540,
       "idle_sec": 1980,
       "charging": "0 сек",
-      "discharging": "12 хв",
+      "discharging": "9 хв",
       "idle": "33 хв",
       "last_charging": null,
       "last_discharging": {
