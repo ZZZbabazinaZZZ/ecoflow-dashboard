@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="uk">
-<head>
+<head><script>window.STATIC_SNAPSHOT=true;</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="60">
-  <title>EcoFlow Snapshot</title>
+  <title>EcoFlow + MARSTEK · Моніторинг</title>
   <style>
     :root {
       color-scheme: dark;
@@ -16,8 +15,10 @@
       --muted: #9faab3;
       --green: #3ddc97;
       --red: #ff5d5d;
-      --cyan: #62d7e8;
       --amber: #f0b84a;
+      --cyan: #62d7e8;
+      --violet: #b69cff;
+      --blue: #7fb4ff;
     }
     * { box-sizing: border-box; }
     body {
@@ -28,36 +29,35 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       letter-spacing: 0;
     }
-    main { max-width: 1120px; margin: 0 auto; padding: 24px; }
+    main { max-width: 1180px; margin: 0 auto; padding: 24px; }
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding-bottom: 18px;
+      padding: 6px 0 20px;
       border-bottom: 1px solid var(--line);
     }
-    h1 { margin: 0; font-size: clamp(26px, 5vw, 44px); line-height: 1.05; }
-    h2 { margin: 0 0 12px; font-size: 20px; }
+    h1 { margin: 0; font-size: clamp(24px, 4vw, 42px); line-height: 1.05; }
     .sub { margin-top: 8px; color: var(--muted); font-size: 14px; }
     .status {
-      min-width: 146px;
+      min-width: 154px;
       display: inline-flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       border: 1px solid var(--line);
       background: var(--panel);
-      border-radius: 8px;
       padding: 10px 14px;
-      font-weight: 800;
+      border-radius: 8px;
+      font-weight: 700;
     }
-    .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); }
-    .online .dot { background: var(--green); box-shadow: 0 0 18px var(--green); }
-    .offline .dot { background: var(--red); box-shadow: 0 0 18px var(--red); }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 18px currentColor; }
+    .online .dot { background: var(--green); color: var(--green); }
+    .offline .dot { background: var(--red); color: var(--red); }
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.2fr .8fr;
       gap: 16px;
       margin-top: 18px;
     }
@@ -67,32 +67,98 @@
       border-radius: 8px;
       padding: 18px;
     }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(180px, 280px) 1fr;
+      gap: 20px;
+      align-items: center;
+      min-height: 330px;
+    }
+    .battery-wrap {
+      display: grid;
+      place-items: center;
+      min-width: 0;
+    }
     .battery {
       position: relative;
-      height: 26px;
-      background: #2c3338;
-      border-radius: 999px;
-      overflow: hidden;
-      margin-top: 14px;
+      width: min(100%, 250px);
+      aspect-ratio: 1 / 1.62;
+      border: 7px solid #dfe8ea;
+      border-radius: 18px;
+      padding: 10px;
+      background: #0b0d0f;
+      box-shadow: inset 0 0 0 1px #3f464b, 0 24px 70px rgba(0,0,0,.28);
     }
-    .fill { width: 83%; height: 100%; background: linear-gradient(90deg, var(--green), var(--cyan)); }
-    .cards {
+    .battery:before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 34%;
+      width: 32%;
+      height: 12px;
+      border-radius: 5px 5px 0 0;
+      background: #dfe8ea;
+    }
+    .fill {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 0%;
+      min-height: 5%;
+      border-radius: 9px;
+      background: linear-gradient(180deg, var(--green), #57d7d4);
+      transition: height .45s ease;
+    }
+    .battery.low .fill { background: linear-gradient(180deg, var(--red), var(--amber)); }
+    .soc {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: clamp(42px, 7vw, 64px);
+      font-weight: 850;
+      text-shadow: 0 2px 18px rgba(0,0,0,.62);
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .metric {
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 96px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .label { color: var(--muted); font-size: 13px; }
+    .value { font-size: clamp(25px, 4vw, 38px); font-weight: 820; line-height: 1.05; white-space: nowrap; }
+    .unit { color: var(--muted); font-size: .48em; font-weight: 700; margin-left: 4px; }
+    .strip {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
       margin-top: 16px;
     }
-    .card {
-      min-height: 104px;
-      background: var(--panel-2);
+    .mini {
+      min-height: 112px;
+      background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding: 15px;
     }
-    .daily-card { margin-top: 16px; }
+    .mini strong { display: block; margin-top: 8px; font-size: 24px; }
+    .daily-card {
+      margin-top: 16px;
+    }
+    .daily-card h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
     .daily-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -108,21 +174,40 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    .daily-item strong { font-size: 24px; line-height: 1.08; }
-    .daily-item small { color: var(--muted); line-height: 1.35; }
-    .label { color: var(--muted); font-size: 13px; }
-    .value { font-size: clamp(25px, 4vw, 36px); font-weight: 850; line-height: 1.05; white-space: nowrap; }
+    .daily-item strong {
+      font-size: 24px;
+      line-height: 1.08;
+    }
+    .daily-item small {
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .bar {
+      height: 9px;
+      border-radius: 999px;
+      background: #2c3338;
+      overflow: hidden;
+      margin-top: 13px;
+    }
+    .bar span { display: block; height: 100%; width: 0%; background: var(--cyan); transition: width .45s ease; }
+    .feed {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
     .row {
       display: flex;
       justify-content: space-between;
-      gap: 12px;
-      padding: 10px 0;
+      align-items: baseline;
+      gap: 16px;
+      padding: 12px 0;
       border-bottom: 1px solid var(--line);
     }
     .row:last-child { border-bottom: 0; }
     .row span:first-child { color: var(--muted); }
-    .row span:last-child { font-weight: 760; text-align: right; }
+    .row span:last-child { font-size: 18px; font-weight: 740; text-align: right; }
     .error {
+      display: none;
       margin-top: 16px;
       color: #ffe7e7;
       background: #3a1d22;
@@ -131,8 +216,27 @@
       padding: 12px 14px;
       overflow-wrap: anywhere;
     }
-    .history {
+    .history-card {
       margin-top: 16px;
+    }
+    .history-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+    .history-head h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .history-count {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .history-list {
+      display: grid;
     }
     .event {
       min-height: 68px;
@@ -156,312 +260,531 @@
     .event-meta { margin-top: 4px; color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
     .event-values { color: var(--text); font-weight: 780; text-align: right; white-space: nowrap; }
     .empty { color: var(--muted); padding: 10px 0 2px; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
-    th { color: var(--muted); }
-    td:first-child { color: var(--cyan); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-    details { margin-top: 16px; color: var(--muted); }
-    pre { overflow: auto; background: #0b0d0f; border: 1px solid var(--line); border-radius: 8px; padding: 12px; color: var(--text); }
-    @media (max-width: 760px) {
+    .raw-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .raw-head h2 { margin: 0; font-size: 20px; }
+    .raw-search {
+      width: min(100%, 320px);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #11161a;
+      color: var(--text);
+      padding: 10px 12px;
+      font: inherit;
+      outline: none;
+    }
+    .raw-search:focus { border-color: var(--cyan); }
+    .raw-table-wrap {
+      max-height: 420px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #151a1e;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    td:nth-child(1) {
+      color: var(--cyan);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      overflow-wrap: anywhere;
+    }
+    td:nth-child(2) {
+      font-weight: 720;
+      overflow-wrap: anywhere;
+    }
+    .muted { color: var(--muted); }
+    @media (max-width: 860px) {
       main { padding: 16px; }
       header { align-items: flex-start; flex-direction: column; }
-      .grid, .cards, .daily-grid { grid-template-columns: 1fr; }
-      .status { width: 100%; }
+      .grid, .hero { grid-template-columns: 1fr; }
+      .strip, .daily-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .battery { width: min(68vw, 220px); }
+      .raw-head { align-items: stretch; flex-direction: column; }
+      .raw-search { width: 100%; }
       .event { grid-template-columns: 14px 1fr; align-items: start; }
       .event-values { grid-column: 2; text-align: left; white-space: normal; }
     }
-  </style>
+    @media (max-width: 520px) {
+      .metrics, .strip, .daily-grid { grid-template-columns: 1fr; }
+      .status { width: 100%; }
+      .value { font-size: 30px; }
+    }
+  
+    [hidden] { display:none !important; }
+    .tabs { display:flex; gap:8px; flex-wrap:wrap; margin:18px 0; }
+    .tabs button { color:var(--text); background:var(--panel); border:1px solid var(--line); padding:12px 18px; border-radius:8px; cursor:pointer; font:inherit; }
+    .tabs button[aria-selected="true"] { border-color:var(--cyan); color:var(--cyan); }
+    .station-cards,.chart-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:16px 0; }
+    .station-cards h2 { margin:0 0 14px; font-size:21px; }
+    .station-soc { font-size:48px; font-weight:800; margin:12px 0; }
+    .station-status { color:var(--cyan); }
+    .station-status.stale,.stale-note { color:var(--amber); }
+    .temp-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:14px; }
+    .temperature { padding:14px; background:var(--panel-2); border:1px solid var(--line); border-radius:8px; }
+    .temperature strong { display:block; margin-top:8px; font-size:25px; }
+    .temperature.warm { border-color:var(--amber); }
+    .temperature.hot { border-color:var(--red); }
+    .chart-card { min-width:0; }
+    .chart-card h3 { margin:0 0 6px; }
+    .chart-card svg { display:block; width:100%; height:180px; }
+    .legend { font-size:12px; line-height:1.7; color:var(--muted); }
+    .table-scroll { overflow:auto; max-height:540px; }
+    .station-note { color:var(--muted); font-size:13px; line-height:1.5; margin:12px 0; }
+    #connectionBanner { margin:12px 0; }
+    @media(max-width:700px) { .station-cards,.chart-grid { grid-template-columns:1fr; } .tabs button { flex:1; padding:12px 8px; } }
+</style>
 </head>
 <body>
 <main>
   <header>
     <div>
-      <h1>EcoFlow Snapshot</h1>
-      <div class="sub">Cloud MQTT · generated 2026-11-26T23:16:48 · data 2026-11-26T23:16:48</div>
+      <h1>Енергія вдома</h1>
+      <div class="sub"><span id="source">...</span> · <span id="updated">очікування даних</span></div>
     </div>
-    <div class="status online"><span class="dot"></span><span>AC online</span></div>
+    <div id="state" class="status"><span class="dot"></span><span id="stateText">Підключення</span></div>
   </header>
+  <nav class="tabs" aria-label="Станції" role="tablist">
+    <button role="tab" aria-selected="true" aria-controls="overviewPanel" data-panel="overviewPanel">Загальна панель</button>
+    <button role="tab" aria-selected="false" aria-controls="ecoflowPanel" data-panel="ecoflowPanel">EcoFlow Delta Pro</button>
+    <button role="tab" aria-selected="false" aria-controls="marstekPanel" data-panel="marstekPanel">MARSTEK Venus E 3.0</button>
+  </nav>
+  <div id="connectionBanner" class="stale-note" role="status"></div>
+  <div id="overviewPanel" role="tabpanel">
+    <section>
+      <h2>Дві станції · 8,72 кВт·год</h2>
+      <div class="metrics">
+        <div class="metric"><span class="label">Загальний залишок енергії ≈</span><strong class="value" id="totalEnergy">—</strong></div>
+        <div class="metric"><span class="label">Сумарний баланс потужності</span><strong class="value" id="totalPower">—</strong></div>
+      </div>
+      <p class="station-note" id="totalNote">Очікування даних обох станцій.</p>
+    </section>
+    <div class="station-cards">
+      <section><h2>EcoFlow Delta Pro</h2><span class="station-status" id="ecoStatus">Очікування</span>
+        <div class="station-soc" id="ecoSoc">—</div><div id="ecoEnergy">—</div>
+        <div class="row"><span>Баланс потужності</span><span id="ecoPower">—</span></div>
+        <div class="row"><span>Найвища доступна температура</span><span id="ecoTemp">—</span></div>
+        <p class="station-note" id="ecoUpdated">Останнє успішне оновлення: —</p>
+      </section>
+      <section><h2>MARSTEK Venus E 3.0</h2><span class="station-status" id="marStatus">Очікування</span>
+        <div class="station-soc" id="marSoc">—</div><div id="marEnergy">—</div>
+        <div class="row"><span>Потужність батареї</span><span id="marPower">—</span></div>
+        <div class="row"><span>Найвища доступна температура</span><span id="marTemp">—</span></div>
+        <p class="station-note" id="marUpdated">Останнє успішне оновлення: —</p>
+      </section>
+    </div>
+    <p class="station-note">Енергія — оцінка за SOC та паспортною ємністю 3600 / 5120 Вт·год, без поправки на SOH і втрати. «+» потужності — заряджання, «−» — розряджання. У UPS баланс EcoFlow входу/виходу приблизний; сума не є споживанням будинку.</p>
+  </div>
+  <div id="ecoflowPanel" role="tabpanel" hidden>
+    <h2>EcoFlow Delta Pro</h2>
 
-  
 
   <div class="grid">
-    <section>
-      <h2>Battery</h2>
-      <div class="value">83%</div>
-      <div class="battery"><div class="fill"></div></div>
-      <div class="row"><span>ETA</span><span>111:41</span></div>
-      <div class="row"><span>SOC limits</span><span>10.0% - 84.0%</span></div>
-    </section>
-    <section>
-      <h2>AC</h2>
-      <div class="row"><span>Input voltage</span><span>230.4 V</span></div>
-      <div class="row"><span>Input frequency</span><span>50.0 Hz</span></div>
-      <div class="row"><span>Output voltage</span><span>229.6 V</span></div>
-    </section>
-  </div>
-
-  <div class="cards">
-    <div class="card"><span class="label">Input</span><span class="value">0 W</span></div>
-    <div class="card"><span class="label">Load</span><span class="value">0 W</span></div>
-    <div class="card"><span class="label">Battery temp</span><span class="value">27°C</span></div>
-    <div class="card"><span class="label">Inverter temp</span><span class="value">32°C</span></div>
-  </div>
-
-  
-    <section class="daily-card">
-      <h2>Останні 24 години</h2>
-      <div class="daily-grid">
-        <div class="daily-item"><span class="label">Напруга min / max</span><strong>223 V / 232 V</strong><small>26.11 18:35 / 26.11 01:18</small></div>
-        <div class="daily-item"><span class="label">SOC min / max</span><strong>82% / 84%</strong><small>26.11 18:35 / 26.11 06:01</small></div>
-        <div class="daily-item"><span class="label">Пік навантаження</span><strong>65 W</strong><small>26.11 10:04</small></div>
-        <div class="daily-item"><span class="label">Зарядний ліміт</span><strong>1300 W</strong><small>пік входу 65 W · 5% ліміту</small></div>
-        <div class="daily-item"><span class="label">Заряджання</span><strong>0 сек</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Розряджання</span><strong>0 сек</strong><small>--</small></div>
-        <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong>81 Wh / 81 Wh</strong><small>оцінка за sample-ами</small></div>
-        <div class="daily-item"><span class="label">Частота min / max</span><strong>50.0 Hz / 50.0 Hz</strong><small>25.11 23:49 / 25.11 23:49</small></div>
+    <section class="hero">
+      <div class="battery-wrap">
+        <div id="battery" class="battery">
+          <div id="fill" class="fill"></div>
+          <div class="soc"><span id="soc">--</span>%</div>
+        </div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="label">Вхід</div><div class="value"><span id="inW">--</span><span class="unit">W</span></div></div>
+        <div class="metric"><div class="label">Навантаження</div><div class="value"><span id="outW">--</span><span class="unit">W</span></div></div>
+        <div class="metric"><div class="label">AC вхід</div><div class="value"><span id="acInV">--</span><span class="unit">V</span></div></div>
+        <div class="metric"><div class="label">AC вихід</div><div class="value"><span id="acOutV">--</span><span class="unit">V</span></div></div>
       </div>
     </section>
-    
 
-  
-    <section class="history">
-      <h2>Останні події світла</h2>
-      <div class='event'><span class='event-dot power_on'></span><div><div class='event-title'>Світло з&#x27;явилось</div><div class='event-meta'>2026-11-25T19:12:45 · було без світла 3 год 03 хв</div></div><div class='event-values'>217.1 V<br>84% · 73 W</div></div>
-<div class='event'><span class='event-dot power_off'></span><div><div class='event-title'>Світло зникло</div><div class='event-meta'>2026-11-25T16:09:20</div></div><div class='event-values'>0.0 V<br>84% · 65 W</div></div>
-<div class='event'><span class='event-dot power_on'></span><div><div class='event-title'>Світло з&#x27;явилось</div><div class='event-meta'>2026-11-25T13:06:29 · було без світла 2 год 02 хв</div></div><div class='event-values'>221.3 V<br>84% · 36 W</div></div>
-<div class='event'><span class='event-dot power_off'></span><div><div class='event-title'>Світло зникло</div><div class='event-meta'>2026-11-25T11:04:15</div></div><div class='event-values'>0.0 V<br>82% · 60 W</div></div>
-<div class='event'><span class='event-dot power_on'></span><div><div class='event-title'>Світло з&#x27;явилось</div><div class='event-meta'>2026-11-25T05:08:21 · було без світла 4 год 20 хв</div></div><div class='event-values'>227.6 V<br>76% · 60 W</div></div>
-<div class='event'><span class='event-dot power_off'></span><div><div class='event-title'>Світло зникло</div><div class='event-meta'>2026-11-25T00:48:03</div></div><div class='event-values'>0.0 V<br>67% · 390 W</div></div>
-<div class='event'><span class='event-dot power_on'></span><div><div class='event-title'>Світло з&#x27;явилось</div><div class='event-meta'>2026-11-24T18:41:37 · було без світла 5 год 09 хв</div></div><div class='event-values'>214.4 V<br>62% · 47 W</div></div>
-<div class='event'><span class='event-dot power_off'></span><div><div class='event-title'>Світло зникло</div><div class='event-meta'>2026-11-24T13:32:00</div></div><div class='event-values'>0.0 V<br>81% · 59 W</div></div>
-<div class='event'><span class='event-dot power_on'></span><div><div class='event-title'>Світло з&#x27;явилось</div><div class='event-meta'>2026-11-24T02:57:23 · було без світла 4 год 08 хв</div></div><div class='event-values'>225.7 V<br>84% · 23 W</div></div>
-<div class='event'><span class='event-dot power_off'></span><div><div class='event-title'>Світло зникло</div><div class='event-meta'>2026-11-23T22:48:34</div></div><div class='event-values'>0.0 V<br>83% · 59 W</div></div>
-<div class='event'><span class='event-dot power_on'></span><div><div class='event-title'>Світло з&#x27;явилось</div><div class='event-meta'>2026-11-23T19:30:53 · було без світла 3 год 03 хв</div></div><div class='event-values'>222.4 V<br>54% · 59 W</div></div>
-<div class='event'><span class='event-dot power_off'></span><div><div class='event-title'>Світло зникло</div><div class='event-meta'>2026-11-23T16:27:39</div></div><div class='event-values'>0.0 V<br>77% · 510 W</div></div>
+    <section class="feed">
+      <div class="row"><span>Мережа</span><span id="gridState">--</span></div>
+      <div class="row"><span>Частота</span><span><span id="freq">--</span> Hz</span></div>
+      <div class="row"><span>ETA від батареї</span><span id="eta">--</span></div>
+      <div class="row"><span>Ліміти SOC</span><span><span id="socMin">--</span>–<span id="socMax">--</span>%</span></div>
+      <div class="row"><span>Ліміт заряджання</span><span><span id="chargeLimit">--</span> W</span></div>
+      <div class="row"><span>Оновлення</span><span id="age">--</span></div>
     </section>
-    
+  </div>
 
-  
+  <div class="strip">
+    <div class="mini"><span class="label">Батарея</span><strong><span id="batTemp">--</span>°C</strong><div class="bar"><span id="batTempBar"></span></div></div>
+    <div class="mini"><span class="label">Інвертор</span><strong><span id="invTemp">--</span>°C</strong><div class="bar"><span id="invTempBar"></span></div></div>
+    <div class="mini"><span class="label">MPPT</span><strong><span id="mpptTemp">--</span>°C</strong><div class="bar"><span id="mpptTempBar"></span></div></div>
+    <div class="mini"><span class="label">AC потужність</span><strong><span id="acOutW">--</span> W</strong><div class="bar"><span id="powerBar"></span></div></div>
+  </div>
 
-  <details>
-    <summary>Snapshot JSON</summary>
-    <pre>{
-  &quot;ok&quot;: true,
-  &quot;source&quot;: &quot;Cloud MQTT&quot;,
-  &quot;device&quot;: &quot;DELTA Pro&quot;,
-  &quot;timestamp&quot;: &quot;2026-11-26T23:16:48&quot;,
-  &quot;grid&quot;: true,
-  &quot;battery&quot;: {
-    &quot;soc&quot;: 83,
-    &quot;min&quot;: 10.0,
-    &quot;max&quot;: 84.0,
-    &quot;eta&quot;: &quot;111:41&quot;
-  },
-  &quot;power&quot;: {
-    &quot;in&quot;: 0,
-    &quot;out&quot;: 0,
-    &quot;acOut&quot;: 0,
-    &quot;chargeLimit&quot;: 1300
-  },
-  &quot;ac&quot;: {
-    &quot;inputVoltage&quot;: 230.45,
-    &quot;inputFreq&quot;: 50.0,
-    &quot;outputVoltage&quot;: 229.575
-  },
-  &quot;temps&quot;: {
-    &quot;battery&quot;: 27,
-    &quot;inverter&quot;: 32,
-    &quot;mppt&quot;: 34
-  },
-  &quot;history&quot;: [
-    {
-      &quot;ts&quot;: &quot;2026-11-25T19:12:45&quot;,
-      &quot;type&quot;: &quot;power_on&quot;,
-      &quot;title&quot;: &quot;Світло з&#x27;явилось&quot;,
-      &quot;ac_v&quot;: 217.067,
-      &quot;freq&quot;: 50.0,
-      &quot;soc&quot;: 84,
-      &quot;load_w&quot;: 73,
-      &quot;duration&quot;: &quot;3 год 03 хв&quot;
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-25T16:09:20&quot;,
-      &quot;type&quot;: &quot;power_off&quot;,
-      &quot;title&quot;: &quot;Світло зникло&quot;,
-      &quot;ac_v&quot;: 0.0,
-      &quot;freq&quot;: 0.0,
-      &quot;soc&quot;: 84,
-      &quot;load_w&quot;: 65
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-25T13:06:29&quot;,
-      &quot;type&quot;: &quot;power_on&quot;,
-      &quot;title&quot;: &quot;Світло з&#x27;явилось&quot;,
-      &quot;ac_v&quot;: 221.299,
-      &quot;freq&quot;: 50.0,
-      &quot;soc&quot;: 84,
-      &quot;load_w&quot;: 36,
-      &quot;duration&quot;: &quot;2 год 02 хв&quot;
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-25T11:04:15&quot;,
-      &quot;type&quot;: &quot;power_off&quot;,
-      &quot;title&quot;: &quot;Світло зникло&quot;,
-      &quot;ac_v&quot;: 0.0,
-      &quot;freq&quot;: 0.0,
-      &quot;soc&quot;: 82,
-      &quot;load_w&quot;: 60
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-25T05:08:21&quot;,
-      &quot;type&quot;: &quot;power_on&quot;,
-      &quot;title&quot;: &quot;Світло з&#x27;явилось&quot;,
-      &quot;ac_v&quot;: 227.552,
-      &quot;freq&quot;: 50.0,
-      &quot;soc&quot;: 76,
-      &quot;load_w&quot;: 60,
-      &quot;duration&quot;: &quot;4 год 20 хв&quot;
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-25T00:48:03&quot;,
-      &quot;type&quot;: &quot;power_off&quot;,
-      &quot;title&quot;: &quot;Світло зникло&quot;,
-      &quot;ac_v&quot;: 0.0,
-      &quot;freq&quot;: 0.0,
-      &quot;soc&quot;: 67,
-      &quot;load_w&quot;: 390
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-24T18:41:37&quot;,
-      &quot;type&quot;: &quot;power_on&quot;,
-      &quot;title&quot;: &quot;Світло з&#x27;явилось&quot;,
-      &quot;ac_v&quot;: 214.37,
-      &quot;freq&quot;: 50.0,
-      &quot;soc&quot;: 62,
-      &quot;load_w&quot;: 47,
-      &quot;duration&quot;: &quot;5 год 09 хв&quot;
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-24T13:32:00&quot;,
-      &quot;type&quot;: &quot;power_off&quot;,
-      &quot;title&quot;: &quot;Світло зникло&quot;,
-      &quot;ac_v&quot;: 0.0,
-      &quot;freq&quot;: 0.0,
-      &quot;soc&quot;: 81,
-      &quot;load_w&quot;: 59
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-24T02:57:23&quot;,
-      &quot;type&quot;: &quot;power_on&quot;,
-      &quot;title&quot;: &quot;Світло з&#x27;явилось&quot;,
-      &quot;ac_v&quot;: 225.71,
-      &quot;freq&quot;: 50.0,
-      &quot;soc&quot;: 84,
-      &quot;load_w&quot;: 23,
-      &quot;duration&quot;: &quot;4 год 08 хв&quot;
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-23T22:48:34&quot;,
-      &quot;type&quot;: &quot;power_off&quot;,
-      &quot;title&quot;: &quot;Світло зникло&quot;,
-      &quot;ac_v&quot;: 0.0,
-      &quot;freq&quot;: 0.0,
-      &quot;soc&quot;: 83,
-      &quot;load_w&quot;: 59
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-23T19:30:53&quot;,
-      &quot;type&quot;: &quot;power_on&quot;,
-      &quot;title&quot;: &quot;Світло з&#x27;явилось&quot;,
-      &quot;ac_v&quot;: 222.364,
-      &quot;freq&quot;: 50.0,
-      &quot;soc&quot;: 54,
-      &quot;load_w&quot;: 59,
-      &quot;duration&quot;: &quot;3 год 03 хв&quot;
-    },
-    {
-      &quot;ts&quot;: &quot;2026-11-23T16:27:39&quot;,
-      &quot;type&quot;: &quot;power_off&quot;,
-      &quot;title&quot;: &quot;Світло зникло&quot;,
-      &quot;ac_v&quot;: 0.0,
-      &quot;freq&quot;: 0.0,
-      &quot;soc&quot;: 77,
-      &quot;load_w&quot;: 510
-    }
-  ],
-  &quot;telemetry&quot;: {
-    &quot;window&quot;: &quot;24h&quot;,
-    &quot;sample_count&quot;: 80,
-    &quot;from&quot;: &quot;2026-11-25T23:49:20&quot;,
-    &quot;to&quot;: &quot;2026-11-26T23:16:42&quot;,
-    &quot;latest&quot;: {
-      &quot;mode&quot;: &quot;idle&quot;,
-      &quot;grid&quot;: true,
-      &quot;soc&quot;: 83.0,
-      &quot;ac_v&quot;: 230.551,
-      &quot;in_w&quot;: 0.0,
-      &quot;out_w&quot;: 0.0,
-      &quot;charge_limit_w&quot;: 1300.0
-    },
-    &quot;voltage&quot;: {
-      &quot;min&quot;: {
-        &quot;value&quot;: 222.9,
-        &quot;ts&quot;: &quot;2026-11-26T18:35:58&quot;
-      },
-      &quot;max&quot;: {
-        &quot;value&quot;: 232.0,
-        &quot;ts&quot;: &quot;2026-11-26T01:18:05&quot;
-      },
-      &quot;frequency_min&quot;: {
-        &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-11-25T23:49:20&quot;
-      },
-      &quot;frequency_max&quot;: {
-        &quot;value&quot;: 50.0,
-        &quot;ts&quot;: &quot;2026-11-25T23:49:20&quot;
-      }
-    },
-    &quot;soc&quot;: {
-      &quot;min&quot;: {
-        &quot;value&quot;: 82.0,
-        &quot;ts&quot;: &quot;2026-11-26T18:35:58&quot;
-      },
-      &quot;max&quot;: {
-        &quot;value&quot;: 84.0,
-        &quot;ts&quot;: &quot;2026-11-26T06:01:39&quot;
-      }
-    },
-    &quot;power&quot;: {
-      &quot;max_load&quot;: {
-        &quot;value&quot;: 65.0,
-        &quot;ts&quot;: &quot;2026-11-26T10:04:30&quot;
-      },
-      &quot;max_input&quot;: {
-        &quot;value&quot;: 65.0,
-        &quot;ts&quot;: &quot;2026-11-26T10:04:30&quot;
-      },
-      &quot;max_ac_output&quot;: {
-        &quot;value&quot;: 65.0,
-        &quot;ts&quot;: &quot;2026-11-26T10:04:30&quot;
-      },
-      &quot;charge_limit_w&quot;: 1300.0,
-      &quot;max_input_pct_of_current_limit&quot;: 5,
-      &quot;input_wh_est&quot;: 81.3,
-      &quot;load_wh_est&quot;: 81.3
-    },
-    &quot;modes&quot;: {
-      &quot;charging_sec&quot;: 0,
-      &quot;discharging_sec&quot;: 0,
-      &quot;idle_sec&quot;: 7706,
-      &quot;charging&quot;: &quot;0 сек&quot;,
-      &quot;discharging&quot;: &quot;0 сек&quot;,
-      &quot;idle&quot;: &quot;2 год 08 хв&quot;,
-      &quot;last_charging&quot;: null,
-      &quot;last_discharging&quot;: null
-    }
-  }
-}</pre>
-  </details>
+  <section class="daily-card">
+    <h2>Останні 24 години</h2>
+    <div class="daily-grid">
+      <div class="daily-item"><span class="label">Напруга min / max</span><strong id="dailyVoltage">--</strong><small id="dailyVoltageTime">--</small></div>
+      <div class="daily-item"><span class="label">SOC min / max</span><strong id="dailySoc">--</strong><small id="dailySocTime">--</small></div>
+      <div class="daily-item"><span class="label">Пік навантаження</span><strong id="dailyLoad">--</strong><small id="dailyLoadTime">--</small></div>
+      <div class="daily-item"><span class="label">Зарядний ліміт</span><strong id="dailyChargeLimit">--</strong><small id="dailyChargeLimitInfo">--</small></div>
+      <div class="daily-item"><span class="label">Заряджання</span><strong id="dailyCharging">--</strong><small id="dailyLastCharging">--</small></div>
+      <div class="daily-item"><span class="label">Розряджання</span><strong id="dailyDischarging">--</strong><small id="dailyLastDischarging">--</small></div>
+      <div class="daily-item"><span class="label">Енергія вхід / вихід</span><strong id="dailyEnergy">--</strong><small>оцінка за sample-ами</small></div>
+      <div class="daily-item"><span class="label">Частота min / max</span><strong id="dailyFreq">--</strong><small id="dailyFreqTime">--</small></div>
+    </div>
+  </section>
+
+  <section class="history-card">
+    <div class="history-head">
+      <h2>Останні події світла</h2>
+      <span id="historyCount" class="history-count">0 подій</span>
+    </div>
+    <div id="historyRows" class="history-list">
+      <div class="empty">Поки що немає зафіксованих перемикань.</div>
+    </div>
+  </section>
+
+  <section style="margin-top:16px">
+    <div class="raw-head">
+      <h2>MQTT params</h2>
+      <input id="rawSearch" class="raw-search" placeholder="Пошук параметра" autocomplete="off">
+    </div>
+    <div class="raw-table-wrap">
+      <table>
+        <thead><tr><th>Параметр</th><th>Значення</th></tr></thead>
+        <tbody id="rawRows"><tr><td class="muted" colspan="2">Очікування даних</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div id="error" class="error"></div>
+
+    <div id="ecoCharts" class="chart-grid"></div>
+  </div>
+  <div id="marstekPanel" role="tabpanel" hidden>
+    <section>
+      <h2>MARSTEK Venus E 3.0 · UPS</h2>
+      <p id="marDetailStatus" class="station-note">Очікування Modbus TCP</p>
+      <div class="metrics" id="marMetrics"></div>
+      <p class="station-note">UPS — заданий користувачем режим; монітор його не змінює. Наявність мережі оцінюється окремо за напругою входу, а не за напругою інвертора.</p>
+    </section>
+    <section style="margin-top:16px"><h2>Температури</h2><div class="temp-list" id="marTemps"></div>
+      <p class="station-note">Позначки ≥45 °C / ≥60 °C — лише візуальні орієнтири, не межі захисту виробника. Температура корпусу окремо не вимірюється.</p>
+    </section>
+    <div id="marCharts" class="chart-grid"></div>
+    <section><h2>Комірки батареї</h2><p id="cellSpread" class="station-note">—</p>
+      <div class="table-scroll"><table><thead><tr><th>Комірка</th><th>Напруга</th><th>Дані</th></tr></thead><tbody id="cellRows"></tbody></table></div>
+    </section>
+    <section style="margin-top:16px"><h2>Діагностика та всі доступні поля</h2>
+      <p id="marLimitations" class="station-note"></p>
+      <div class="table-scroll"><table><thead><tr><th>Показник / регістр</th><th>Значення</th><th>Статус / пояснення</th></tr></thead><tbody id="sensorRows"></tbody></table></div>
+    </section>
+  </div>
 </main>
-</body>
+
+<script>
+const $ = id => document.getElementById(id);
+let lastRaw = {};
+const numeric = n => n !== null && n !== undefined && n !== "" && Number.isFinite(Number(n));
+const fmt = n => numeric(n) ? Math.round(Number(n)) : "--";
+const fmt1 = n => numeric(n) ? Number(n).toFixed(1) : "--";
+const pct = n => `${Math.max(0, Math.min(100, Number(n) || 0))}%`;
+const fmtUnit = (value, unit) => numeric(value) ? `${Math.round(Number(value))}${unit}` : `--${unit}`;
+
+function tempBar(value) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return "0%";
+  return pct((n / 75) * 100);
+}
+
+function setOnline(ok, grid) {
+  const state = $("state");
+  state.className = `status ${ok ? "online" : "offline"}`;
+  $("stateText").textContent = ok ? (grid ? "AC online" : "Батарея") : "Помилка";
+}
+
+function updateEcoFlow(data) {
+  $("source").textContent = data.source || "EcoFlow";
+  $("updated").textContent = data.timestamp ? new Date(data.timestamp).toLocaleString("uk-UA") : "немає даних";
+  if (!data.ok) {
+    setOnline(false, false);
+    $("error").style.display = "block";
+    $("error").textContent = data.error || "Немає даних";
+    for (const id of ['soc','inW','outW','acInV','acOutV','freq','eta','socMin','socMax','chargeLimit','batTemp','invTemp','mpptTemp','acOutW','gridState']) $(id).textContent = '--';
+    for (const id of ['fill','batTempBar','invTempBar','mpptTempBar','powerBar']) $(id).style[id === 'fill' ? 'height' : 'width'] = '0%';
+    $("age").textContent = 'дані недоступні / застарілі';
+    return;
+  }
+  $("error").style.display = "none";
+  setOnline(true, data.grid);
+
+  const soc = data.battery.soc;
+  $("soc").textContent = fmt(soc);
+  $("fill").style.height = pct(soc);
+  $("battery").classList.toggle("low", soc < 25);
+
+  $("inW").textContent = fmt(data.power.in);
+  $("outW").textContent = fmt(data.power.out);
+  $("acInV").textContent = fmt(data.ac.inputVoltage);
+  $("acOutV").textContent = fmt(data.ac.outputVoltage);
+  $("freq").textContent = fmt1(data.ac.inputFreq);
+  $("eta").textContent = data.battery.eta || "--";
+  $("socMin").textContent = fmt(data.battery.min);
+  $("socMax").textContent = fmt(data.battery.max);
+  $("chargeLimit").textContent = data.power.chargeLimit ? fmt(data.power.chargeLimit) : "--";
+  $("gridState").textContent = data.grid == null ? '--' : data.grid ? "Є мережа" : "Від батареї";
+  $("age").textContent = data.last_success ? `${Math.round(Date.now()/1000-data.last_success)} с тому` : '--';
+
+  $("batTemp").textContent = data.temps.battery ?? "--";
+  $("invTemp").textContent = data.temps.inverter ?? "--";
+  $("mpptTemp").textContent = data.temps.mppt ?? "--";
+  $("acOutW").textContent = fmt(data.power.acOut);
+  $("batTempBar").style.width = tempBar(data.temps.battery);
+  $("invTempBar").style.width = tempBar(data.temps.inverter);
+  $("mpptTempBar").style.width = tempBar(data.temps.mppt);
+  $("powerBar").style.width = pct((Number(data.power.acOut) / 3600) * 100);
+  renderDaily(data.telemetry || {});
+  renderHistory(data.history || []);
+  lastRaw = data.raw || {};
+  renderRaw();
+}
+
+function renderDaily(telemetry) {
+  const voltageMin = telemetry.voltage?.min;
+  const voltageMax = telemetry.voltage?.max;
+  const freqMin = telemetry.voltage?.frequency_min;
+  const freqMax = telemetry.voltage?.frequency_max;
+  const socMin = telemetry.soc?.min;
+  const socMax = telemetry.soc?.max;
+  const maxLoad = telemetry.power?.max_load;
+  const maxInput = telemetry.power?.max_input;
+  const chargeLimit = telemetry.power?.charge_limit_w;
+  const inputPct = telemetry.power?.max_input_pct_of_current_limit;
+  const charging = telemetry.modes?.charging || "--";
+  const discharging = telemetry.modes?.discharging || "--";
+  const lastCharging = telemetry.modes?.last_charging;
+  const lastDischarging = telemetry.modes?.last_discharging;
+
+  $("dailyVoltage").textContent = `${extremeValue(voltageMin, " V")} / ${extremeValue(voltageMax, " V")}`;
+  $("dailyVoltageTime").textContent = `${extremeTime(voltageMin)} / ${extremeTime(voltageMax)}`;
+  $("dailySoc").textContent = `${extremeValue(socMin, "%")} / ${extremeValue(socMax, "%")}`;
+  $("dailySocTime").textContent = `${extremeTime(socMin)} / ${extremeTime(socMax)}`;
+  $("dailyLoad").textContent = extremeValue(maxLoad, " W");
+  $("dailyLoadTime").textContent = extremeTime(maxLoad);
+  $("dailyChargeLimit").textContent = Number(chargeLimit) > 0 ? `${fmt(chargeLimit)} W` : "--";
+  $("dailyChargeLimitInfo").textContent = maxInput
+    ? `пік входу ${extremeValue(maxInput, " W")}${Number.isFinite(Number(inputPct)) ? ` · ${inputPct}% ліміту` : ""}`
+    : "--";
+  $("dailyCharging").textContent = charging;
+  $("dailyLastCharging").textContent = lastCharging ? `останнє ${formatEventTime(lastCharging.ts)} · ${fmtUnit(lastCharging.in_w, " W")}` : "--";
+  $("dailyDischarging").textContent = discharging;
+  $("dailyLastDischarging").textContent = lastDischarging ? `останнє ${formatEventTime(lastDischarging.ts)} · ${fmtUnit(lastDischarging.out_w, " W")}` : "--";
+  $("dailyEnergy").textContent = `${fmtWh(telemetry.power?.input_wh_est)} / ${fmtWh(telemetry.power?.load_wh_est)}`;
+  $("dailyFreq").textContent = `${extremeValue(freqMin, " Hz", 1)} / ${extremeValue(freqMax, " Hz", 1)}`;
+  $("dailyFreqTime").textContent = `${extremeTime(freqMin)} / ${extremeTime(freqMax)}`;
+}
+
+function extremeValue(item, unit, digits = 0) {
+  if (!item || !numeric(item.value)) return `--${unit}`;
+  return `${Number(item.value).toFixed(digits)}${unit}`;
+}
+
+function extremeTime(item) {
+  return item?.ts ? formatEventTime(item.ts) : "--";
+}
+
+function fmtWh(value) {
+  if (!numeric(value)) return "--";
+  const n = Number(value);
+  if (!Number.isFinite(n)) return "--";
+  return n >= 1000 ? `${(n / 1000).toFixed(1)} kWh` : `${Math.round(n)} Wh`;
+}
+
+function renderHistory(events) {
+  const cleanEvents = Array.isArray(events) ? events.filter(event => event && typeof event === "object") : [];
+  $("historyCount").textContent = `${cleanEvents.length} ${eventWord(cleanEvents.length)}`;
+  $("historyRows").innerHTML = cleanEvents.length
+    ? cleanEvents.map(renderEvent).join("")
+    : `<div class="empty">Поки що немає зафіксованих перемикань.</div>`;
+}
+
+function renderEvent(event) {
+  const duration = event.duration ? ` · було без світла ${escapeHtml(String(event.duration))}` : "";
+  return `
+    <div class="event">
+      <span class="event-dot ${escapeHtml(String(event.type || ""))}"></span>
+      <div>
+        <div class="event-title">${escapeHtml(String(event.title || "Подія"))}</div>
+        <div class="event-meta">${escapeHtml(formatEventTime(event.ts))}${duration}</div>
+      </div>
+      <div class="event-values">
+        ${escapeHtml(fmtUnit(event.ac_v, " V"))}<br>
+        ${escapeHtml(fmtUnit(event.soc, "%"))} · ${escapeHtml(fmtUnit(event.load_w, " W"))}
+      </div>
+    </div>`;
+}
+
+function formatEventTime(value) {
+  if (!value) return "--";
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? String(value) : date.toLocaleString("uk-UA");
+}
+
+function eventWord(count) {
+  if (count === 1) return "подія";
+  if (count >= 2 && count <= 4) return "події";
+  return "подій";
+}
+
+function renderRaw() {
+  const q = ($("rawSearch").value || "").trim().toLowerCase();
+  const entries = Object.entries(lastRaw)
+    .filter(([key, value]) => !q || key.toLowerCase().includes(q) || String(value).toLowerCase().includes(q))
+    .sort(([a], [b]) => a.localeCompare(b));
+  $("rawRows").innerHTML = entries.length
+    ? entries.map(([key, value]) => `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(String(value))}</td></tr>`).join("")
+    : `<tr><td class="muted" colspan="2">Нічого не знайдено</td></tr>`;
+}
+
+function escapeHtml(value) {
+  return value.replace(/[&<>"']/g, ch => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;"
+  })[ch]);
+}
+
+$("rawSearch").addEventListener("input", renderRaw);
+
+const events = {};
+events.onmessage = event => update(JSON.parse(event.data));
+events.onerror = () => {
+  setOnline(false, false);
+  $("error").style.display = "block";
+  $("error").textContent = "Втрачено з'єднання з dashboard server";
+};
+</script>
+<script>
+let latestStations = null;
+let lastEventAt = 0;
+let chartHistory = {ecoflow:[], marstek:[]};
+const unitValue = (v, unit='', digits=1) => numeric(v) ? `${Number(v).toLocaleString('uk-UA',{maximumFractionDigits:digits})} ${unit}` : '—';
+const modes = {charging:'Заряджання',discharging:'Розряджання',idle:'Очікування',unknown:'Стан невідомий'};
+const temperatureFields = {internal_temp:'Внутрішній датчик',mos1_temp:'MOS1',mos2_temp:'MOS2',bms1_temp:'BMS 1',bms2_temp:'BMS 2',cell1_temp:'Комірки, датчик 1',cell_max_temp:'Комірки: максимум',cell_min_temp:'Комірки: мінімум',inverter_temp:'Інвертор (окремий датчик)'};
+const escape = value => escapeHtml(String(value ?? ''));
+function updatedText(station) {
+  return 'Останні успішні дані: ' + (station.last_success ? new Date(station.last_success*1000).toLocaleString('uk-UA') : 'ще не отримано');
+}
+function freshStation(station, maxAge) {
+  return !!station?.ok && !station.stale && numeric(station.last_success) && Date.now()/1000-station.last_success < maxAge;
+}
+function renderStations(data) {
+  const e = data.stations?.ecoflow || {};
+  const m = data.stations?.marstek || {};
+  const ef = freshStation(e, e.stale_after || 95), mf = freshStation(m,95);
+  $('state').className = `status ${ef&&mf?'online':'offline'}`;
+  $('stateText').textContent = `${Number(ef)+Number(mf)} / 2 станції`;
+  $('source').textContent = 'EcoFlow MQTT · MARSTEK Modbus TCP';
+  const v = m.values || {};
+  for (const [prefix, station, fresh, soc, power, temps] of [
+    ['eco',e,ef,e.battery?.soc,e.net_power,Object.values(e.temps||{})],
+    ['mar',m,mf,v.soc,v.battery_power,Object.keys(temperatureFields).map(k=>v[k])]]) {
+    $(prefix+'Status').textContent = fresh ? modes[station.mode] || '—' : 'Немає актуальних даних';
+    $(prefix+'Status').classList.toggle('stale',!fresh);
+    $(prefix+'Soc').textContent = fresh ? unitValue(soc,'%') : '—';
+    $(prefix+'Power').textContent = fresh ? unitValue(power,'Вт') : '—';
+    $(prefix+'Energy').textContent = fresh ? '≈ '+unitValue(station.remaining_wh_estimate,'Вт·год',0) : '—';
+    const measured = temps.filter(numeric).map(Number);
+    $(prefix+'Temp').textContent = fresh && measured.length ? unitValue(Math.max(...measured),'°C') : '—';
+    $(prefix+'Updated').textContent = updatedText(station);
+  }
+  $('totalEnergy').textContent = ef && mf && numeric(data.combined?.remaining_wh_estimate) ? unitValue(data.combined.remaining_wh_estimate/1000,'кВт·год',2) : '—';
+  $('totalPower').textContent = ef && mf ? unitValue(data.combined?.net_power_w,'Вт',0) : '—';
+  $('totalNote').textContent = ef && mf ? 'Сума лише доступних вимірів обох станцій; + заряд / − розряд.' : 'Повна сума недоступна: потрібні актуальні дані обох станцій.';
+  $('marDetailStatus').textContent = `${updatedText(m)} · ${mf ? 'Modbus TCP / FC03 · Unit '+m.unit_id+' · '+modes[m.mode] : (m.error || 'Очікування або застарілі дані')} · інтервал ≥30 с`;
+  const present = mf && typeof m.grid_present_estimate === 'boolean' ? (m.grid_present_estimate ? 'Є мережа (оцінка)' : 'Мережа відсутня (оцінка)') : '—';
+  const metrics = [['SOC',v.soc,'%'],['SOH',null,'%'],['Залишок енергії ≈',m.remaining_wh_estimate,'Вт·год'],['Заряджання',m.charge_power,'Вт'],['Розряджання',m.discharge_power,'Вт'],['Резервний вихід',v.backup_power,'Вт'],['Напруга батареї',v.battery_voltage,'V'],['Струм батареї',v.battery_current,'A'],['AC вхід (V148)',v.grid_voltage,'V'],['AC резервний вихід',v.backup_voltage,'V'],['Частота AC',v.ac_frequency,'Hz'],['Цикли',v.cycles,'']];
+  $('marMetrics').innerHTML = metrics.map(([label,n,u])=>`<div class="metric"><span class="label">${escape(label)}</span><strong>${mf?unitValue(n,u):'—'}</strong></div>`).join('')+`<div class="metric"><span class="label">Електромережа</span><strong>${present}</strong></div>`;
+  $('marTemps').innerHTML = Object.entries(temperatureFields).map(([key,label])=>{
+    const n = mf ? v[key] : null;
+    return `<div class="temperature ${numeric(n)&&n>=60?'hot':numeric(n)&&n>=45?'warm':''}"><span class="label">${label}</span><strong>${unitValue(n,'°C')}</strong></div>`;
+  }).join('');
+  $('cellRows').innerHTML = Array.from({length:16},(_,i)=>`<tr><td>${i+1}</td><td>${mf?unitValue(v['cell_'+(i+1)],'V',3):'—'}</td><td>${mf&&numeric(v['cell_'+(i+1)])?'Отримано':'Немає актуального виміру'}</td></tr>`).join('');
+  $('cellSpread').textContent = `Min ${mf?unitValue(v.cell_min_voltage,'V',3):'—'} · Max ${mf?unitValue(v.cell_max_voltage,'V',3):'—'} · Δ ${mf?unitValue(m.cell_delta_mv,'mV',1):'—'}`;
+  $('marLimitations').textContent = Object.values(m.unmapped||{}).join('. ') + '. Сирі коди помилок не мають підтвердженої розшифровки для V148.';
+  const entries = Object.entries(m.sensors||{});
+  $('sensorRows').innerHTML = entries.length ? entries.map(([key,s])=>`<tr><td>${escape(s.label)}<br><small>${s.address} · ${s.signed?'int':'uint'}${s.count*16} × ${s.scale}</small></td><td>${mf?unitValue(v[key],s.unit,3):'—'}</td><td>${escape(m.errors?.[key] || (!mf ? 'Застаріло / недоступно' : s.note || 'Прочитано'))}<br><small>raw: ${escape(JSON.stringify(s.raw))}</small></td></tr>`).join('') : '<tr><td colspan="3">Жодного регістра ще не прочитано. Доступність датчиків не підтверджена.</td></tr>';
+  for (const [key,error] of Object.entries(m.errors||{})) {
+    if (!m.sensors?.[key]) $('sensorRows').insertAdjacentHTML('beforeend',`<tr><td>${escape(key)}</td><td>—</td><td>${escape(error)}</td></tr>`);
+  }
+}
+function update(data) {
+  latestStations=data; lastEventAt=Date.now();
+  updateEcoFlow(data.stations?.ecoflow || data);
+  renderStations(data);
+  $('connectionBanner').textContent='';
+}
+document.querySelectorAll('[data-panel]').forEach(button=>button.addEventListener('click',()=>{
+  document.querySelectorAll('[data-panel]').forEach(b=>b.setAttribute('aria-selected',String(b===button)));
+  ['overviewPanel','ecoflowPanel','marstekPanel'].forEach(id=>$(id).hidden=id!==button.dataset.panel);
+}));
+const colors=['#62d7e8','#f0b84a','#b69cff','#3ddc97','#ff7777','#7fb4ff'];
+function chart(title, samples, fields, unit) {
+  const valid=samples.flatMap(s=>fields.map(([key])=>s[key]).filter(numeric).map(Number));
+  if (!valid.length) return `<section class="chart-card"><h3>${title}</h3><p class="station-note">Немає вимірів за останні 24 години.</p></section>`;
+  let lo=Math.min(...valid), hi=Math.max(...valid); if(hi===lo){lo-=1;hi+=1;}
+  const end=Date.now()/1000,start=end-86400;
+  const x=t=>42+(t-start)/86400*510,y=v=>145-(v-lo)/(hi-lo)*118;
+  const lines=fields.map(([key,label],i)=>{
+    let paths=[], points=[],prev=null;
+    for(const s of samples){
+      if(!numeric(s[key]) || (prev!==null && s.ts-prev>100)){if(points.length)paths.push(points);points=[];}
+      if(numeric(s[key]))points.push([x(s.ts),y(Number(s[key]))]);
+      prev=s.ts;
+    }
+    if(points.length)paths.push(points);
+    return paths.map(p=>p.length===1?`<circle cx="${p[0][0]}" cy="${p[0][1]}" r="2" fill="${colors[i%6]}"/>`:`<polyline points="${p.map(a=>a.join(',')).join(' ')}" fill="none" stroke="${colors[i%6]}" stroke-width="2"/>`).join('');
+  }).join('');
+  return `<section class="chart-card"><h3>${title}</h3><svg viewBox="0 0 570 180" role="img" aria-label="${title}"><path d="M42 20V145H552" fill="none" stroke="#53606b"/><text x="0" y="28" fill="#9faab3" font-size="11">${hi.toFixed(1)}</text><text x="0" y="147" fill="#9faab3" font-size="11">${lo.toFixed(1)}</text>${lines}<text x="42" y="170" fill="#9faab3" font-size="11">−24 год</text><text x="510" y="170" fill="#9faab3" font-size="11">зараз</text></svg><div class="legend">${fields.map(([k,l],i)=>`<span style="color:${colors[i%6]}">● ${l}</span>`).join(' · ')} · ${unit}</div></section>`;
+}
+function renderCharts(){
+  for(const [id,key,temp,voltage] of [['ecoCharts','ecoflow',[['battery_temp','Батарея'],['inverter_temp','Інвертор'],['mppt_temp','MPPT']],[['grid_voltage','AC вхід']]],['marCharts','marstek',[['internal_temp','Внутрішня'],['mos1_temp','MOS1'],['mos2_temp','MOS2'],['bms1_temp','BMS1'],['bms2_temp','BMS2'],['cell_max_temp','Комірки max']],[['battery_voltage','Батарея'],['grid_voltage','AC вхід']]]]) {
+    const samples=chartHistory[key]||[];
+    $(id).innerHTML=chart('Температура · 24 год',samples,temp,'°C')+chart('Потужність · 24 год',samples,[['battery_power','Баланс батареї']],'W')+chart('Напруга · 24 год',samples,voltage,'V')+chart('Заряд · 24 год',samples,[['soc','SOC']],'%');
+  }
+}
+async function loadCharts(){
+  try{const r=await fetch(window.STATIC_SNAPSHOT?'history.json':'/api/history',{cache:'no-store'});if(r.ok)chartHistory=await r.json();}catch(e){}
+  renderCharts();
+}
+setInterval(()=>{
+  if(latestStations)renderStations(latestStations);
+  const limit=window.STATIC_SNAPSHOT?180000:15000;
+  if(lastEventAt && Date.now()-lastEventAt>limit){
+    $('connectionBanner').textContent='З’єднання з панеллю втрачено. Поточні дані недоступні.';
+    const d=JSON.parse(JSON.stringify(latestStations));
+    if(d.stations){Object.values(d.stations).forEach(s=>s.stale=true);renderStations(d);}
+    updateEcoFlow({ok:false,error:'З’єднання втрачено'});
+  }
+},2000);
+renderCharts();loadCharts();setInterval(loadCharts,60000);
+</script><script>
+update({"ok": true, "source": "Cloud MQTT", "device": "DELTA Pro", "timestamp": "2026-11-26T23:32:06", "grid": true, "battery": {"soc": 83, "min": 10.0, "max": 84.0, "eta": "111:41"}, "power": {"in": 0, "out": 0, "acOut": 0, "chargeLimit": 1300}, "ac": {"inputVoltage": 225.127, "inputFreq": 50.0, "outputVoltage": 223.808}, "temps": {"battery": 27, "inverter": 32, "mppt": 34}, "last_success": 1795728726.649239, "stale_after": 615, "stale": false, "history": [{"ts": "2026-11-25T19:12:45", "type": "power_on", "title": "Світло з'явилось", "ac_v": 217.067, "freq": 50.0, "soc": 84, "load_w": 73, "duration": "3 год 03 хв"}, {"ts": "2026-11-25T16:09:20", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 84, "load_w": 65}, {"ts": "2026-11-25T13:06:29", "type": "power_on", "title": "Світло з'явилось", "ac_v": 221.299, "freq": 50.0, "soc": 84, "load_w": 36, "duration": "2 год 02 хв"}, {"ts": "2026-11-25T11:04:15", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 82, "load_w": 60}, {"ts": "2026-11-25T05:08:21", "type": "power_on", "title": "Світло з'явилось", "ac_v": 227.552, "freq": 50.0, "soc": 76, "load_w": 60, "duration": "4 год 20 хв"}, {"ts": "2026-11-25T00:48:03", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 67, "load_w": 390}, {"ts": "2026-11-24T18:41:37", "type": "power_on", "title": "Світло з'явилось", "ac_v": 214.37, "freq": 50.0, "soc": 62, "load_w": 47, "duration": "5 год 09 хв"}, {"ts": "2026-11-24T13:32:00", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 81, "load_w": 59}, {"ts": "2026-11-24T02:57:23", "type": "power_on", "title": "Світло з'явилось", "ac_v": 225.71, "freq": 50.0, "soc": 84, "load_w": 23, "duration": "4 год 08 хв"}, {"ts": "2026-11-23T22:48:34", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 83, "load_w": 59}, {"ts": "2026-11-23T19:30:53", "type": "power_on", "title": "Світло з'явилось", "ac_v": 222.364, "freq": 50.0, "soc": 54, "load_w": 59, "duration": "3 год 03 хв"}, {"ts": "2026-11-23T16:27:39", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 77, "load_w": 510}], "telemetry": {"window": "24h", "sample_count": 95, "from": "2026-11-25T23:49:20", "to": "2026-11-26T23:31:52", "latest": {"mode": "idle", "grid": true, "soc": 83.0, "ac_v": 230.211, "in_w": 0.0, "out_w": 0.0, "charge_limit_w": 1300.0}, "voltage": {"min": {"value": 222.9, "ts": "2026-11-26T18:35:58"}, "max": {"value": 232.0, "ts": "2026-11-26T01:18:05"}, "frequency_min": {"value": 50.0, "ts": "2026-11-25T23:49:20"}, "frequency_max": {"value": 50.0, "ts": "2026-11-25T23:49:20"}}, "soc": {"min": {"value": 82.0, "ts": "2026-11-26T18:35:58"}, "max": {"value": 84.0, "ts": "2026-11-26T06:01:39"}}, "power": {"max_load": {"value": 65.0, "ts": "2026-11-26T10:04:30"}, "max_input": {"value": 65.0, "ts": "2026-11-26T10:04:30"}, "max_ac_output": {"value": 65.0, "ts": "2026-11-26T10:04:30"}, "charge_limit_w": 1300.0, "max_input_pct_of_current_limit": 5, "input_wh_est": 81.3, "load_wh_est": 81.3}, "modes": {"charging_sec": 0, "discharging_sec": 0, "idle_sec": 8616, "charging": "0 сек", "discharging": "0 сек", "idle": "2 год 23 хв", "last_charging": null, "last_discharging": null}}, "remaining_wh_estimate": 2988.0, "net_power": 0.0, "mode": "idle", "stations": {"ecoflow": {"ok": true, "source": "Cloud MQTT", "device": "DELTA Pro", "timestamp": "2026-11-26T23:32:06", "grid": true, "battery": {"soc": 83, "min": 10.0, "max": 84.0, "eta": "111:41"}, "power": {"in": 0, "out": 0, "acOut": 0, "chargeLimit": 1300}, "ac": {"inputVoltage": 225.127, "inputFreq": 50.0, "outputVoltage": 223.808}, "temps": {"battery": 27, "inverter": 32, "mppt": 34}, "last_success": 1795728726.649239, "stale_after": 615, "stale": false, "history": [{"ts": "2026-11-25T19:12:45", "type": "power_on", "title": "Світло з'явилось", "ac_v": 217.067, "freq": 50.0, "soc": 84, "load_w": 73, "duration": "3 год 03 хв"}, {"ts": "2026-11-25T16:09:20", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 84, "load_w": 65}, {"ts": "2026-11-25T13:06:29", "type": "power_on", "title": "Світло з'явилось", "ac_v": 221.299, "freq": 50.0, "soc": 84, "load_w": 36, "duration": "2 год 02 хв"}, {"ts": "2026-11-25T11:04:15", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 82, "load_w": 60}, {"ts": "2026-11-25T05:08:21", "type": "power_on", "title": "Світло з'явилось", "ac_v": 227.552, "freq": 50.0, "soc": 76, "load_w": 60, "duration": "4 год 20 хв"}, {"ts": "2026-11-25T00:48:03", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 67, "load_w": 390}, {"ts": "2026-11-24T18:41:37", "type": "power_on", "title": "Світло з'явилось", "ac_v": 214.37, "freq": 50.0, "soc": 62, "load_w": 47, "duration": "5 год 09 хв"}, {"ts": "2026-11-24T13:32:00", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 81, "load_w": 59}, {"ts": "2026-11-24T02:57:23", "type": "power_on", "title": "Світло з'явилось", "ac_v": 225.71, "freq": 50.0, "soc": 84, "load_w": 23, "duration": "4 год 08 хв"}, {"ts": "2026-11-23T22:48:34", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 83, "load_w": 59}, {"ts": "2026-11-23T19:30:53", "type": "power_on", "title": "Світло з'явилось", "ac_v": 222.364, "freq": 50.0, "soc": 54, "load_w": 59, "duration": "3 год 03 хв"}, {"ts": "2026-11-23T16:27:39", "type": "power_off", "title": "Світло зникло", "ac_v": 0.0, "freq": 0.0, "soc": 77, "load_w": 510}], "telemetry": {"window": "24h", "sample_count": 95, "from": "2026-11-25T23:49:20", "to": "2026-11-26T23:31:52", "latest": {"mode": "idle", "grid": true, "soc": 83.0, "ac_v": 230.211, "in_w": 0.0, "out_w": 0.0, "charge_limit_w": 1300.0}, "voltage": {"min": {"value": 222.9, "ts": "2026-11-26T18:35:58"}, "max": {"value": 232.0, "ts": "2026-11-26T01:18:05"}, "frequency_min": {"value": 50.0, "ts": "2026-11-25T23:49:20"}, "frequency_max": {"value": 50.0, "ts": "2026-11-25T23:49:20"}}, "soc": {"min": {"value": 82.0, "ts": "2026-11-26T18:35:58"}, "max": {"value": 84.0, "ts": "2026-11-26T06:01:39"}}, "power": {"max_load": {"value": 65.0, "ts": "2026-11-26T10:04:30"}, "max_input": {"value": 65.0, "ts": "2026-11-26T10:04:30"}, "max_ac_output": {"value": 65.0, "ts": "2026-11-26T10:04:30"}, "charge_limit_w": 1300.0, "max_input_pct_of_current_limit": 5, "input_wh_est": 81.3, "load_wh_est": 81.3}, "modes": {"charging_sec": 0, "discharging_sec": 0, "idle_sec": 8616, "charging": "0 сек", "discharging": "0 сек", "idle": "2 год 23 хв", "last_charging": null, "last_discharging": null}}, "remaining_wh_estimate": 2988.0, "net_power": 0.0, "mode": "idle"}, "marstek": {"ok": true, "stale": false, "last_success": 1795728700.238813, "last_attempt": 1795728691.753969, "values": {"soc": 100.0, "battery_power": -21, "battery_voltage": 54.34, "battery_current": -0.3, "nominal_capacity": 5120, "cycles": 1, "inverter_voltage": 226.7, "ac_frequency": 50.0, "ac_power": 0, "ac_current": 0.0, "backup_voltage": 226.5, "backup_power": 28, "internal_temp": 31.6, "mos1_temp": 31.1, "mos2_temp": 31.1, "cell_max_temp": 26.9, "cell_min_temp": 26.4, "bms1_temp": 33.3, "bms2_temp": 28.9, "cell1_temp": 26.6, "cell_max_voltage": 3.428, "cell_min_voltage": 3.37, "bms_status": 517, "bms_code": 2, "bms_online": 1, "inverter_state": 6, "alarms_raw": 0, "faults_raw": 0, "grid_voltage": 226.8, "ems_version": 148, "vms_version": 117, "bms_version": 115, "wifi_status": 1, "cloud_status": 1, "wifi_rssi": -43, "cell_1": 3.387, "cell_2": 3.411, "cell_3": 3.4, "cell_4": 3.39, "cell_5": 3.427, "cell_6": 3.382, "cell_7": 3.37, "cell_8": 3.388, "cell_9": 3.396, "cell_10": 3.41, "cell_11": 3.395, "cell_12": 3.394, "cell_13": 3.379, "cell_14": 3.428, "cell_15": 3.39, "cell_16": 3.402, "charge_total": 4.06, "discharge_total": 0.0, "charge_daily": 4.06, "discharge_daily": 0.0, "charge_monthly": 4.06, "discharge_monthly": 0.0}, "sensors": {"soc": {"key": "soc", "address": 34002, "label": "Заряд SOC", "unit": "%", "scale": 0.1, "signed": false, "count": 1, "low": 0, "high": 100, "note": "", "raw": [1000], "read_at": 1795728691.772841}, "battery_power": {"key": "battery_power", "address": 30001, "label": "Потужність батареї (+ заряд)", "unit": "W", "scale": 1, "signed": true, "count": 1, "low": -6000, "high": 6000, "note": "", "raw": [65515], "read_at": 1795728691.922403}, "battery_voltage": {"key": "battery_voltage", "address": 30100, "label": "Напруга батареї", "unit": "V", "scale": 0.01, "signed": false, "count": 1, "low": 10, "high": 100, "note": "", "raw": [5434], "read_at": 1795728692.073619}, "battery_current": {"key": "battery_current", "address": 30101, "label": "Струм батареї", "unit": "A", "scale": 0.1, "signed": true, "count": 1, "low": -150, "high": 150, "note": "", "raw": [65533], "read_at": 1795728692.223312}, "nominal_capacity": {"key": "nominal_capacity", "address": 32105, "label": "Номінальна енергоємність (регістр)", "unit": "Wh", "scale": 1, "signed": false, "count": 1, "low": 1, "high": 20000, "note": "", "raw": [5120], "read_at": 1795728692.372716}, "cycles": {"key": "cycles", "address": 34003, "label": "Цикли", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [1], "read_at": 1795728692.523943}, "inverter_voltage": {"key": "inverter_voltage", "address": 32200, "label": "AC напруга інвертора", "unit": "V", "scale": 0.1, "signed": false, "count": 1, "low": 0, "high": 300, "note": "Не є надійним доказом наявності зовнішньої мережі в UPS.", "raw": [2267], "read_at": 1795728692.673435}, "ac_frequency": {"key": "ac_frequency", "address": 32204, "label": "Частота AC", "unit": "Hz", "scale": 0.1, "signed": true, "count": 1, "low": 0, "high": 70, "note": "", "raw": [500], "read_at": 1795728692.824374}, "ac_power": {"key": "ac_power", "address": 30006, "label": "AC потужність інвертора", "unit": "W", "scale": 1, "signed": true, "count": 1, "low": -6000, "high": 6000, "note": "", "raw": [0], "read_at": 1795728692.973257}, "ac_current": {"key": "ac_current", "address": 37004, "label": "AC струм", "unit": "A", "scale": 0.004, "signed": true, "count": 1, "low": -40, "high": 40, "note": "", "raw": [0], "read_at": 1795728693.12359}, "backup_voltage": {"key": "backup_voltage", "address": 32300, "label": "Напруга резервного виходу", "unit": "V", "scale": 0.1, "signed": false, "count": 1, "low": 0, "high": 300, "note": "", "raw": [2265], "read_at": 1795728693.2732038}, "backup_power": {"key": "backup_power", "address": 32302, "label": "Навантаження резервного виходу", "unit": "W", "scale": 1, "signed": true, "count": 1, "low": 0, "high": 6000, "note": "E v3: int16, один регістр; не int32 від E v1/v2.", "raw": [28], "read_at": 1795728693.424274}, "internal_temp": {"key": "internal_temp", "address": 35000, "label": "Внутрішня температура", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "", "raw": [316], "read_at": 1795728693.5733418}, "mos1_temp": {"key": "mos1_temp", "address": 35001, "label": "Температура MOS1", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "", "raw": [311], "read_at": 1795728693.724343}, "mos2_temp": {"key": "mos2_temp", "address": 35002, "label": "Температура MOS2", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "", "raw": [311], "read_at": 1795728693.874381}, "cell_max_temp": {"key": "cell_max_temp", "address": 35010, "label": "Максимальна температура комірок", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "", "raw": [269], "read_at": 1795728694.024461}, "cell_min_temp": {"key": "cell_min_temp", "address": 35011, "label": "Мінімальна температура комірок", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "", "raw": [264], "read_at": 1795728694.174956}, "bms1_temp": {"key": "bms1_temp", "address": 34011, "label": "Температура BMS 1", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "Адреса з дослідження V148; потребує підтвердження на цій станції.", "raw": [333], "read_at": 1795728694.324964}, "bms2_temp": {"key": "bms2_temp", "address": 34012, "label": "Температура BMS 2", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "Адреса з дослідження V148; потребує підтвердження на цій станції.", "raw": [289], "read_at": 1795728694.4733021}, "cell1_temp": {"key": "cell1_temp", "address": 34013, "label": "Температура комірок, датчик 1", "unit": "°C", "scale": 0.1, "signed": true, "count": 1, "low": -40, "high": 150, "note": "", "raw": [266], "read_at": 1795728694.625122}, "cell_max_voltage": {"key": "cell_max_voltage", "address": 37007, "label": "Максимальна напруга комірки", "unit": "V", "scale": 0.001, "signed": false, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3428], "read_at": 1795728694.774997}, "cell_min_voltage": {"key": "cell_min_voltage", "address": 37008, "label": "Мінімальна напруга комірки", "unit": "V", "scale": 0.001, "signed": false, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3370], "read_at": 1795728694.925108}, "bms_status": {"key": "bms_status", "address": 30106, "label": "BMS status (сирий код)", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [517], "read_at": 1795728695.0733938}, "bms_code": {"key": "bms_code", "address": 34004, "label": "BMS code (сирий код)", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [2], "read_at": 1795728695.223659}, "bms_online": {"key": "bms_online", "address": 37000, "label": "BMS online (сирий код)", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [1], "read_at": 1795728695.374589}, "inverter_state": {"key": "inverter_state", "address": 35100, "label": "Стан інвертора (сирий код)", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [6], "read_at": 1795728695.5237691}, "alarms_raw": {"key": "alarms_raw", "address": 36000, "label": "Попередження (2 сирі слова)", "unit": "", "scale": 1, "signed": false, "count": 2, "low": null, "high": null, "note": "Значення бітів V148 не підтверджено; 0 не гарантує відсутність усіх помилок.", "raw": [0, 0], "read_at": 1795728695.675576}, "faults_raw": {"key": "faults_raw", "address": 36100, "label": "Помилки (2 сирі слова)", "unit": "", "scale": 1, "signed": false, "count": 2, "low": null, "high": null, "note": "Значення бітів V148 не підтверджено.", "raw": [0, 0], "read_at": 1795728695.824429}, "grid_voltage": {"key": "grid_voltage", "address": 36103, "label": "Напруга зовнішньої мережі (V148)", "unit": "V", "scale": 0.1, "signed": false, "count": 1, "low": 0, "high": 300, "note": "Дослідження V148; статус мережі є оцінкою за цією напругою.", "raw": [2268], "read_at": 1795728695.974369}, "ems_version": {"key": "ems_version", "address": 30200, "label": "EMS версія (сире значення)", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [148], "read_at": 1795728696.12479}, "vms_version": {"key": "vms_version", "address": 30202, "label": "VMS версія", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [117], "read_at": 1795728696.27405}, "bms_version": {"key": "bms_version", "address": 30204, "label": "BMS версія", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [115], "read_at": 1795728696.424938}, "wifi_status": {"key": "wifi_status", "address": 30300, "label": "Wi-Fi status (код)", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [1], "read_at": 1795728696.575613}, "cloud_status": {"key": "cloud_status", "address": 30302, "label": "Cloud status (код)", "unit": "", "scale": 1, "signed": false, "count": 1, "low": null, "high": null, "note": "", "raw": [1], "read_at": 1795728696.723917}, "wifi_rssi": {"key": "wifi_rssi", "address": 30303, "label": "Wi-Fi RSSI", "unit": "dBm", "scale": -1, "signed": false, "count": 1, "low": -150, "high": 0, "note": "", "raw": [43], "read_at": 1795728696.873965}, "cell_1": {"key": "cell_1", "address": 34018, "label": "Комірка 1", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3387], "read_at": 1795728697.0250409}, "cell_2": {"key": "cell_2", "address": 34019, "label": "Комірка 2", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3411], "read_at": 1795728697.174415}, "cell_3": {"key": "cell_3", "address": 34020, "label": "Комірка 3", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3400], "read_at": 1795728697.325562}, "cell_4": {"key": "cell_4", "address": 34021, "label": "Комірка 4", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3390], "read_at": 1795728697.475085}, "cell_5": {"key": "cell_5", "address": 34022, "label": "Комірка 5", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3427], "read_at": 1795728697.624158}, "cell_6": {"key": "cell_6", "address": 34023, "label": "Комірка 6", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3382], "read_at": 1795728697.7752059}, "cell_7": {"key": "cell_7", "address": 34024, "label": "Комірка 7", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3370], "read_at": 1795728697.923611}, "cell_8": {"key": "cell_8", "address": 34025, "label": "Комірка 8", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3388], "read_at": 1795728698.074199}, "cell_9": {"key": "cell_9", "address": 34026, "label": "Комірка 9", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3396], "read_at": 1795728698.2244391}, "cell_10": {"key": "cell_10", "address": 34027, "label": "Комірка 10", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3410], "read_at": 1795728698.375666}, "cell_11": {"key": "cell_11", "address": 34028, "label": "Комірка 11", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3395], "read_at": 1795728698.525156}, "cell_12": {"key": "cell_12", "address": 34029, "label": "Комірка 12", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3394], "read_at": 1795728698.674838}, "cell_13": {"key": "cell_13", "address": 34030, "label": "Комірка 13", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3379], "read_at": 1795728698.8247051}, "cell_14": {"key": "cell_14", "address": 34031, "label": "Комірка 14", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3428], "read_at": 1795728698.9742799}, "cell_15": {"key": "cell_15", "address": 34032, "label": "Комірка 15", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3390], "read_at": 1795728699.124872}, "cell_16": {"key": "cell_16", "address": 34033, "label": "Комірка 16", "unit": "V", "scale": 0.001, "signed": true, "count": 1, "low": 1, "high": 5, "note": "", "raw": [3402], "read_at": 1795728699.2745018}, "charge_total": {"key": "charge_total", "address": 33000, "label": "charge_total", "unit": "kWh", "scale": 0.01, "signed": false, "count": 2, "low": 0, "high": null, "note": "", "raw": [0, 406], "read_at": 1795728699.424524}, "discharge_total": {"key": "discharge_total", "address": 33002, "label": "discharge_total", "unit": "kWh", "scale": 0.01, "signed": true, "count": 2, "low": 0, "high": null, "note": "", "raw": [0, 0], "read_at": 1795728699.574454}, "charge_daily": {"key": "charge_daily", "address": 33004, "label": "charge_daily", "unit": "kWh", "scale": 0.01, "signed": false, "count": 2, "low": 0, "high": null, "note": "", "raw": [0, 406], "read_at": 1795728699.724803}, "discharge_daily": {"key": "discharge_daily", "address": 33006, "label": "discharge_daily", "unit": "kWh", "scale": 0.01, "signed": true, "count": 2, "low": 0, "high": null, "note": "", "raw": [0, 0], "read_at": 1795728699.875597}, "charge_monthly": {"key": "charge_monthly", "address": 33008, "label": "charge_monthly", "unit": "kWh", "scale": 0.01, "signed": false, "count": 2, "low": 0, "high": null, "note": "", "raw": [0, 406], "read_at": 1795728700.024802}, "discharge_monthly": {"key": "discharge_monthly", "address": 33010, "label": "discharge_monthly", "unit": "kWh", "scale": 0.01, "signed": true, "count": 2, "low": 0, "high": null, "note": "", "raw": [0, 0], "read_at": 1795728700.175067}}, "errors": {}, "unmapped": {"soh": "SOH: підтвердженої адреси V148 немає", "inverter_temp": "Окрему температуру інвертора не ідентифіковано; internal/MOS показано окремо", "remaining_capacity_measured": "Прямий вимір залишкової ємності не ідентифіковано"}, "name": "MARSTEK Venus E 3.0", "source": "Modbus TCP / FC03", "configured_capacity_wh": 5120, "firmware_expected": "V148", "host": "192.168.0.139", "unit_id": 1, "failures": 0, "retry_in_seconds": 30, "next_poll": 1795728730.239073, "age_seconds": 26.700395107269287, "mode": "discharging", "remaining_wh_estimate": 5120.0, "charge_power": 0, "discharge_power": 21, "cell_delta_mv": 58.0, "grid_present_estimate": true}}, "combined": {"remaining_wh_estimate": 8108.0, "net_power_w": -21.0, "configured_capacity_wh": 8720, "complete": true, "note": "Енергія ≈ SOC × паспортна ємність; баланс потужності + заряд / − розряд."}});
+async function refreshSnapshot(){try{const r=await fetch('status.json?t='+Date.now(),{cache:'no-store'});if(r.ok)update(await r.json());}catch(e){}}
+setInterval(refreshSnapshot,60000);
+</script></body>
 </html>
