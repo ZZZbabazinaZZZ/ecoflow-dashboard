@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-11-28T17:26:35",
+  "timestamp": "2026-11-28T17:57:39",
   "grid": true,
   "battery": {
     "soc": 76,
@@ -17,16 +17,16 @@
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 231.387,
+    "inputVoltage": 231.453,
     "inputFreq": 50.0,
-    "outputVoltage": 231.026
+    "outputVoltage": 230.601
   },
   "temps": {
     "battery": 27,
     "inverter": 32,
     "mppt": 34
   },
-  "last_success": 1795879595.755567,
+  "last_success": 1795881458.931217,
   "stale_after": 615,
   "stale": false,
   "history": [
@@ -148,13 +148,13 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 97,
-    "from": "2026-11-27T17:35:48",
-    "to": "2026-11-28T17:25:55",
+    "from": "2026-11-27T18:06:59",
+    "to": "2026-11-28T17:57:29",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 76.0,
-      "ac_v": 231.531,
+      "ac_v": 231.845,
       "in_w": 0.0,
       "out_w": 0.0,
       "charge_limit_w": 1300.0
@@ -170,11 +170,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-27T17:35:48"
+        "ts": "2026-11-27T18:06:59"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-27T17:35:48"
+        "ts": "2026-11-27T18:06:59"
       }
     },
     "soc": {
@@ -184,7 +184,7 @@
       },
       "max": {
         "value": 79.0,
-        "ts": "2026-11-27T17:35:48"
+        "ts": "2026-11-27T18:06:59"
       }
     },
     "power": {
@@ -202,8 +202,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 14,
-      "input_wh_est": 128.0,
-      "load_wh_est": 128.0
+      "input_wh_est": 123.6,
+      "load_wh_est": 123.6
     },
     "modes": {
       "charging_sec": 0,
@@ -224,7 +224,7 @@
       "ok": true,
       "source": "Cloud MQTT",
       "device": "DELTA Pro",
-      "timestamp": "2026-11-28T17:26:35",
+      "timestamp": "2026-11-28T17:57:39",
       "grid": true,
       "battery": {
         "soc": 76,
@@ -239,16 +239,16 @@
         "chargeLimit": 1300
       },
       "ac": {
-        "inputVoltage": 231.387,
+        "inputVoltage": 231.453,
         "inputFreq": 50.0,
-        "outputVoltage": 231.026
+        "outputVoltage": 230.601
       },
       "temps": {
         "battery": 27,
         "inverter": 32,
         "mppt": 34
       },
-      "last_success": 1795879595.755567,
+      "last_success": 1795881458.931217,
       "stale_after": 615,
       "stale": false,
       "history": [
@@ -370,13 +370,13 @@
       "telemetry": {
         "window": "24h",
         "sample_count": 97,
-        "from": "2026-11-27T17:35:48",
-        "to": "2026-11-28T17:25:55",
+        "from": "2026-11-27T18:06:59",
+        "to": "2026-11-28T17:57:29",
         "latest": {
           "mode": "idle",
           "grid": true,
           "soc": 76.0,
-          "ac_v": 231.531,
+          "ac_v": 231.845,
           "in_w": 0.0,
           "out_w": 0.0,
           "charge_limit_w": 1300.0
@@ -392,11 +392,11 @@
           },
           "frequency_min": {
             "value": 50.0,
-            "ts": "2026-11-27T17:35:48"
+            "ts": "2026-11-27T18:06:59"
           },
           "frequency_max": {
             "value": 50.0,
-            "ts": "2026-11-27T17:35:48"
+            "ts": "2026-11-27T18:06:59"
           }
         },
         "soc": {
@@ -406,7 +406,7 @@
           },
           "max": {
             "value": 79.0,
-            "ts": "2026-11-27T17:35:48"
+            "ts": "2026-11-27T18:06:59"
           }
         },
         "power": {
@@ -424,8 +424,8 @@
           },
           "charge_limit_w": 1300.0,
           "max_input_pct_of_current_limit": 14,
-          "input_wh_est": 128.0,
-          "load_wh_est": 128.0
+          "input_wh_est": 123.6,
+          "load_wh_est": 123.6
         },
         "modes": {
           "charging_sec": 0,
@@ -443,10 +443,10 @@
       "mode": "idle"
     },
     "marstek": {
-      "ok": true,
-      "stale": false,
+      "ok": false,
+      "stale": true,
       "last_success": 1795879566.708787,
-      "last_attempt": 1795879556.803496,
+      "last_attempt": 1795879596.796721,
       "values": {
         "soc": 100.0,
         "battery_power": -24,
@@ -1440,11 +1440,12 @@
       "firmware_expected": "V148",
       "host": "192.168.0.139",
       "unit_id": 1,
-      "failures": 0,
-      "retry_in_seconds": 30,
-      "next_poll": 1795879596.709067,
-      "age_seconds": 29.29745602607727,
-      "mode": "discharging",
+      "error": "ModbusIOException: Modbus Error: [Input/Output] No response received after 0 retries, continue with next request",
+      "failures": 1,
+      "retry_in_seconds": 60,
+      "next_poll": 1795880564.4419048,
+      "age_seconds": 1892.4916489124298,
+      "mode": "unknown",
       "remaining_wh_estimate": 5120.0,
       "charge_power": 0,
       "discharge_power": 24,
@@ -1453,14 +1454,14 @@
     }
   },
   "combined": {
-    "remaining_wh_estimate": 7856.0,
-    "net_power_w": -24.0,
+    "remaining_wh_estimate": null,
+    "net_power_w": null,
     "configured_capacity_wh": 8720,
-    "complete": true,
+    "complete": false,
     "note": "Енергія ≈ SOC × паспортна ємність; баланс потужності + заряд / − розряд."
   },
   "publication": {
-    "generated_at": 1795879596.006294,
+    "generated_at": 1795881459.200476,
     "interval_seconds": 900
   }
 }
