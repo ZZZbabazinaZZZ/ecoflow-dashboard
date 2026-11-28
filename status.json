@@ -2,31 +2,31 @@
   "ok": true,
   "source": "Cloud MQTT",
   "device": "DELTA Pro",
-  "timestamp": "2026-11-28T07:50:53",
+  "timestamp": "2026-11-28T08:32:47",
   "grid": true,
   "battery": {
     "soc": 76,
     "min": 10.0,
     "max": 77.0,
-    "eta": "49:15"
+    "eta": "100:58"
   },
   "power": {
-    "in": 41,
-    "out": 41,
-    "acOut": 41,
+    "in": 0,
+    "out": 0,
+    "acOut": 0,
     "chargeLimit": 1300
   },
   "ac": {
-    "inputVoltage": 229.713,
+    "inputVoltage": 228.328,
     "inputFreq": 50.0,
-    "outputVoltage": 228.84
+    "outputVoltage": 227.925
   },
   "temps": {
     "battery": 27,
     "inverter": 32,
     "mppt": 34
   },
-  "last_success": 1795845053.194941,
+  "last_success": 1795847567.060561,
   "stale_after": 615,
   "stale": false,
   "history": [
@@ -148,15 +148,15 @@
   "telemetry": {
     "window": "24h",
     "sample_count": 97,
-    "from": "2026-11-27T07:51:33",
-    "to": "2026-11-28T07:50:25",
+    "from": "2026-11-27T08:33:33",
+    "to": "2026-11-28T08:32:35",
     "latest": {
       "mode": "idle",
       "grid": true,
       "soc": 76.0,
-      "ac_v": 229.897,
-      "in_w": 40.0,
-      "out_w": 40.0,
+      "ac_v": 229.604,
+      "in_w": 0.0,
+      "out_w": 0.0,
       "charge_limit_w": 1300.0
     },
     "voltage": {
@@ -170,11 +170,11 @@
       },
       "frequency_min": {
         "value": 50.0,
-        "ts": "2026-11-27T07:51:33"
+        "ts": "2026-11-27T08:33:33"
       },
       "frequency_max": {
         "value": 50.0,
-        "ts": "2026-11-27T07:51:33"
+        "ts": "2026-11-27T08:33:33"
       }
     },
     "soc": {
@@ -184,7 +184,7 @@
       },
       "max": {
         "value": 82.0,
-        "ts": "2026-11-27T07:51:33"
+        "ts": "2026-11-27T08:33:33"
       }
     },
     "power": {
@@ -202,8 +202,8 @@
       },
       "charge_limit_w": 1300.0,
       "max_input_pct_of_current_limit": 13,
-      "input_wh_est": 146.6,
-      "load_wh_est": 146.6
+      "input_wh_est": 146.1,
+      "load_wh_est": 146.1
     },
     "modes": {
       "charging_sec": 0,
@@ -224,31 +224,31 @@
       "ok": true,
       "source": "Cloud MQTT",
       "device": "DELTA Pro",
-      "timestamp": "2026-11-28T07:50:53",
+      "timestamp": "2026-11-28T08:32:47",
       "grid": true,
       "battery": {
         "soc": 76,
         "min": 10.0,
         "max": 77.0,
-        "eta": "49:15"
+        "eta": "100:58"
       },
       "power": {
-        "in": 41,
-        "out": 41,
-        "acOut": 41,
+        "in": 0,
+        "out": 0,
+        "acOut": 0,
         "chargeLimit": 1300
       },
       "ac": {
-        "inputVoltage": 229.713,
+        "inputVoltage": 228.328,
         "inputFreq": 50.0,
-        "outputVoltage": 228.84
+        "outputVoltage": 227.925
       },
       "temps": {
         "battery": 27,
         "inverter": 32,
         "mppt": 34
       },
-      "last_success": 1795845053.194941,
+      "last_success": 1795847567.060561,
       "stale_after": 615,
       "stale": false,
       "history": [
@@ -370,15 +370,15 @@
       "telemetry": {
         "window": "24h",
         "sample_count": 97,
-        "from": "2026-11-27T07:51:33",
-        "to": "2026-11-28T07:50:25",
+        "from": "2026-11-27T08:33:33",
+        "to": "2026-11-28T08:32:35",
         "latest": {
           "mode": "idle",
           "grid": true,
           "soc": 76.0,
-          "ac_v": 229.897,
-          "in_w": 40.0,
-          "out_w": 40.0,
+          "ac_v": 229.604,
+          "in_w": 0.0,
+          "out_w": 0.0,
           "charge_limit_w": 1300.0
         },
         "voltage": {
@@ -392,11 +392,11 @@
           },
           "frequency_min": {
             "value": 50.0,
-            "ts": "2026-11-27T07:51:33"
+            "ts": "2026-11-27T08:33:33"
           },
           "frequency_max": {
             "value": 50.0,
-            "ts": "2026-11-27T07:51:33"
+            "ts": "2026-11-27T08:33:33"
           }
         },
         "soc": {
@@ -406,7 +406,7 @@
           },
           "max": {
             "value": 82.0,
-            "ts": "2026-11-27T07:51:33"
+            "ts": "2026-11-27T08:33:33"
           }
         },
         "power": {
@@ -424,8 +424,8 @@
           },
           "charge_limit_w": 1300.0,
           "max_input_pct_of_current_limit": 13,
-          "input_wh_est": 146.6,
-          "load_wh_est": 146.6
+          "input_wh_est": 146.1,
+          "load_wh_est": 146.1
         },
         "modes": {
           "charging_sec": 0,
@@ -443,67 +443,67 @@
       "mode": "idle"
     },
     "marstek": {
-      "ok": true,
-      "stale": false,
-      "last_success": 1795845051.630168,
-      "last_attempt": 1795845040.271727,
+      "ok": false,
+      "stale": true,
+      "last_success": 1795846620.651843,
+      "last_attempt": 1795846650.7906759,
       "values": {
         "soc": 100.0,
         "battery_power": -23,
-        "battery_voltage": 54.08,
+        "battery_voltage": 54.53,
         "battery_current": -0.3,
         "nominal_capacity": 5120,
         "cycles": 1,
-        "inverter_voltage": 230.3,
+        "inverter_voltage": 227.4,
         "ac_frequency": 50.0,
         "ac_power": 0,
         "ac_current": 0.0,
-        "backup_voltage": 229.8,
-        "backup_power": 30,
-        "internal_temp": 30.7,
-        "mos1_temp": 30.2,
-        "mos2_temp": 30.2,
-        "cell_max_temp": 25.7,
-        "cell_min_temp": 25.1,
-        "bms1_temp": 32.3,
-        "bms2_temp": 27.8,
-        "cell1_temp": 25.6,
-        "cell_max_voltage": 3.408,
-        "cell_min_voltage": 3.356,
+        "backup_voltage": 226.5,
+        "backup_power": 25,
+        "internal_temp": 31.0,
+        "mos1_temp": 30.6,
+        "mos2_temp": 30.6,
+        "cell_max_temp": 25.8,
+        "cell_min_temp": 25.3,
+        "bms1_temp": 32.6,
+        "bms2_temp": 28.1,
+        "cell1_temp": 25.7,
+        "cell_max_voltage": 3.45,
+        "cell_min_voltage": 3.373,
         "bms_status": 517,
         "bms_code": 2,
         "bms_online": 1,
         "inverter_state": 6,
         "alarms_raw": 0,
         "faults_raw": 0,
-        "grid_voltage": 230.3,
+        "grid_voltage": 227.6,
         "ems_version": 148,
         "vms_version": 117,
         "bms_version": 115,
         "wifi_status": 1,
         "cloud_status": 1,
-        "wifi_rssi": -30,
-        "cell_1": 3.372,
-        "cell_2": 3.393,
-        "cell_3": 3.384,
-        "cell_4": 3.376,
-        "cell_5": 3.406,
-        "cell_6": 3.367,
-        "cell_7": 3.355,
-        "cell_8": 3.371,
-        "cell_9": 3.381,
-        "cell_10": 3.392,
-        "cell_11": 3.379,
-        "cell_12": 3.38,
-        "cell_13": 3.365,
-        "cell_14": 3.407,
-        "cell_15": 3.374,
-        "cell_16": 3.384,
-        "charge_total": 4.79,
+        "wifi_rssi": -38,
+        "cell_1": 3.396,
+        "cell_2": 3.427,
+        "cell_3": 3.412,
+        "cell_4": 3.4,
+        "cell_5": 3.449,
+        "cell_6": 3.388,
+        "cell_7": 3.372,
+        "cell_8": 3.394,
+        "cell_9": 3.407,
+        "cell_10": 3.424,
+        "cell_11": 3.408,
+        "cell_12": 3.406,
+        "cell_13": 3.385,
+        "cell_14": 3.448,
+        "cell_15": 3.4,
+        "cell_16": 3.415,
+        "charge_total": 4.82,
         "discharge_total": 0.0,
-        "charge_daily": 0.16,
+        "charge_daily": 0.19,
         "discharge_daily": 0.0,
-        "charge_monthly": 4.79,
+        "charge_monthly": 4.82,
         "discharge_monthly": 0.0
       },
       "sensors": {
@@ -521,7 +521,7 @@
           "raw": [
             1000
           ],
-          "read_at": 1795845040.291244
+          "read_at": 1795846610.760017
         },
         "battery_power": {
           "key": "battery_power",
@@ -537,7 +537,7 @@
           "raw": [
             65513
           ],
-          "read_at": 1795845040.491328
+          "read_at": 1795846610.9601028
         },
         "battery_voltage": {
           "key": "battery_voltage",
@@ -551,9 +551,9 @@
           "high": 100,
           "note": "",
           "raw": [
-            5408
+            5453
           ],
-          "read_at": 1795845040.6716642
+          "read_at": 1795846611.120457
         },
         "battery_current": {
           "key": "battery_current",
@@ -569,7 +569,7 @@
           "raw": [
             65533
           ],
-          "read_at": 1795845040.822289
+          "read_at": 1795846611.2715142
         },
         "nominal_capacity": {
           "key": "nominal_capacity",
@@ -585,7 +585,7 @@
           "raw": [
             5120
           ],
-          "read_at": 1795845041.011466
+          "read_at": 1795846611.420544
         },
         "cycles": {
           "key": "cycles",
@@ -601,7 +601,7 @@
           "raw": [
             1
           ],
-          "read_at": 1795845041.161629
+          "read_at": 1795846611.6203918
         },
         "inverter_voltage": {
           "key": "inverter_voltage",
@@ -615,9 +615,9 @@
           "high": 300,
           "note": "Не є надійним доказом наявності зовнішньої мережі в UPS.",
           "raw": [
-            2303
+            2274
           ],
-          "read_at": 1795845041.3414662
+          "read_at": 1795846611.810227
         },
         "ac_frequency": {
           "key": "ac_frequency",
@@ -633,7 +633,7 @@
           "raw": [
             500
           ],
-          "read_at": 1795845041.541346
+          "read_at": 1795846612.01052
         },
         "ac_power": {
           "key": "ac_power",
@@ -649,7 +649,7 @@
           "raw": [
             0
           ],
-          "read_at": 1795845041.70175
+          "read_at": 1795846612.1808078
         },
         "ac_current": {
           "key": "ac_current",
@@ -665,7 +665,7 @@
           "raw": [
             0
           ],
-          "read_at": 1795845041.881353
+          "read_at": 1795846612.330339
         },
         "backup_voltage": {
           "key": "backup_voltage",
@@ -679,9 +679,9 @@
           "high": 300,
           "note": "",
           "raw": [
-            2298
+            2265
           ],
-          "read_at": 1795845042.071282
+          "read_at": 1795846612.48113
         },
         "backup_power": {
           "key": "backup_power",
@@ -695,9 +695,9 @@
           "high": 6000,
           "note": "E v3: int16, один регістр; не int32 від E v1/v2.",
           "raw": [
-            30
+            25
           ],
-          "read_at": 1795845042.221514
+          "read_at": 1795846612.650542
         },
         "internal_temp": {
           "key": "internal_temp",
@@ -711,9 +711,9 @@
           "high": 150,
           "note": "",
           "raw": [
-            307
+            310
           ],
-          "read_at": 1795845042.421205
+          "read_at": 1795846612.82019
         },
         "mos1_temp": {
           "key": "mos1_temp",
@@ -727,9 +727,9 @@
           "high": 150,
           "note": "",
           "raw": [
-            302
+            306
           ],
-          "read_at": 1795845042.581621
+          "read_at": 1795846612.971652
         },
         "mos2_temp": {
           "key": "mos2_temp",
@@ -743,9 +743,9 @@
           "high": 150,
           "note": "",
           "raw": [
-            302
+            306
           ],
-          "read_at": 1795845042.771373
+          "read_at": 1795846613.121226
         },
         "cell_max_temp": {
           "key": "cell_max_temp",
@@ -759,9 +759,9 @@
           "high": 150,
           "note": "",
           "raw": [
-            257
+            258
           ],
-          "read_at": 1795845042.9212182
+          "read_at": 1795846613.27122
         },
         "cell_min_temp": {
           "key": "cell_min_temp",
@@ -775,9 +775,9 @@
           "high": 150,
           "note": "",
           "raw": [
-            251
+            253
           ],
-          "read_at": 1795845043.0713952
+          "read_at": 1795846613.450454
         },
         "bms1_temp": {
           "key": "bms1_temp",
@@ -791,9 +791,9 @@
           "high": 150,
           "note": "Адреса з дослідження V148; потребує підтвердження на цій станції.",
           "raw": [
-            323
+            326
           ],
-          "read_at": 1795845043.251368
+          "read_at": 1795846613.6004832
         },
         "bms2_temp": {
           "key": "bms2_temp",
@@ -807,9 +807,9 @@
           "high": 150,
           "note": "Адреса з дослідження V148; потребує підтвердження на цій станції.",
           "raw": [
-            278
+            281
           ],
-          "read_at": 1795845043.441108
+          "read_at": 1795846613.800978
         },
         "cell1_temp": {
           "key": "cell1_temp",
@@ -823,9 +823,9 @@
           "high": 150,
           "note": "",
           "raw": [
-            256
+            257
           ],
-          "read_at": 1795845043.600986
+          "read_at": 1795846614.0033422
         },
         "cell_max_voltage": {
           "key": "cell_max_voltage",
@@ -839,9 +839,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3408
+            3450
           ],
-          "read_at": 1795845043.7512178
+          "read_at": 1795846614.200395
         },
         "cell_min_voltage": {
           "key": "cell_min_voltage",
@@ -855,9 +855,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3356
+            3373
           ],
-          "read_at": 1795845043.961005
+          "read_at": 1795846614.360341
         },
         "bms_status": {
           "key": "bms_status",
@@ -873,7 +873,7 @@
           "raw": [
             517
           ],
-          "read_at": 1795845044.1409652
+          "read_at": 1795846614.5605052
         },
         "bms_code": {
           "key": "bms_code",
@@ -889,7 +889,7 @@
           "raw": [
             2
           ],
-          "read_at": 1795845044.350961
+          "read_at": 1795846614.710516
         },
         "bms_online": {
           "key": "bms_online",
@@ -905,7 +905,7 @@
           "raw": [
             1
           ],
-          "read_at": 1795845044.560958
+          "read_at": 1795846614.8604212
         },
         "inverter_state": {
           "key": "inverter_state",
@@ -921,7 +921,7 @@
           "raw": [
             6
           ],
-          "read_at": 1795845044.771966
+          "read_at": 1795846615.060208
         },
         "alarms_raw": {
           "key": "alarms_raw",
@@ -938,7 +938,7 @@
             0,
             0
           ],
-          "read_at": 1795845044.951116
+          "read_at": 1795846615.211445
         },
         "faults_raw": {
           "key": "faults_raw",
@@ -955,7 +955,7 @@
             0,
             0
           ],
-          "read_at": 1795845045.1913989
+          "read_at": 1795846615.380196
         },
         "grid_voltage": {
           "key": "grid_voltage",
@@ -969,9 +969,9 @@
           "high": 300,
           "note": "Дослідження V148; статус мережі є оцінкою за цією напругою.",
           "raw": [
-            2303
+            2276
           ],
-          "read_at": 1795845045.5217202
+          "read_at": 1795846615.5605319
         },
         "ems_version": {
           "key": "ems_version",
@@ -987,7 +987,7 @@
           "raw": [
             148
           ],
-          "read_at": 1795845045.7111099
+          "read_at": 1795846615.71028
         },
         "vms_version": {
           "key": "vms_version",
@@ -1003,7 +1003,7 @@
           "raw": [
             117
           ],
-          "read_at": 1795845046.041434
+          "read_at": 1795846615.860936
         },
         "bms_version": {
           "key": "bms_version",
@@ -1019,7 +1019,7 @@
           "raw": [
             115
           ],
-          "read_at": 1795845046.2922828
+          "read_at": 1795846616.030186
         },
         "wifi_status": {
           "key": "wifi_status",
@@ -1035,7 +1035,7 @@
           "raw": [
             1
           ],
-          "read_at": 1795845046.50111
+          "read_at": 1795846616.1801379
         },
         "cloud_status": {
           "key": "cloud_status",
@@ -1051,7 +1051,7 @@
           "raw": [
             1
           ],
-          "read_at": 1795845046.81182
+          "read_at": 1795846616.385827
         },
         "wifi_rssi": {
           "key": "wifi_rssi",
@@ -1065,9 +1065,9 @@
           "high": 0,
           "note": "",
           "raw": [
-            30
+            38
           ],
-          "read_at": 1795845047.0212748
+          "read_at": 1795846616.5702899
         },
         "cell_1": {
           "key": "cell_1",
@@ -1081,9 +1081,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3372
+            3396
           ],
-          "read_at": 1795845047.330704
+          "read_at": 1795846616.770735
         },
         "cell_2": {
           "key": "cell_2",
@@ -1097,9 +1097,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3393
+            3427
           ],
-          "read_at": 1795845047.540577
+          "read_at": 1795846616.92005
         },
         "cell_3": {
           "key": "cell_3",
@@ -1113,9 +1113,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3384
+            3412
           ],
-          "read_at": 1795845047.840729
+          "read_at": 1795846617.084044
         },
         "cell_4": {
           "key": "cell_4",
@@ -1129,9 +1129,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3376
+            3400
           ],
-          "read_at": 1795845048.0435772
+          "read_at": 1795846617.231061
         },
         "cell_5": {
           "key": "cell_5",
@@ -1145,9 +1145,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3406
+            3449
           ],
-          "read_at": 1795845048.2103522
+          "read_at": 1795846617.3907
         },
         "cell_6": {
           "key": "cell_6",
@@ -1161,9 +1161,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3367
+            3388
           ],
-          "read_at": 1795845048.370314
+          "read_at": 1795846617.666126
         },
         "cell_7": {
           "key": "cell_7",
@@ -1177,9 +1177,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3355
+            3372
           ],
-          "read_at": 1795845048.550347
+          "read_at": 1795846617.861365
         },
         "cell_8": {
           "key": "cell_8",
@@ -1193,9 +1193,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3371
+            3394
           ],
-          "read_at": 1795845048.740623
+          "read_at": 1795846618.0531719
         },
         "cell_9": {
           "key": "cell_9",
@@ -1209,9 +1209,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3381
+            3407
           ],
-          "read_at": 1795845048.940418
+          "read_at": 1795846618.1948621
         },
         "cell_10": {
           "key": "cell_10",
@@ -1225,9 +1225,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3392
+            3424
           ],
-          "read_at": 1795845049.150354
+          "read_at": 1795846618.3403819
         },
         "cell_11": {
           "key": "cell_11",
@@ -1241,9 +1241,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3379
+            3408
           ],
-          "read_at": 1795845049.340294
+          "read_at": 1795846618.490262
         },
         "cell_12": {
           "key": "cell_12",
@@ -1257,9 +1257,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3380
+            3406
           ],
-          "read_at": 1795845049.550366
+          "read_at": 1795846618.680233
         },
         "cell_13": {
           "key": "cell_13",
@@ -1273,9 +1273,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3365
+            3385
           ],
-          "read_at": 1795845049.7002969
+          "read_at": 1795846618.880391
         },
         "cell_14": {
           "key": "cell_14",
@@ -1289,9 +1289,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3407
+            3448
           ],
-          "read_at": 1795845049.910372
+          "read_at": 1795846619.080252
         },
         "cell_15": {
           "key": "cell_15",
@@ -1305,9 +1305,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3374
+            3400
           ],
-          "read_at": 1795845050.090336
+          "read_at": 1795846619.290385
         },
         "cell_16": {
           "key": "cell_16",
@@ -1321,9 +1321,9 @@
           "high": 5,
           "note": "",
           "raw": [
-            3384
+            3415
           ],
-          "read_at": 1795845050.30011
+          "read_at": 1795846619.4403908
         },
         "charge_total": {
           "key": "charge_total",
@@ -1338,9 +1338,9 @@
           "note": "",
           "raw": [
             0,
-            479
+            482
           ],
-          "read_at": 1795845050.490135
+          "read_at": 1795846619.6510231
         },
         "discharge_total": {
           "key": "discharge_total",
@@ -1357,7 +1357,7 @@
             0,
             0
           ],
-          "read_at": 1795845050.690221
+          "read_at": 1795846619.810863
         },
         "charge_daily": {
           "key": "charge_daily",
@@ -1372,9 +1372,9 @@
           "note": "",
           "raw": [
             0,
-            16
+            19
           ],
-          "read_at": 1795845050.900168
+          "read_at": 1795846620.017359
         },
         "discharge_daily": {
           "key": "discharge_daily",
@@ -1391,7 +1391,7 @@
             0,
             0
           ],
-          "read_at": 1795845051.100193
+          "read_at": 1795846620.1699982
         },
         "charge_monthly": {
           "key": "charge_monthly",
@@ -1406,9 +1406,9 @@
           "note": "",
           "raw": [
             0,
-            479
+            482
           ],
-          "read_at": 1795845051.2802172
+          "read_at": 1795846620.320117
         },
         "discharge_monthly": {
           "key": "discharge_monthly",
@@ -1425,7 +1425,7 @@
             0,
             0
           ],
-          "read_at": 1795845051.440746
+          "read_at": 1795846620.491702
         }
       },
       "errors": {},
@@ -1440,27 +1440,28 @@
       "firmware_expected": "V148",
       "host": "192.168.0.139",
       "unit_id": 1,
-      "failures": 0,
-      "retry_in_seconds": 30,
-      "next_poll": 1795845081.6303701,
-      "age_seconds": 1.843672275543213,
-      "mode": "discharging",
+      "error": "ModbusIOException: Modbus Error: [Input/Output] No response received after 0 retries, continue with next request",
+      "failures": 1,
+      "retry_in_seconds": 60,
+      "next_poll": 1795847617.362111,
+      "age_seconds": 946.687814950943,
+      "mode": "unknown",
       "remaining_wh_estimate": 5120.0,
       "charge_power": 0,
       "discharge_power": 23,
-      "cell_delta_mv": 52.0,
+      "cell_delta_mv": 77.0,
       "grid_present_estimate": true
     }
   },
   "combined": {
-    "remaining_wh_estimate": 7856.0,
-    "net_power_w": -23.0,
+    "remaining_wh_estimate": null,
+    "net_power_w": null,
     "configured_capacity_wh": 8720,
-    "complete": true,
+    "complete": false,
     "note": "Енергія ≈ SOC × паспортна ємність; баланс потужності + заряд / − розряд."
   },
   "publication": {
-    "generated_at": 1795845053.473894,
+    "generated_at": 1795847567.3396978,
     "interval_seconds": 900
   }
 }
